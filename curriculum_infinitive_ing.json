@@ -1,0 +1,106 @@
+{
+  "intro": {
+    "title": "Infinitive and -ing form",
+    "sections": [
+      {
+        "title": "What are we comparing?",
+        "content": "After many verbs we use either the **to-infinitive** (to do, to go) or the **-ing form** (doing, going). The choice depends on the verb – some verbs take only to-infinitive, some only -ing, and some take both (sometimes with a different meaning).\n\n• **To-infinitive**: I want to leave. She decided to apply. They hope to win.\n• **-ing form**: I enjoy swimming. She finished reading. He avoided answering.\n\nYou need to learn which pattern each verb takes."
+      },
+      {
+        "title": "Verbs + to-infinitive",
+        "content": "These verbs are followed by **to + verb** (to do, to go):\n\n• want, would like, hope, expect, decide, plan, agree, refuse, promise, offer, manage, fail, afford, need (to do), try (to do = attempt)\n• After adjectives: happy to, glad to, pleased to, surprised to, easy to, difficult to\n• Purpose: I came to see you. She phoned to ask.\n\nExamples: I want to learn. She decided to stay. It's easy to forget."
+      },
+      {
+        "title": "Verbs + -ing form",
+        "content": "These verbs are followed by **verb + -ing** (doing, going):\n\n• enjoy, finish, avoid, consider, suggest, mind, keep, imagine, miss, practise, risk, deny, admit, delay, postpone\n• After prepositions: interested in doing, good at doing, tired of doing\n• After expressions: It's no use, It's worth, busy doing, can't help doing\n\nExamples: I enjoy reading. She finished writing. Do you mind waiting?"
+      },
+      {
+        "title": "Verbs + both (same or similar meaning)",
+        "content": "Some verbs can take **to-infinitive** or **-ing** with little or no change of meaning:\n\n• like, love, prefer, hate, start, begin, continue\n• I like to swim / I like swimming. She started to cry / She started crying.\n\nWith **prefer** we often say: I prefer to do X rather than (do) Y, or I prefer doing X to doing Y."
+      },
+      {
+        "title": "Verbs + both (different meaning)",
+        "content": "With some verbs the meaning changes:\n\n• **remember**: remember to do = don't forget (future); remember doing = recall (past): I remembered to lock the door. I remember meeting him.\n• **forget**: forget to do = fail to do; forget doing = no memory of doing: I forgot to call. I'll never forget visiting Paris.\n• **stop**: stop to do = pause in order to do; stop doing = give up: We stopped to rest. She stopped smoking.\n• **try**: try to do = attempt; try doing = experiment: I tried to open it. Try adding salt.\n• **regret**: regret to do = sorry to say (e.g. I regret to inform you); regret doing = sorry about past: I regret leaving."
+      },
+      {
+        "title": "Quick summary",
+        "content": "• **Want, decide, hope, promise, need, try (attempt)** → to-infinitive.\n• **Enjoy, finish, avoid, mind, suggest, consider** → -ing.\n• **Like, love, start, begin** → both (similar meaning).\n• **Remember, forget, stop, try, regret** → both but meaning changes (learn each pair).\n• After a preposition → always -ing: interested in learning, good at swimming."
+      },
+      {
+        "title": "Typical Czech learner errors",
+        "content": "Czech often uses infinitive or a different structure where English uses to-infinitive or -ing:\n\n• Using -ing after **want**: Wrong: I want learning English. Right: I want to learn English.\n• Using to-infinitive after **enjoy**: Wrong: I enjoy to read. Right: I enjoy reading.\n• Using to-infinitive after **look forward to** (to is a preposition here): Wrong: I look forward to see you. Right: I look forward to seeing you.\n• Confusing **remember to do** vs **remember doing**: Wrong: I remembered locking the door (if you mean you didn't forget). Right: I remembered to lock the door.\n\nTip: Learn verbs in groups – want/hope/decide = to-infinitive; enjoy/finish/avoid = -ing."
+      }
+    ]
+  },
+  "check": {
+    "title": "Test your understanding",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "Which is correct?",
+        "options": {"a": "I want learning English.", "b": "I want to learn English.", "c": "I want learn English.", "d": "I want learning English well."},
+        "correct_option": "b",
+        "explanation": "Want is followed by to-infinitive, not -ing."
+      },
+      {
+        "type": "mc",
+        "question": "Which is correct?",
+        "options": {"a": "She enjoys to read.", "b": "She enjoys read.", "c": "She enjoys reading.", "d": "She enjoys to reading."},
+        "correct_option": "c",
+        "explanation": "Enjoy is followed by -ing, not to-infinitive."
+      },
+      {
+        "type": "mc",
+        "question": "'I remember _____ the door.' (I didn't forget to lock it.) Which fits?",
+        "options": {"a": "to lock", "b": "locking", "c": "lock", "d": "to locking"},
+        "correct_option": "a",
+        "explanation": "Remember to do = don't forget (future action). Remember doing = recall past."
+      },
+      {
+        "type": "mc",
+        "question": "'I look forward to _____ you.' Which is correct?",
+        "options": {"a": "see", "b": "seeing", "c": "to see", "d": "to seeing"},
+        "correct_option": "b",
+        "explanation": "Look forward to is followed by -ing (to is a preposition here)."
+      },
+      {
+        "type": "mc",
+        "question": "'She stopped _____.' (She gave up smoking.) Which fits?",
+        "options": {"a": "to smoke", "b": "smoking", "c": "smoke", "d": "to smoking"},
+        "correct_option": "b",
+        "explanation": "Stop doing = give up. Stop to do = pause in order to do."
+      }
+    ]
+  },
+  "practice_order": ["gapfill", "errorcorrection"],
+  "practice": {
+    "gapfill": {
+      "title": "Practice: Infinitive or -ing?",
+      "questions": [
+        {"type": "open", "question": "I want ____ (learn) Spanish.", "answers": ["to learn"], "explanation": "Want + to-infinitive."},
+        {"type": "open", "question": "She enjoys ____ (read) in the evening.", "answers": ["reading"], "explanation": "Enjoy + -ing."},
+        {"type": "open", "question": "He decided ____ (apply) for the job.", "answers": ["to apply"], "explanation": "Decide + to-infinitive."},
+        {"type": "open", "question": "Do you mind ____ (wait) a few minutes?", "answers": ["waiting"], "explanation": "Mind + -ing."},
+        {"type": "open", "question": "We hope ____ (see) you soon.", "answers": ["to see"], "explanation": "Hope + to-infinitive."},
+        {"type": "open", "question": "She finished ____ (write) the report.", "answers": ["writing"], "explanation": "Finish + -ing."},
+        {"type": "open", "question": "I'm looking forward to ____ (meet) you.", "answers": ["meeting"], "explanation": "Look forward to + -ing (to is a preposition)."},
+        {"type": "open", "question": "He promised ____ (help) us.", "answers": ["to help"], "explanation": "Promise + to-infinitive."},
+        {"type": "open", "question": "They avoided ____ (answer) the question.", "answers": ["answering"], "explanation": "Avoid + -ing."},
+        {"type": "open", "question": "Don't forget ____ (lock) the door.", "answers": ["to lock"], "explanation": "Forget to do = fail to do (future)."},
+        {"type": "open", "question": "I'll never forget ____ (visit) Paris for the first time.", "answers": ["visiting"], "explanation": "Forget doing = no memory of (past experience)."},
+        {"type": "open", "question": "She suggested ____ (go) to the cinema.", "answers": ["going"], "explanation": "Suggest + -ing."}
+      ]
+    },
+    "errorcorrection": {
+      "title": "Practice: Correct the form (infinitive vs -ing)",
+      "questions": [
+        {"type": "open", "question": "Wrong: 'I want learning English.' Correct the sentence.", "answers": ["I want to learn English.", "I want to learn English"], "explanation": "Want + to-infinitive, not -ing."},
+        {"type": "open", "question": "Wrong: 'She enjoys to read.' Correct the sentence.", "answers": ["She enjoys reading.", "She enjoys reading"], "explanation": "Enjoy + -ing, not to-infinitive."},
+        {"type": "open", "question": "Wrong: 'I look forward to see you.' Correct the sentence.", "answers": ["I look forward to seeing you.", "I look forward to seeing you"], "explanation": "Look forward to + -ing (to is a preposition)."},
+        {"type": "open", "question": "Wrong: 'He suggested to go early.' Correct the sentence.", "answers": ["He suggested going early.", "He suggested going early"], "explanation": "Suggest + -ing, not to-infinitive."},
+        {"type": "open", "question": "Wrong: 'We decided staying longer.' Correct the sentence.", "answers": ["We decided to stay longer.", "We decided to stay longer"], "explanation": "Decide + to-infinitive, not -ing."},
+        {"type": "open", "question": "Wrong: 'She finished to write the email.' Correct the sentence.", "answers": ["She finished writing the email.", "She finished writing the email"], "explanation": "Finish + -ing, not to-infinitive."}
+      ]
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "topics": [
+    {"id": "present_perfect", "title": "Present Perfect Simple vs Continuous", "curriculum": "curriculum.json", "questions_key": "sets"},
+    {"id": "past_simple_present_perfect", "title": "Past Simple vs Present Perfect", "curriculum": "curriculum_past_simple_present_perfect.json", "questions_key": "past_simple_present_perfect"},
+    {"id": "prepositions", "title": "Prepositions", "curriculum": "curriculum_prepositions.json", "questions_key": "prepositions"},
+    {"id": "relative_pronouns", "title": "Relative pronouns", "curriculum": "curriculum_relative_pronouns.json", "questions_key": "relative_pronouns"},
+    {"id": "will_going_to", "title": "Will and going to", "curriculum": "curriculum_will_going_to.json", "questions_key": "will_going_to"},
+    {"id": "infinitive_ing", "title": "Infinitive and -ing form", "curriculum": "curriculum_infinitive_ing.json", "questions_key": "infinitive_ing"},
+    {"id": "spelling", "title": "Spelling", "curriculum": "curriculum_spelling.json", "questions_key": "spelling"},
+    {"id": "comparatives", "title": "Comparatives and Superlatives", "curriculum": "curriculum_comparatives.json", "questions_key": "comparatives"}
+  ]
+}

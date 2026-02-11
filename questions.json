@@ -1,0 +1,707 @@
+{
+  "sets": {
+    "set1": {
+      "title": "Present Perfect Simple vs Continuous – Set 1",
+      "summary": "The present perfect simple highlights finished actions, results, and how many/how much, and is usually used with stative verbs like 'know', 'love', and 'have'. The present perfect continuous focuses on the duration or repetition of an activity and often explains a recent or visible effect now. With dynamic verbs, both forms are sometimes possible, but the continuous stresses the activity itself, while the simple stresses the result or completion.",
+      "questions": [
+        {
+          "type": "open",
+          "question": "1. Fill in the blank (duration/how long – continuous)\nI'm sorry I'm late. I ____ (wait) for the train for almost an hour.",
+          "answers": ["have been waiting"],
+          "explanation": "We focus on how long the action has been in progress, so we use the present perfect continuous."
+        },
+        {
+          "type": "open",
+          "question": "2. Fill in the blank (completion/how many – simple)\nShe ____ (read) five books so far this summer.",
+          "answers": ["has read"],
+          "explanation": "We focus on the number of completed actions (how many books), so we use the present perfect simple."
+        },
+        {
+          "type": "open",
+          "question": "3. Fill in the blank (recent effect – continuous)\nYour hair is wet. ____ you ____ (run) in the rain?",
+          "answers": ["have you been running"],
+          "explanation": "We explain a visible present result (wet hair) caused by a recent ongoing activity, so we use the present perfect continuous."
+        },
+        {
+          "type": "open",
+          "question": "4. Fill in the blank (stative verb – simple)\nI ____ (know) him since we started high school.",
+          "answers": ["have known"],
+          "explanation": "With stative verbs like 'know', we normally use the present perfect simple, not the continuous."
+        },
+        {
+          "type": "open",
+          "question": "5. Fill in the blank (negative, duration – continuous)\nThey ____ (not sleep) well lately because of the noisy neighbours.",
+          "answers": ["have not been sleeping", "haven't been sleeping", "haven’t been sleeping"],
+          "explanation": "We talk about an ongoing situation 'lately' and its effect now, so we use the present perfect continuous."
+        },
+        {
+          "type": "mc",
+          "question": "6. Multiple choice (result vs activity)\nI'm not hungry. I ____ already ____ breakfast.",
+          "options": {
+            "a": "have eaten",
+            "b": "have been eating",
+            "c": "was eating",
+            "d": "have been eaten"
+          },
+          "correct_option": "a",
+          "explanation": "We focus on the finished action and its result (I'm not hungry now), so we use the present perfect simple."
+        },
+        {
+          "type": "mc",
+          "question": "7. Multiple choice (duration vs result)\nBen ____ at this company for ten years, but he ____ three different positions.",
+          "options": {
+            "a": "has worked / has had",
+            "b": "has been working / has been having",
+            "c": "worked / has had",
+            "d": "has been working / had"
+          },
+          "correct_option": "a",
+          "explanation": "Both verbs refer to long-term states, so we use the present perfect simple to describe his experience and completed changes."
+        },
+        {
+          "type": "mc",
+          "question": "8. Multiple choice (recent effect – continuous)\nWhy are your hands so dirty?\nBecause I ____ the bike.",
+          "options": {
+            "a": "have repaired",
+            "b": "have been repairing",
+            "c": "repaired",
+            "d": "have repair"
+          },
+          "correct_option": "b",
+          "explanation": "We explain a visible present effect (dirty hands) caused by a recent ongoing activity, so we use the present perfect continuous."
+        },
+        {
+          "type": "open",
+          "question": "9. Error correction (stative verb)\nWrong sentence: 'I have been loving this new series since the first episode.'\nCorrect the sentence.",
+          "answers": [
+            "i have loved this new series since the first episode.",
+            "i have loved this new series since the first episode",
+            "have loved this new series since the first episode.",
+            "have loved this new series since the first episode",
+            "I have loved this new series since the first episode.",
+            "I have loved this new series since the first episode"
+          ],
+          "explanation": "'Love' is a stative verb, so we use the present perfect simple, not the continuous."
+        },
+        {
+          "type": "mc",
+          "question": "10. Choose the best sentence (duration vs result)\nYou see your friend, who looks very tired. Which sentence is more natural?",
+          "options": {
+            "a": "I see you're tired. How long have you worked today?",
+            "b": "I see you're tired. How long have you been working today?",
+            "c": "I see you're tired. How long did you work today?",
+            "d": "I see you're tired. For how long you work today?"
+          },
+          "correct_option": "b",
+          "explanation": "We ask about the duration of an activity that explains the tiredness now, so we prefer the present perfect continuous."
+        }
+      ]
+    },
+    "set2": {
+      "title": "Present Perfect Simple vs Continuous – Set 2",
+      "summary": "Use present perfect simple for completed results and stative verbs; use present perfect continuous for duration and recent visible effects.",
+      "questions": [
+        {
+          "type": "open",
+          "question": "1. Fill in the blank (duration)\nWe ____ (look) for a new flat for months.",
+          "answers": ["have been looking"],
+          "explanation": "We focus on how long the search has been going on, so we use the present perfect continuous."
+        },
+        {
+          "type": "open",
+          "question": "2. Fill in the blank (how many – simple)\nHe ____ (send) ten job applications this week.",
+          "answers": ["has sent"],
+          "explanation": "We focus on the number of completed actions, so we use the present perfect simple."
+        },
+        {
+          "type": "open",
+          "question": "3. Fill in the blank (stative – simple)\nShe ____ (have) that car since 2020.",
+          "answers": ["has had"],
+          "explanation": "'Have' (possession) is stative; we use the present perfect simple."
+        },
+        {
+          "type": "open",
+          "question": "4. Fill in the blank (recent effect – continuous)\nWhy are you out of breath? ____ you ____ (exercise)?",
+          "answers": ["have you been exercising"],
+          "explanation": "We explain a visible present effect (out of breath) with a recent activity, so we use the present perfect continuous."
+        },
+        {
+          "type": "mc",
+          "question": "5. Multiple choice\nI ____ three chapters of the book. I'll finish it tonight.",
+          "options": {"a": "have been reading", "b": "have read", "c": "read", "d": "am reading"},
+          "correct_option": "b",
+          "explanation": "We focus on completion (how much is done), so we use the present perfect simple."
+        },
+        {
+          "type": "mc",
+          "question": "6. Multiple choice\nThey're tired because they ____ all day.",
+          "options": {"a": "have worked", "b": "have been working", "c": "worked", "d": "work"},
+          "correct_option": "b",
+          "explanation": "We explain why they're tired now (duration of activity), so we use the present perfect continuous."
+        },
+        {
+          "type": "open",
+          "question": "7. Error correction\nWrong: 'I have been having this phone for two years.' Correct the sentence.",
+          "answers": ["i have had this phone for two years", "i have had this phone for two years.", "I have had this phone for two years", "I have had this phone for two years."],
+          "explanation": "'Have' (possession) is stative; we use the present perfect simple, not the continuous."
+        },
+        {
+          "type": "mc",
+          "question": "8. Choose the best sentence\nYour friend's hands are covered in flour.",
+          "options": {"a": "Have you made cakes?", "b": "Have you been making cakes?", "c": "Did you make cakes?", "d": "Do you make cakes?"},
+          "correct_option": "b",
+          "explanation": "We explain a visible effect (flour on hands) with a recent ongoing activity, so the present perfect continuous is more natural."
+        }
+      ]
+    },
+    "set3": {
+      "title": "Present Perfect Simple vs Continuous – Set 3",
+      "summary": "Duration and visible effect → continuous. Completion and count → simple. Stative verbs → simple only.",
+      "questions": [
+        {
+          "type": "open",
+          "question": "1. Fill in the blank (duration)\nShe ____ (study) for her exam all week.",
+          "answers": ["has been studying"],
+          "explanation": "We focus on how long she has been studying, so we use the present perfect continuous."
+        },
+        {
+          "type": "open",
+          "question": "2. Fill in the blank (how many – simple)\nI ____ (watch) four episodes of that series today.",
+          "answers": ["have watched"],
+          "explanation": "We focus on the number of completed episodes, so we use the present perfect simple."
+        },
+        {
+          "type": "open",
+          "question": "3. Fill in the blank (stative – simple)\nWe ____ (believe) in recycling for years.",
+          "answers": ["have believed"],
+          "explanation": "'Believe' is stative; we use the present perfect simple."
+        },
+        {
+          "type": "mc",
+          "question": "4. Multiple choice\nLook at the mess! What ____ you ____?",
+          "options": {"a": "have you done", "b": "have you been doing", "c": "did you do", "d": "do you do"},
+          "correct_option": "b",
+          "explanation": "We explain a visible effect (the mess) with a recent activity, so we use the present perfect continuous."
+        },
+        {
+          "type": "mc",
+          "question": "5. Multiple choice\nI ____ five emails so far. I'll do the rest after lunch.",
+          "options": {"a": "have been writing", "b": "have written", "c": "wrote", "d": "am writing"},
+          "correct_option": "b",
+          "explanation": "We focus on how many completed, so we use the present perfect simple."
+        },
+        {
+          "type": "open",
+          "question": "6. Error correction\nWrong: 'She has been owning that shop since 2019.' Correct the sentence.",
+          "answers": ["she has owned that shop since 2019", "she has owned that shop since 2019.", "She has owned that shop since 2019", "She has owned that shop since 2019."],
+          "explanation": "'Own' is stative; we use the present perfect simple, not the continuous."
+        }
+      ]
+    },
+    "set4": {
+      "title": "Present Perfect Simple vs Continuous – Set 4",
+      "summary": "Use simple for results and stative verbs; use continuous for duration and recent visible effects.",
+      "questions": [
+        {
+          "type": "open",
+          "question": "1. Fill in the blank (duration)\nThey ____ (try) to sell their house for six months.",
+          "answers": ["have been trying"],
+          "explanation": "We focus on how long the activity has been going on, so we use the present perfect continuous."
+        },
+        {
+          "type": "open",
+          "question": "2. Fill in the blank (completion – simple)\nShe ____ (already / finish) her homework.",
+          "answers": ["has already finished", "has already finished her homework"],
+          "explanation": "We focus on completion, so we use the present perfect simple."
+        },
+        {
+          "type": "open",
+          "question": "3. Fill in the blank (stative – simple)\nI ____ (like) that band since their first album.",
+          "answers": ["have liked"],
+          "explanation": "'Like' is stative; we use the present perfect simple."
+        },
+        {
+          "type": "open",
+          "question": "4. Fill in the blank (negative, recent effect)\nShe's not answering. She ____ (not feel) well lately.",
+          "answers": ["has not been feeling", "hasn't been feeling"],
+          "explanation": "We describe an ongoing situation lately with a present effect, so we use the present perfect continuous."
+        },
+        {
+          "type": "mc",
+          "question": "5. Multiple choice\nHow many times ____ you ____ to Japan?",
+          "options": {"a": "have you been", "b": "have you been going", "c": "did you go", "d": "were you"},
+          "correct_option": "a",
+          "explanation": "We ask about the number of completed visits (experience), so we use the present perfect simple."
+        },
+        {
+          "type": "mc",
+          "question": "6. Choose the best sentence\nYour colleague's eyes are red. He looks tired.",
+          "options": {"a": "Have you slept enough?", "b": "Have you been sleeping enough?", "c": "Did you sleep enough?", "d": "Have you been working late?"},
+          "correct_option": "d",
+          "explanation": "We explain a visible effect (red eyes, tired) – 'have you been working late?' fits the context; continuous for recent ongoing activity."
+        }
+      ]
+    },
+    "set5": {
+      "title": "Present Perfect Simple vs Continuous – Set 5",
+      "summary": "Extra practice: duration, result, stative verbs, and visible effect.",
+      "questions": [
+        {
+          "type": "open",
+          "question": "1. Fill in the blank (duration)\nI ____ (work) on this report since Monday.",
+          "answers": ["have been working", "have been working on this report since Monday"],
+          "explanation": "Duration (since Monday) → present perfect continuous."
+        },
+        {
+          "type": "open",
+          "question": "2. Fill in the blank (how many – simple)\nShe ____ (apply) for six jobs so far.",
+          "answers": ["has applied"],
+          "explanation": "How many completed → present perfect simple."
+        },
+        {
+          "type": "open",
+          "question": "3. Fill in the blank (stative – simple)\nThey ____ (own) that house for twenty years.",
+          "answers": ["have owned"],
+          "explanation": "'Own' is stative; we use the present perfect simple."
+        },
+        {
+          "type": "mc",
+          "question": "4. Multiple choice\nI'm tired. I ____ all afternoon.",
+          "options": {"a": "have worked", "b": "have been working", "c": "worked", "d": "work"},
+          "correct_option": "b",
+          "explanation": "Visible effect (tired) + duration → present perfect continuous."
+        },
+        {
+          "type": "open",
+          "question": "5. Error correction\nWrong: 'She has been owning that flat since 2018.' Correct the sentence.",
+          "answers": ["she has owned that flat since 2018", "she has owned that flat since 2018.", "She has owned that flat since 2018", "She has owned that flat since 2018."],
+          "explanation": "'Own' is stative; we use the present perfect simple."
+        },
+        {
+          "type": "mc",
+          "question": "6. Choose the best sentence\nYou want to know the number of times someone has visited Paris.",
+          "options": {"a": "How long have you been to Paris?", "b": "How many times have you been to Paris?", "c": "How long have you been in Paris?", "d": "When have you been to Paris?"},
+          "correct_option": "b",
+          "explanation": "How many times (experience/count) → present perfect simple."
+        }
+      ]
+    }
+  },
+  "past_simple_present_perfect": {
+    "set1": {
+      "title": "Past Simple vs Present Perfect – Set 1",
+      "summary": "Past simple for finished past time; present perfect for result now or life experience.",
+      "questions": [
+        {"type": "open", "question": "1. I ____ (see) him yesterday.", "answers": ["saw"], "explanation": "Yesterday → past simple."},
+        {"type": "open", "question": "2. She ____ (live) here since 2019.", "answers": ["has lived"], "explanation": "Since + duration up to now → present perfect."},
+        {"type": "open", "question": "3. ____ you ever ____ (try) sushi?", "answers": ["have you ever tried"], "explanation": "Ever (life experience) → present perfect."},
+        {"type": "open", "question": "4. They ____ (leave) an hour ago.", "answers": ["left"], "explanation": "Ago → past simple."},
+        {"type": "mc", "question": "5. I'm not hungry. I ____ already ____ lunch.", "options": {"a": "have eaten", "b": "ate", "c": "have been eating", "d": "was eating"}, "correct_option": "a", "explanation": "Result now (not hungry) → present perfect."},
+        {"type": "mc", "question": "6. When ____ you ____ to Paris?", "options": {"a": "have you been", "b": "did you go", "c": "have you gone", "d": "do you go"}, "correct_option": "b", "explanation": "When (specific time) → past simple."},
+        {"type": "open", "question": "7. Wrong: 'I have been to the cinema yesterday.' Correct the sentence.", "answers": ["I went to the cinema yesterday.", "I went to the cinema yesterday"], "explanation": "Yesterday → past simple."},
+        {"type": "open", "question": "8. She ____ (just / finish) her homework.", "answers": ["has just finished", "has just finished her homework"], "explanation": "Just (recent) → present perfect."}
+      ]
+    }
+  },
+  "prepositions": {
+    "set1": {
+      "title": "Prepositions – Simple (time and place)",
+      "summary": "Gap fill: time (at, on, in, for, since) and place (at, on, in, to).",
+      "questions": [
+        {"type": "open", "question": "1. I get up ____ 7 o'clock every day.", "answers": ["at"], "explanation": "We use **at** with exact clock times (at 7 o'clock, at noon, at midnight). Use **on** for days (on Monday) and **in** for longer periods (in 1995, in summer)."},
+        {"type": "open", "question": "2. The meeting is ____ Monday.", "answers": ["on"], "explanation": "We use **on** with days of the week and dates (on Monday, on 5th March). Use **at** for clock times and **in** for months, years or seasons."},
+        {"type": "open", "question": "3. She was born ____ 1995.", "answers": ["in"], "explanation": "We use **in** with years, months and seasons (in 1995, in January, in summer). Use **on** for specific days and **at** for clock times."},
+        {"type": "open", "question": "4. The book is ____ the table.", "answers": ["on"], "explanation": "We use **on** when something is on top of a surface (on the table, on the wall, on the floor). Use **in** for inside a space and **at** for a point or place as a meeting point."},
+        {"type": "open", "question": "5. He lives ____ London.", "answers": ["in"], "explanation": "We use **in** with cities, countries and enclosed or large areas (in London, in the box, in the room). Use **at** for a specific point (at the station) and **on** for a street or surface."},
+        {"type": "open", "question": "6. We'll meet ____ the bus stop.", "answers": ["at"], "explanation": "We use **at** for a specific point or place where something happens (at the bus stop, at the door, at home). Use **in** for being inside a building or area."},
+        {"type": "open", "question": "7. I'm going ____ the supermarket.", "answers": ["to"], "explanation": "We use **to** for movement or direction towards a place (to the supermarket, to school, to work). Use **at** when we are already there (at the supermarket)."},
+        {"type": "open", "question": "8. She's been waiting ____ two hours.", "answers": ["for"], "explanation": "We use **for** to say how long something lasts (for two hours, for a week). Use **since** when we say when it started (since 9 o'clock) and **during** when we say when it happened (during the meeting)."},
+        {"type": "open", "question": "9. I've lived here ____ 2020.", "answers": ["since"], "explanation": "We use **since** with a point in time when something started and is still true (since 2020, since Monday). Use **for** with a duration (for three years) and **from** when we don't imply 'until now'."},
+        {"type": "open", "question": "10. The keys are ____ the drawer.", "answers": ["in"], "explanation": "We use **in** when something is inside a space (in the drawer, in the box, in the room). Use **on** for on top of a surface and **under** for underneath."},
+        {"type": "open", "question": "11. I'll see you ____ the morning.", "answers": ["in"], "explanation": "We use **in** with parts of the day (in the morning, in the afternoon) but **at** for night (at night)."},
+        {"type": "open", "question": "12. The shop opens ____ 9 am.", "answers": ["at"], "explanation": "Exact time → at (at 9 am, at noon)."},
+        {"type": "open", "question": "13. She was born ____ 15th March.", "answers": ["on"], "explanation": "Specific date → on (on 15th March, on Monday)."},
+        {"type": "open", "question": "14. We're going on holiday ____ August.", "answers": ["in"], "explanation": "Month → in (in August, in 2024)."},
+        {"type": "open", "question": "15. The pen is ____ the desk.", "answers": ["on"], "explanation": "On top of a surface → on."},
+        {"type": "open", "question": "16. They live ____ the end of the street.", "answers": ["at"], "explanation": "A specific point (end of the street) → at."},
+        {"type": "open", "question": "17. I've been learning English ____ six months.", "answers": ["for"], "explanation": "Duration (how long) → for."},
+        {"type": "open", "question": "18. We stayed ____ midnight.", "answers": ["until", "till"], "explanation": "Up to a time → until or till."},
+        {"type": "open", "question": "19. The answer is ____ the bottom of the page.", "answers": ["at"], "explanation": "A specific point (bottom of the page) → at."}
+      ]
+    },
+    "set2": {
+      "title": "Prepositions – Advanced",
+      "summary": "Gap fill: by, through, beside, between, during, under, across, along, by (transport).",
+      "questions": [
+        {"type": "open", "question": "1. The project must be finished ____ Friday.", "answers": ["by"], "explanation": "We use **by** to mean 'no later than' or 'before' a time (by Friday, by 5 pm). Use **until** when something continues up to that time (wait until Friday), and **on** for the day itself (on Friday)."},
+        {"type": "open", "question": "2. We walked right ____ the park from one side to the other to reach the station.", "answers": ["through"], "explanation": "We use **through** when we move from one side of an area or space to the other (through the park, through the tunnel). Use **across** for a surface (across the road) and **along** for following a line (along the path)."},
+        {"type": "open", "question": "3. She sat right ____ me in the cinema so we could share the popcorn.", "answers": ["beside", "next to"], "explanation": "We use **beside** or **next to** when one thing is at the side of another (beside me, next to the window). Use **between** for something in the middle of two others (between you and me)."},
+        {"type": "open", "question": "4. Divide the sweets ____ the four children.", "answers": ["between"], "explanation": "We use **between** when we talk about two or more separate people or things (between the four children, between A and B). Use **among** for a general group when we don't name them individually (among the crowd)."},
+        {"type": "open", "question": "5. I'll be there ____ 9 and 10 o'clock.", "answers": ["between"], "explanation": "We use **between** for a time (or place) in the middle of two points (between 9 and 10, between Monday and Friday). Use **from...to** for a range (from 9 to 10)."},
+        {"type": "open", "question": "6. We discussed the problem ____ the meeting.", "answers": ["during"], "explanation": "We use **during** when something happens within a period or event (during the meeting, during the film). Use **for** for how long (for two hours) and **while** with a clause (while we were meeting)."},
+        {"type": "open", "question": "7. The cat is hiding ____ the sofa—you can see its tail sticking out from underneath.", "answers": ["under"], "explanation": "We use **under** when something is below or beneath another thing (under the sofa, under the table). Use **below** for a lower level and **over** for above."},
+        {"type": "open", "question": "8. They walked ____ the bridge.", "answers": ["across"], "explanation": "We use **across** when we go from one side of a surface or area to the other (across the bridge, across the road). Use **through** for going inside something (through the tunnel) and **along** for following the length (along the bridge)."},
+        {"type": "open", "question": "9. We drove ____ the coast for miles, following the shoreline.", "answers": ["along"], "explanation": "We use **along** when we follow a line or length (along the coast, along the river, along the road). Use **through** for from one end to the other inside something, and **across** for from one side to the other."},
+        {"type": "open", "question": "10. He arrived ____ train.", "answers": ["by"], "explanation": "We use **by** with means of transport when we say how we travel (by train, by car, by plane). Use **on** for some transport (on foot, on the bus) and **in** for others (in a car, in a taxi)."},
+        {"type": "open", "question": "11. The ball rolled ____ the table and onto the floor.", "answers": ["off"], "explanation": "Off = from on top of something down or away (off the table)."},
+        {"type": "open", "question": "12. We cycled ____ the river for about five miles.", "answers": ["along"], "explanation": "Following a line (the river) → along."},
+        {"type": "open", "question": "13. The tunnel goes ____ the mountain.", "answers": ["through"], "explanation": "From one side to the other inside something → through."},
+        {"type": "open", "question": "14. She stood ____ the window, looking out.", "answers": ["by", "beside", "next to"], "explanation": "At the side of → by, beside, or next to."},
+        {"type": "open", "question": "15. The deadline is ____ the end of the week.", "answers": ["by"], "explanation": "No later than → by."},
+        {"type": "open", "question": "16. We had a break ____ the journey.", "answers": ["during"], "explanation": "Within the time of the journey → during."},
+        {"type": "open", "question": "17. The temperature dropped ____ zero.", "answers": ["below", "under"], "explanation": "Lower than (temperature) → below or under."},
+        {"type": "open", "question": "18. They ran ____ the road to the other side.", "answers": ["across"], "explanation": "From one side of a surface to the other → across."}
+      ]
+    },
+    "set3": {
+      "title": "Prepositions – Tricky and idiomatic",
+      "summary": "Gap fill: interested in, good at, look for, depend on, afraid of, tired of, insist on, complain about, focus on, by (agent).",
+      "questions": [
+        {"type": "open", "question": "1. I'm interested ____ learning Spanish.", "answers": ["in"], "explanation": "The fixed phrase is **interested in** (interested in music, interested in learning). We don't use 'interested about' or 'interested on' – it's always **in**."},
+        {"type": "open", "question": "2. She's good ____ maths.", "answers": ["at"], "explanation": "We say **good at** a subject or skill (good at maths, good at swimming). Use **good with** for people or tools (good with children) and **good for** when something benefits (good for you)."},
+        {"type": "open", "question": "3. We're looking ____ our keys.", "answers": ["for"], "explanation": "**Look for** means to search for or try to find (looking for our keys, look for a job). Use **look at** when we look in a direction, and **look after** for taking care of."},
+        {"type": "open", "question": "4. It depends ____ the weather.", "answers": ["on"], "explanation": "The fixed phrase is **depend on** (it depends on the weather, it depends on you). We always use **on** after 'depend', not 'of' or 'from'."},
+        {"type": "open", "question": "5. He's afraid ____ spiders.", "answers": ["of"], "explanation": "We say **afraid of** (afraid of spiders, afraid of the dark). Use **of** after 'afraid' when we name what we fear; we can also say 'afraid to' do something."},
+        {"type": "open", "question": "6. I'm tired ____ waiting.", "answers": ["of"], "explanation": "We say **tired of** when we've had enough of something (tired of waiting, tired of this weather). Use **tired from** when we're physically tired because of something (tired from work)."},
+        {"type": "open", "question": "7. She insisted ____ paying the bill.", "answers": ["on"], "explanation": "The fixed phrase is **insist on** (insist on paying, insist on coming). We use **on** after 'insist' when we say what someone insists on doing or having."},
+        {"type": "open", "question": "8. They complained ____ the noise.", "answers": ["about"], "explanation": "We say **complain about** something (complain about the noise, complain about the service). We can also say **complain to** someone (complain to the manager)."},
+        {"type": "open", "question": "9. We need to focus ____ the main point.", "answers": ["on"], "explanation": "We say **focus on** something (focus on the main point, focus on your work). Use **on** after 'focus' – we don't say 'focus in' or 'focus at'."},
+        {"type": "open", "question": "10. The book was written ____ a famous author.", "answers": ["by"], "explanation": "In passive sentences we use **by** to introduce the person or thing that does the action (written by a famous author, made by hand). Use **by** for the agent, not 'from'."},
+        {"type": "open", "question": "11. She's responsible ____ the project.", "answers": ["for"], "explanation": "Responsible for something → for."},
+        {"type": "open", "question": "12. He's very proud ____ his daughter.", "answers": ["of"], "explanation": "Proud of → of."},
+        {"type": "open", "question": "13. We're worried ____ the results.", "answers": ["about"], "explanation": "Worried about → about."},
+        {"type": "open", "question": "14. She's capable ____ doing the job.", "answers": ["of"], "explanation": "Capable of → of."},
+        {"type": "open", "question": "15. They're keen ____ starting soon.", "answers": ["on"], "explanation": "Keen on (doing something) → on."},
+        {"type": "open", "question": "16. I'm grateful ____ your help.", "answers": ["for"], "explanation": "Grateful for → for."},
+        {"type": "open", "question": "17. He's allergic ____ nuts.", "answers": ["to"], "explanation": "Allergic to → to."},
+        {"type": "open", "question": "18. We're familiar ____ the system.", "answers": ["with"], "explanation": "Familiar with → with."},
+        {"type": "open", "question": "19. She's famous ____ her novels.", "answers": ["for"], "explanation": "Famous for → for."}
+      ]
+    },
+    "set4": {
+      "title": "Prepositions – Dependent prepositions: Verbs",
+      "summary": "Gap fill: accuse of, suffer from, apologize for, approve of, apply for, arrive at, believe in, complain to, congratulate on, consist of, decide on, dream of/about, insist on, listen to, object to.",
+      "questions": [
+        {"type": "open", "question": "1. They accused him ____ stealing.", "answers": ["of"], "explanation": "Accuse someone **of** something (accuse of stealing)."},
+        {"type": "open", "question": "2. She suffers ____ migraines.", "answers": ["from"], "explanation": "Suffer **from** an illness or problem."},
+        {"type": "open", "question": "3. He apologized ____ being late.", "answers": ["for"], "explanation": "Apologize **for** something."},
+        {"type": "open", "question": "4. I don't approve ____ that plan.", "answers": ["of"], "explanation": "Approve **of** something."},
+        {"type": "open", "question": "5. She applied ____ the job.", "answers": ["for"], "explanation": "Apply **for** a job or place."},
+        {"type": "open", "question": "6. We arrived ____ the station at 8.", "answers": ["at"], "explanation": "Arrive **at** a place (arrive **in** for cities/countries)."},
+        {"type": "open", "question": "7. He believes ____ climate change.", "answers": ["in"], "explanation": "Believe **in** something."},
+        {"type": "open", "question": "8. They complained ____ the manager about the noise.", "answers": ["to"], "explanation": "Complain **to** someone; complain **about** something."},
+        {"type": "open", "question": "9. She congratulated him ____ passing the exam.", "answers": ["on"], "explanation": "Congratulate someone **on** something."},
+        {"type": "open", "question": "10. We consist ____ ten members.", "answers": ["of"], "explanation": "Consist **of** = be made up of."},
+        {"type": "open", "question": "11. He decided ____ a new car.", "answers": ["on"], "explanation": "Decide **on** something."},
+        {"type": "open", "question": "12. She dreams ____ travelling the world.", "answers": ["of", "about"], "explanation": "Dream **of** or **about** something."},
+        {"type": "open", "question": "13. They insisted ____ paying for dinner.", "answers": ["on"], "explanation": "Insist **on** doing something."},
+        {"type": "open", "question": "14. He listened ____ the radio.", "answers": ["to"], "explanation": "Listen **to** something."},
+        {"type": "open", "question": "15. She objected ____ the proposal.", "answers": ["to"], "explanation": "Object **to** something."}
+      ]
+    },
+    "set5": {
+      "title": "Prepositions – Dependent prepositions: Adjectives",
+      "summary": "Gap fill: famous for, aware of, bad at, capable of, excited about, good at, grateful for, interested in, jealous of, keen on, nervous about, proud of, responsible for, tired of, worried about.",
+      "questions": [
+        {"type": "open", "question": "1. She's famous ____ her research.", "answers": ["for"], "explanation": "Famous **for** something."},
+        {"type": "open", "question": "2. He's aware ____ the problem.", "answers": ["of"], "explanation": "Aware **of** something."},
+        {"type": "open", "question": "3. I'm bad ____ remembering names.", "answers": ["at"], "explanation": "Bad **at** something."},
+        {"type": "open", "question": "4. She's capable ____ making quick decisions.", "answers": ["of"], "explanation": "Capable **of** doing something."},
+        {"type": "open", "question": "5. They're excited ____ the trip.", "answers": ["about"], "explanation": "Excited **about** something."},
+        {"type": "open", "question": "6. He's good ____ languages.", "answers": ["at"], "explanation": "Good **at** a skill or subject."},
+        {"type": "open", "question": "7. We're grateful ____ your support.", "answers": ["for"], "explanation": "Grateful **for** something."},
+        {"type": "open", "question": "8. She's interested ____ archaeology.", "answers": ["in"], "explanation": "Interested **in** something."},
+        {"type": "open", "question": "9. He's jealous ____ his brother's success.", "answers": ["of"], "explanation": "Jealous **of** someone or something."},
+        {"type": "open", "question": "10. I'm keen ____ learning to cook.", "answers": ["on"], "explanation": "Keen **on** something."},
+        {"type": "open", "question": "11. They're nervous ____ the interview.", "answers": ["about"], "explanation": "Nervous **about** something."},
+        {"type": "open", "question": "12. She's proud ____ her team.", "answers": ["of"], "explanation": "Proud **of** someone or something."},
+        {"type": "open", "question": "13. He's responsible ____ the budget.", "answers": ["for"], "explanation": "Responsible **for** something."},
+        {"type": "open", "question": "14. We're tired ____ waiting.", "answers": ["of"], "explanation": "Tired **of** something."},
+        {"type": "open", "question": "15. She's worried ____ the delay.", "answers": ["about"], "explanation": "Worried **about** something."}
+      ]
+    },
+    "set6": {
+      "title": "Prepositions – Dependent prepositions: Nouns",
+      "summary": "Gap fill: leader of, increase in, experience in/of, reason for, relationship with, solution to, complaint about, fear of, demand for, interest in, talk on/about, difference between, talent for, confidence in, need for.",
+      "questions": [
+        {"type": "open", "question": "1. She's the leader ____ the team.", "answers": ["of"], "explanation": "Leader **of** something."},
+        {"type": "open", "question": "2. There's been an increase ____ demand.", "answers": ["in"], "explanation": "Increase **in** something."},
+        {"type": "open", "question": "3. He has a lot of experience ____ teaching.", "answers": ["in", "of"], "explanation": "Experience **in** or **of** something."},
+        {"type": "open", "question": "4. What's the reason ____ the delay?", "answers": ["for"], "explanation": "Reason **for** something."},
+        {"type": "open", "question": "5. She has a good relationship ____ her boss.", "answers": ["with"], "explanation": "Relationship **with** someone."},
+        {"type": "open", "question": "6. There's a solution ____ the problem.", "answers": ["to"], "explanation": "Solution **to** a problem."},
+        {"type": "open", "question": "7. He made a complaint ____ the service.", "answers": ["about"], "explanation": "Complaint **about** something."},
+        {"type": "open", "question": "8. She has a fear ____ flying.", "answers": ["of"], "explanation": "Fear **of** something."},
+        {"type": "open", "question": "9. There's a demand ____ better transport.", "answers": ["for"], "explanation": "Demand **for** something."},
+        {"type": "open", "question": "10. He showed an interest ____ the project.", "answers": ["in"], "explanation": "Interest **in** something."},
+        {"type": "open", "question": "11. She gave a talk ____ climate change.", "answers": ["on", "about"], "explanation": "Talk **on** or **about** something."},
+        {"type": "open", "question": "12. There's a difference ____ the two versions.", "answers": ["between"], "explanation": "Difference **between** two things."},
+        {"type": "open", "question": "13. He has a talent ____ music.", "answers": ["for"], "explanation": "Talent **for** something."},
+        {"type": "open", "question": "14. She has confidence ____ her ability.", "answers": ["in"], "explanation": "Confidence **in** someone or something."},
+        {"type": "open", "question": "15. There's a need ____ more staff.", "answers": ["for"], "explanation": "Need **for** something."}
+      ]
+    },
+    "set7": {
+      "title": "Prepositions – Top 40 (all in use)",
+      "summary": "Gap fill: all 40 prepositions (of, to, in, for, on, with, at, by, from, about, as, into, like, through, over, after, between, out of, under, before, without, around, since, against, during, until, among, across, behind, above, below, near, along, off, up, down, towards, within, upon, except).",
+      "questions": [
+        {"type": "open", "question": "1. I need a cup ____ tea.", "answers": ["of"], "explanation": "**of** – part of / belonging (cup of tea)."},
+        {"type": "open", "question": "2. She's proud ____ her son.", "answers": ["of"], "explanation": "**of** – after adjectives (proud of)."},
+        {"type": "open", "question": "3. The table is made ____ wood.", "answers": ["of"], "explanation": "**of** – material (made of wood)."},
+        {"type": "open", "question": "4. I'm going ____ the station.", "answers": ["to"], "explanation": "**to** – direction (go to)."},
+        {"type": "open", "question": "5. Give it ____ me.", "answers": ["to"], "explanation": "**to** – recipient (give to)."},
+        {"type": "open", "question": "6. He's allergic ____ nuts.", "answers": ["to"], "explanation": "**to** – allergic to."},
+        {"type": "open", "question": "7. The keys are ____ the drawer.", "answers": ["in"], "explanation": "**in** – inside a space."},
+        {"type": "open", "question": "8. She was born ____ 1995.", "answers": ["in"], "explanation": "**in** – year/month."},
+        {"type": "open", "question": "9. I'm interested ____ history.", "answers": ["in"], "explanation": "**in** – interested in."},
+        {"type": "open", "question": "10. She's been waiting ____ two hours.", "answers": ["for"], "explanation": "**for** – duration."},
+        {"type": "open", "question": "11. This present is ____ you.", "answers": ["for"], "explanation": "**for** – intended for."},
+        {"type": "open", "question": "12. What's the reason ____ the delay?", "answers": ["for"], "explanation": "**for** – reason for."},
+        {"type": "open", "question": "13. The book is ____ the table.", "answers": ["on"], "explanation": "**on** – on a surface."},
+        {"type": "open", "question": "14. We meet ____ Monday.", "answers": ["on"], "explanation": "**on** – day."},
+        {"type": "open", "question": "15. It depends ____ the weather.", "answers": ["on"], "explanation": "**on** – depend on."},
+        {"type": "open", "question": "16. I went ____ my friend.", "answers": ["with"], "explanation": "**with** – together with."},
+        {"type": "open", "question": "17. Cut it ____ a knife.", "answers": ["with"], "explanation": "**with** – means."},
+        {"type": "open", "question": "18. We'll meet ____ the bus stop.", "answers": ["at"], "explanation": "**at** – point or place."},
+        {"type": "open", "question": "19. The shop opens ____ 9 am.", "answers": ["at"], "explanation": "**at** – clock time."},
+        {"type": "open", "question": "20. She's good ____ maths.", "answers": ["at"], "explanation": "**at** – good at."},
+        {"type": "open", "question": "21. He arrived ____ train.", "answers": ["by"], "explanation": "**by** – means of transport."},
+        {"type": "open", "question": "22. Finish it ____ Friday.", "answers": ["by"], "explanation": "**by** – no later than."},
+        {"type": "open", "question": "23. The book was written ____ a famous author.", "answers": ["by"], "explanation": "**by** – agent in passive."},
+        {"type": "open", "question": "24. She came ____ Paris.", "answers": ["from"], "explanation": "**from** – origin."},
+        {"type": "open", "question": "25. I've lived here ____ 2020.", "answers": ["since"], "explanation": "**since** – from (time) until now."},
+        {"type": "open", "question": "26. He suffers ____ headaches.", "answers": ["from"], "explanation": "**from** – suffer from."},
+        {"type": "open", "question": "27. We talked ____ the project.", "answers": ["about"], "explanation": "**about** – concerning."},
+        {"type": "open", "question": "28. She's worried ____ the exam.", "answers": ["about"], "explanation": "**about** – worried about."},
+        {"type": "open", "question": "29. What's the film ____?", "answers": ["about"], "explanation": "**about** – concerning."},
+        {"type": "open", "question": "30. He works ____ a teacher.", "answers": ["as"], "explanation": "**as** – role."},
+        {"type": "open", "question": "31. She went ____ the room.", "answers": ["into"], "explanation": "**into** – movement inside."},
+        {"type": "open", "question": "32. That sounds ____ a good idea.", "answers": ["like"], "explanation": "**like** – similar to."},
+        {"type": "open", "question": "33. We walked ____ the park.", "answers": ["through"], "explanation": "**through** – from one side to the other."},
+        {"type": "open", "question": "34. The bridge goes ____ the river.", "answers": ["over"], "explanation": "**over** – above, across."},
+        {"type": "open", "question": "35. We'll start ____ dinner.", "answers": ["after"], "explanation": "**after** – later than."},
+        {"type": "open", "question": "36. I'll be there ____ 9 and 10.", "answers": ["between"], "explanation": "**between** – in the middle of two."},
+        {"type": "open", "question": "37. Get ____ the car quickly.", "answers": ["out of"], "explanation": "**out of** – exit."},
+        {"type": "open", "question": "38. The cat is ____ the sofa.", "answers": ["under"], "explanation": "**under** – below."},
+        {"type": "open", "question": "39. Please finish ____ 5 pm.", "answers": ["before"], "explanation": "**before** – earlier than."},
+        {"type": "open", "question": "40. We can't buy it ____ money.", "answers": ["without"], "explanation": "**without** – not having."},
+        {"type": "open", "question": "41. It costs ____ 10 pounds.", "answers": ["around", "about"], "explanation": "**around** / **about** – approximately."},
+        {"type": "open", "question": "42. They sat ____ the table.", "answers": ["around"], "explanation": "**around** – surrounding."},
+        {"type": "open", "question": "43. I've known her ____ 2020.", "answers": ["since"], "explanation": "**since** – from (time) until now."},
+        {"type": "open", "question": "44. That's ____ the law.", "answers": ["against"], "explanation": "**against** – opposing."},
+        {"type": "open", "question": "45. We met ____ the meeting.", "answers": ["during"], "explanation": "**during** – within a period."},
+        {"type": "open", "question": "46. We stayed ____ midnight.", "answers": ["until", "till"], "explanation": "**until** – up to a time."},
+        {"type": "open", "question": "47. We discussed it ____ ourselves.", "answers": ["among"], "explanation": "**among** – in a group."},
+        {"type": "open", "question": "48. They ran ____ the road.", "answers": ["across"], "explanation": "**across** – from one side to the other."},
+        {"type": "open", "question": "49. The keys are ____ the door.", "answers": ["behind"], "explanation": "**behind** – at the back of."},
+        {"type": "open", "question": "50. The plane flew ____ the clouds.", "answers": ["above"], "explanation": "**above** – higher than."},
+        {"type": "open", "question": "51. The temperature dropped ____ zero.", "answers": ["below"], "explanation": "**below** – lower than."},
+        {"type": "open", "question": "52. They live ____ the station.", "answers": ["near"], "explanation": "**near** – close to."},
+        {"type": "open", "question": "53. We walked ____ the river.", "answers": ["along"], "explanation": "**along** – following a line."},
+        {"type": "open", "question": "54. The ball rolled ____ the table.", "answers": ["off"], "explanation": "**off** – away from a surface."},
+        {"type": "open", "question": "55. She ran ____ the stairs.", "answers": ["up"], "explanation": "**up** – direction."},
+        {"type": "open", "question": "56. We walked ____ the hill.", "answers": ["down"], "explanation": "**down** – direction."},
+        {"type": "open", "question": "57. They drove ____ the city.", "answers": ["towards"], "explanation": "**towards** – in the direction of."},
+        {"type": "open", "question": "58. We'll finish ____ an hour.", "answers": ["within"], "explanation": "**within** – inside a time or space."},
+        {"type": "open", "question": "59. Once ____ a time there was a king.", "answers": ["upon"], "explanation": "**upon** – formal for **on**."},
+        {"type": "open", "question": "60. Everyone came ____ Tom.", "answers": ["except"], "explanation": "**except** – not including."}
+      ]
+    }
+  },
+  "relative_pronouns": {
+    "set1": {
+      "title": "Relative pronouns – Choose the pronoun",
+      "summary": "Gap fill: which/that for things, who/that for people, where for places, when for time, whose for possession. Avoid 'what' after a noun.",
+      "questions": [
+        {"type": "open", "question": "1. The book ____ I'm reading is by a Czech author.", "answers": ["that", "which"], "explanation": "For things we use **that** or **which**, not **what**."},
+        {"type": "open", "question": "2. The woman ____ lives next door is very kind.", "answers": ["who", "that"], "explanation": "For people (subject) we use **who** or **that**."},
+        {"type": "open", "question": "3. This is the house ____ I was born.", "answers": ["where"], "explanation": "For place we use **where** (or 'that/which I was born in')."},
+        {"type": "open", "question": "4. The man ____ I spoke to was the manager.", "answers": ["who", "that", "whom"], "explanation": "For people (object) we use **who**, **that**, or **whom**."},
+        {"type": "open", "question": "5. I don't remember the day ____ we first met.", "answers": ["when", "that"], "explanation": "For time we use **when** or **that**, not **what**."},
+        {"type": "open", "question": "6. The film ____ we saw yesterday was boring.", "answers": ["that", "which"], "explanation": "For things we use **that** or **which**, never **what** after a noun."},
+        {"type": "open", "question": "7. The person ____ phone was stolen called the police.", "answers": ["whose"], "explanation": "For possession we use **whose**."},
+        {"type": "open", "question": "8. The town ____ I grew up is very small.", "answers": ["where"], "explanation": "For place we use **where**."},
+        {"type": "open", "question": "9. The teacher ____ taught us English has retired.", "answers": ["who", "that"], "explanation": "For people (subject) we use **who** or **that**."},
+        {"type": "open", "question": "10. Everything ____ he said was true.", "answers": ["that"], "explanation": "After 'everything' we use **that** (or omit), not **what**."}
+      ]
+    },
+    "set2": {
+      "title": "Relative pronouns – Correct the error (Czech-style)",
+      "summary": "Correct sentences that wrongly use 'what' as a relative pronoun. Use which/that, who/that, where, when, why instead.",
+      "questions": [
+        {"type": "open", "question": "1. Wrong: The book what I read was very long. Correct the sentence.", "answers": ["The book that I read was very long.", "The book which I read was very long.", "The book that I read was very long", "The book which I read was very long"], "explanation": "Use **that** or **which** for things, never **what** after a noun."},
+        {"type": "open", "question": "2. Wrong: The man what I met yesterday is a doctor. Correct the sentence.", "answers": ["The man who I met yesterday is a doctor.", "The man that I met yesterday is a doctor.", "The man who I met yesterday is a doctor", "The man that I met yesterday is a doctor"], "explanation": "Use **who** or **that** for people, not **what**."},
+        {"type": "open", "question": "3. Wrong: This is the house what I was born in. Correct the sentence.", "answers": ["This is the house where I was born.", "This is the house that I was born in.", "This is the house which I was born in.", "This is the house where I was born", "This is the house that I was born in", "This is the house which I was born in"], "explanation": "Use **where** or **that/which I was born in**, not **what**."},
+        {"type": "open", "question": "4. Wrong: The film what we saw was really good. Correct the sentence.", "answers": ["The film that we saw was really good.", "The film which we saw was really good.", "The film that we saw was really good", "The film which we saw was really good"], "explanation": "For things use **that** or **which**, never **what**."},
+        {"type": "open", "question": "5. Wrong: The woman what works here is from Prague. Correct the sentence.", "answers": ["The woman who works here is from Prague.", "The woman that works here is from Prague.", "The woman who works here is from Prague", "The woman that works here is from Prague"], "explanation": "For people use **who** or **that**, not **what**."},
+        {"type": "open", "question": "6. Wrong: The place what we stayed was very nice. Correct the sentence.", "answers": ["The place where we stayed was very nice.", "The place that we stayed at was very nice.", "The place which we stayed at was very nice.", "The place where we stayed was very nice", "The place that we stayed at was very nice", "The place which we stayed at was very nice"], "explanation": "For place use **where** or **that/which we stayed at**, not **what**."},
+        {"type": "open", "question": "7. Wrong: The day what we arrived was Monday. Correct the sentence.", "answers": ["The day when we arrived was Monday.", "The day that we arrived was Monday.", "The day when we arrived was Monday", "The day that we arrived was Monday"], "explanation": "For time use **when** or **that**, not **what**."},
+        {"type": "open", "question": "8. Wrong: The person what helped me was very kind. Correct the sentence.", "answers": ["The person who helped me was very kind.", "The person that helped me was very kind.", "The person who helped me was very kind", "The person that helped me was very kind"], "explanation": "For people (subject) use **who** or **that**, not **what**."},
+        {"type": "open", "question": "9. Wrong: That's the reason what I left. Correct the sentence.", "answers": ["That's the reason why I left.", "That's the reason that I left.", "That's the reason why I left", "That's the reason that I left"], "explanation": "For reason use **why** or **that**, not **what**."}
+      ]
+    }
+  },
+  "will_going_to": {
+    "set1": {
+      "title": "Will and going to – Gap fill",
+      "summary": "Choose will or going to: plans/intentions/evidence → going to; spontaneous/offer/promise/general prediction → will.",
+      "questions": [
+        {"type": "open", "question": "1. I ____ (see) the dentist tomorrow at 10. (I already have an appointment.)", "answers": ["am going to see", "'m going to see"], "explanation": "Already planned (appointment) → going to."},
+        {"type": "open", "question": "2. The phone's ringing. – I ____ (get) it.", "answers": ["will get", "'ll get"], "explanation": "Decision at the moment of speaking → will."},
+        {"type": "open", "question": "3. Look at those clouds – it ____ (rain).", "answers": ["is going to rain", "'s going to rain"], "explanation": "Prediction from present evidence → going to."},
+        {"type": "open", "question": "4. I'm so tired. I ____ (have) a rest. (I just decided.)", "answers": ["will have", "'ll have"], "explanation": "Spontaneous decision → will."},
+        {"type": "open", "question": "5. She ____ (study) law at university. (She decided last year.)", "answers": ["is going to study", "'s going to study"], "explanation": "Plan/intention already made → going to."},
+        {"type": "open", "question": "6. That bag looks heavy. I ____ (carry) it for you.", "answers": ["will carry", "'ll carry"], "explanation": "Offer (deciding now) → will."},
+        {"type": "open", "question": "7. We ____ (meet) at 6. (We arranged it yesterday.)", "answers": ["are going to meet", "'re going to meet"], "explanation": "Already arranged → going to."},
+        {"type": "open", "question": "8. I think the match ____ (be) exciting.", "answers": ["will be", "'ll be"], "explanation": "General prediction (I think) → will."},
+        {"type": "open", "question": "9. I promise I ____ (not tell) anyone.", "answers": ["won't tell", "will not tell"], "explanation": "Promise → will."},
+        {"type": "open", "question": "10. They ____ (buy) a new car next year. (They've been saving for it.)", "answers": ["are going to buy", "'re going to buy"], "explanation": "Plan/intention (they've been saving) → going to."}
+      ]
+    },
+    "set2": {
+      "title": "Will and going to – Correct the form",
+      "summary": "Correct sentences: already arranged → going to; spontaneous/offer → will; evidence now → going to; general prediction → will.",
+      "questions": [
+        {"type": "open", "question": "1. Wrong: 'I will meet John at 5.' (You already arranged it.) Correct the sentence.", "answers": ["I'm going to meet John at 5.", "I am going to meet John at 5.", "I'm going to meet John at 5", "I am going to meet John at 5"], "explanation": "Already arranged → going to."},
+        {"type": "open", "question": "2. Wrong: (Phone rings) 'I'm going to get it.' (You decide at that moment.) Correct the sentence.", "answers": ["I'll get it.", "I will get it.", "I'll get it", "I will get it"], "explanation": "Decision at the moment → will."},
+        {"type": "open", "question": "3. Wrong: 'Look at the sky – it will rain.' (You can see the clouds.) Correct the sentence.", "answers": ["Look at the sky – it's going to rain.", "Look at the sky – it is going to rain.", "Look at the sky – it's going to rain", "Look at the sky – it is going to rain"], "explanation": "Prediction from present evidence → going to."},
+        {"type": "open", "question": "4. Wrong: 'I'm going to help you.' (You are offering now.) Correct the sentence.", "answers": ["I'll help you.", "I will help you.", "I'll help you", "I will help you"], "explanation": "Offer → will."},
+        {"type": "open", "question": "5. Wrong: 'She will study in Prague.' (She decided and applied last month.) Correct the sentence.", "answers": ["She's going to study in Prague.", "She is going to study in Prague.", "She's going to study in Prague", "She is going to study in Prague"], "explanation": "Plan already made → going to."}
+      ]
+    }
+  },
+  "infinitive_ing": {
+    "set1": {
+      "title": "Infinitive and -ing – Gap fill",
+      "summary": "Choose to-infinitive or -ing: want/decide/hope → to; enjoy/finish/avoid/mind/suggest → -ing; look forward to → -ing.",
+      "questions": [
+        {"type": "open", "question": "1. I want ____ (learn) Spanish.", "answers": ["to learn"], "explanation": "Want + to-infinitive."},
+        {"type": "open", "question": "2. She enjoys ____ (read) in the evening.", "answers": ["reading"], "explanation": "Enjoy + -ing."},
+        {"type": "open", "question": "3. He decided ____ (apply) for the job.", "answers": ["to apply"], "explanation": "Decide + to-infinitive."},
+        {"type": "open", "question": "4. Do you mind ____ (wait) a few minutes?", "answers": ["waiting"], "explanation": "Mind + -ing."},
+        {"type": "open", "question": "5. We hope ____ (see) you soon.", "answers": ["to see"], "explanation": "Hope + to-infinitive."},
+        {"type": "open", "question": "6. She finished ____ (write) the report.", "answers": ["writing"], "explanation": "Finish + -ing."},
+        {"type": "open", "question": "7. I'm looking forward to ____ (meet) you.", "answers": ["meeting"], "explanation": "Look forward to + -ing."},
+        {"type": "open", "question": "8. He promised ____ (help) us.", "answers": ["to help"], "explanation": "Promise + to-infinitive."},
+        {"type": "open", "question": "9. They avoided ____ (answer) the question.", "answers": ["answering"], "explanation": "Avoid + -ing."},
+        {"type": "open", "question": "10. She suggested ____ (go) to the cinema.", "answers": ["going"], "explanation": "Suggest + -ing."}
+      ]
+    },
+    "set2": {
+      "title": "Infinitive and -ing – Correct the form",
+      "summary": "Correct sentences: want/decide → to-infinitive; enjoy/finish/suggest → -ing; look forward to → -ing.",
+      "questions": [
+        {"type": "open", "question": "1. Wrong: 'I want learning English.' Correct the sentence.", "answers": ["I want to learn English.", "I want to learn English"], "explanation": "Want + to-infinitive."},
+        {"type": "open", "question": "2. Wrong: 'She enjoys to read.' Correct the sentence.", "answers": ["She enjoys reading.", "She enjoys reading"], "explanation": "Enjoy + -ing."},
+        {"type": "open", "question": "3. Wrong: 'I look forward to see you.' Correct the sentence.", "answers": ["I look forward to seeing you.", "I look forward to seeing you"], "explanation": "Look forward to + -ing."},
+        {"type": "open", "question": "4. Wrong: 'He suggested to go early.' Correct the sentence.", "answers": ["He suggested going early.", "He suggested going early"], "explanation": "Suggest + -ing."},
+        {"type": "open", "question": "5. Wrong: 'We decided staying longer.' Correct the sentence.", "answers": ["We decided to stay longer.", "We decided to stay longer"], "explanation": "Decide + to-infinitive."}
+      ]
+    }
+  },
+  "spelling": {
+    "set1": {
+      "title": "Spelling – Correct the spelling",
+      "summary": "Correct sentences containing commonly misspelt words (accommodation, achieve, receive, definitely, necessary, separate, etc.).",
+      "questions": [
+        {"type": "open", "question": "1. Wrong: 'We need accomodation for two nights.' Correct the sentence.", "answers": ["We need accommodation for two nights."], "explanation": "Accommodation has double c and double m."},
+        {"type": "open", "question": "2. Wrong: 'She managed to acheive her goal.' Correct the sentence.", "answers": ["She managed to achieve her goal."], "explanation": "Achieve: i before e (not acheive)."},
+        {"type": "open", "question": "3. Wrong: 'We walked accross the road.' Correct the sentence.", "answers": ["We walked across the road."], "explanation": "Across has one c."},
+        {"type": "open", "question": "4. Wrong: 'Please send your adress.' Correct the sentence.", "answers": ["Please send your address."], "explanation": "Address has double d."},
+        {"type": "open", "question": "5. Wrong: 'He was very agressive.' Correct the sentence.", "answers": ["He was very aggressive."], "explanation": "Aggressive: double g, double s."},
+        {"type": "open", "question": "6. Wrong: 'She was apparantly very tired.' Correct the sentence.", "answers": ["She was apparently very tired."], "explanation": "Apparently: double p, -ent- not -ant-."},
+        {"type": "open", "question": "7. Wrong: 'His appearence had changed.' Correct the sentence.", "answers": ["His appearance had changed."], "explanation": "Appearance: -ance (not -ence)."},
+        {"type": "open", "question": "8. Wrong: 'They had an arguement.' Correct the sentence.", "answers": ["They had an argument."], "explanation": "Argument: no e after u (argue → argument)."},
+        {"type": "open", "question": "9. Wrong: 'From the begining, it was clear.' Correct the sentence.", "answers": ["From the beginning, it was clear."], "explanation": "Beginning: double n."},
+        {"type": "open", "question": "10. Wrong: 'I can't beleive it.' Correct the sentence.", "answers": ["I can't believe it."], "explanation": "Believe: i before e."},
+        {"type": "open", "question": "11. Wrong: 'It's none of your buisness.' Correct the sentence.", "answers": ["It's none of your business."], "explanation": "Business: -i- then -ness (busy → business)."},
+        {"type": "open", "question": "12. Wrong: 'Check the calender for the date.' Correct the sentence.", "answers": ["Check the calendar for the date."], "explanation": "Calendar: -ar at the end (not -er)."},
+        {"type": "open", "question": "13. Wrong: 'Which catagory does it belong to?' Correct the sentence.", "answers": ["Which category does it belong to?"], "explanation": "Category: -e- not -a- in the middle."},
+        {"type": "open", "question": "14. Wrong: 'There was a leak in the cieling.' Correct the sentence.", "answers": ["There was a leak in the ceiling."], "explanation": "Ceiling: i before e."},
+        {"type": "open", "question": "15. Wrong: 'His consience troubled him.' Correct the sentence.", "answers": ["His conscience troubled him."], "explanation": "Conscience: -science (science)."},
+        {"type": "open", "question": "16. Wrong: 'She was concious of the risk.' Correct the sentence.", "answers": ["She was conscious of the risk."], "explanation": "Conscious: -sci- (like science)."},
+        {"type": "open", "question": "17. Wrong: 'I will definately be there.' Correct the sentence.", "answers": ["I will definitely be there."], "explanation": "Definitely: -ite- from finite."},
+        {"type": "open", "question": "18. Wrong: 'They were desparate for help.' Correct the sentence.", "answers": ["They were desperate for help."], "explanation": "Desperate: -per- (not -par-)."},
+        {"type": "open", "question": "19. Wrong: 'What's the diffrence?' Correct the sentence.", "answers": ["What's the difference?"], "explanation": "Difference: double f, -ence."},
+        {"type": "open", "question": "20. Wrong: 'Don't dissapoint them.' Correct the sentence.", "answers": ["Don't disappoint them."], "explanation": "Disappoint: one s, double p."},
+        {"type": "open", "question": "21. Wrong: 'It takes disipline to succeed.' Correct the sentence.", "answers": ["It takes discipline to succeed."], "explanation": "Discipline: -ci- not -i-."},
+        {"type": "open", "question": "22. Wrong: 'She didn't want to embarass him.' Correct the sentence.", "answers": ["She didn't want to embarrass him."], "explanation": "Embarrass: double r, double s."},
+        {"type": "open", "question": "23. Wrong: 'The existance of life on other planets.' Correct the sentence.", "answers": ["The existence of life on other planets."], "explanation": "Existence: -ence (not -ance)."},
+        {"type": "open", "question": "24. Wrong: 'She has a lot of experiance.' Correct the sentence.", "answers": ["She has a lot of experience."], "explanation": "Experience: -ence (not -ance)."},
+        {"type": "open", "question": "25. Wrong: 'We're going in Febuary.' Correct the sentence.", "answers": ["We're going in February."], "explanation": "February: first r after Feb-."},
+        {"type": "open", "question": "26. Wrong: 'It's a foriegn language.' Correct the sentence.", "answers": ["It's a foreign language."], "explanation": "Foreign: e before i (reign, foreign)."},
+        {"type": "open", "question": "27. Wrong: 'She's my best freind.' Correct the sentence.", "answers": ["She's my best friend."], "explanation": "Friend: i before e."},
+        {"type": "open", "question": "28. Wrong: 'The goverment announced new plans.' Correct the sentence.", "answers": ["The government announced new plans."], "explanation": "Government: n before m (govern + -ment)."},
+        {"type": "open", "question": "29. Wrong: 'You must not harrass people.' Correct the sentence.", "answers": ["You must not harass people."], "explanation": "Harass: one r, double s."},
+        {"type": "open", "question": "30. Wrong: 'What's the hight of the building?' Correct the sentence.", "answers": ["What's the height of the building?"], "explanation": "Height: -eigh- (like eight)."},
+        {"type": "open", "question": "31. Wrong: 'Reply imediately.' Correct the sentence.", "answers": ["Reply immediately."], "explanation": "Immediately: double m, -ately."},
+        {"type": "open", "question": "32. Wrong: 'She's very independant.' Correct the sentence.", "answers": ["She's very independent."], "explanation": "Independent: -ent at the end (not -ant)."},
+        {"type": "open", "question": "33. Wrong: 'He has a lot of knowlege.' Correct the sentence.", "answers": ["He has a lot of knowledge."], "explanation": "Knowledge: -ledge (know + ledge)."},
+        {"type": "open", "question": "34. Wrong: 'You need a lisence to drive.' Correct the sentence.", "answers": ["You need a license to drive."], "explanation": "License (AmE noun): -ense."},
+        {"type": "open", "question": "35. Wrong: 'Regular maintainance is required.' Correct the sentence.", "answers": ["Regular maintenance is required."], "explanation": "Maintenance: -ten- (maintain + -ance)."},
+        {"type": "open", "question": "36. Wrong: 'It's neccessary to book in advance.' Correct the sentence.", "answers": ["It's necessary to book in advance."], "explanation": "Necessary: one c, double s."},
+        {"type": "open", "question": "37. Wrong: 'Our neigbour is very kind.' Correct the sentence.", "answers": ["Our neighbour is very kind."], "explanation": "Neighbour (BrE): -eigh- (neighbor in AmE)."},
+        {"type": "open", "question": "38. Wrong: 'On this occassion we will celebrate.' Correct the sentence.", "answers": ["On this occasion we will celebrate."], "explanation": "Occasion: double c, one s."},
+        {"type": "open", "question": "39. Wrong: 'Such an occurance is rare.' Correct the sentence.", "answers": ["Such an occurrence is rare."], "explanation": "Occurrence: double c, double r, -ence."},
+        {"type": "open", "question": "40. Wrong: 'Would you like a peice of cake?' Correct the sentence.", "answers": ["Would you like a piece of cake?"], "explanation": "Piece: i before e (piece of pie)."},
+        {"type": "open", "question": "41. Wrong: 'It was a great priviledge to meet her.' Correct the sentence.", "answers": ["It was a great privilege to meet her."], "explanation": "Privilege: -i- then -lege (no d)."},
+        {"type": "open", "question": "42. Wrong: 'Your pronounciation is very good.' Correct the sentence.", "answers": ["Your pronunciation is very good."], "explanation": "Pronunciation: from 'pronounce' – -nun- not -noun-."},
+        {"type": "open", "question": "43. Wrong: 'I recieved your letter.' Correct the sentence.", "answers": ["I received your letter."], "explanation": "Receive: i before e except after c."},
+        {"type": "open", "question": "44. Wrong: 'I would recomend the fish.' Correct the sentence.", "answers": ["I would recommend the fish."], "explanation": "Recommend: double c, double m."},
+        {"type": "open", "question": "45. Wrong: 'We had dinner at a restuarant.' Correct the sentence.", "answers": ["We had dinner at a restaurant."], "explanation": "Restaurant: -au- in the middle."},
+        {"type": "open", "question": "46. Wrong: 'She has a good sense of rythm.' Correct the sentence.", "answers": ["She has a good sense of rhythm."], "explanation": "Rhythm: no vowel between th and m (rh-y-th-m)."},
+        {"type": "open", "question": "47. Wrong: 'Keep them seperate.' Correct the sentence.", "answers": ["Keep them separate."], "explanation": "Separate: -par- (like 'part')."},
+        {"type": "open", "question": "48. Wrong: 'It was a complete suprise.' Correct the sentence.", "answers": ["It was a complete surprise."], "explanation": "Surprise: double r, -ise."},
+        {"type": "open", "question": "49. Wrong: 'That's a wierd story.' Correct the sentence.", "answers": ["That's a weird story."], "explanation": "Weird: e before i (exception to the rule)."},
+        {"type": "open", "question": "50. Wrong: 'We need accomodation and the restuarant is full.' Correct the sentence.", "answers": ["We need accommodation and the restaurant is full."], "explanation": "Accommodation (double c, double m); restaurant (-au-)."}
+      ]
+    }
+  },
+  "comparatives": {
+    "set1": {
+      "title": "Comparatives – Form the comparative and superlative",
+      "summary": "Gap fill: form correct comparatives (-er / more + adjective, irregular forms) and superlatives (the -est / the most, the best/worst/farthest).",
+      "questions": [
+        {"type": "open", "question": "1. My sister is ____ (tall) than me.", "answers": ["taller"], "explanation": "Tall → taller (short adjective + -er) + than."},
+        {"type": "open", "question": "2. This exercise is ____ (easy) than the last one.", "answers": ["easier"], "explanation": "Easy → easier (y → ier)."},
+        {"type": "open", "question": "3. London is ____ (big) than Prague.", "answers": ["bigger"], "explanation": "Big → bigger (double the final consonant)."},
+        {"type": "open", "question": "4. Today is ____ (hot) than yesterday.", "answers": ["hotter"], "explanation": "Hot → hotter (double the final consonant)."},
+        {"type": "open", "question": "5. This task is ____ (interesting) than the others.", "answers": ["more interesting"], "explanation": "Interesting is long → more interesting than."},
+        {"type": "open", "question": "6. His English is ____ (good) than mine.", "answers": ["better"], "explanation": "Good → better."},
+        {"type": "open", "question": "7. The situation is ____ (bad) than before.", "answers": ["worse"], "explanation": "Bad → worse."},
+        {"type": "open", "question": "8. This street is ____ (narrow) than the main road.", "answers": ["narrower"], "explanation": "Narrow → narrower (add -er)."},
+        {"type": "open", "question": "9. The film was ____ (boring) than I expected.", "answers": ["more boring"], "explanation": "Boring is long → more boring than."},
+        {"type": "open", "question": "10. My flat is ____ (far) from the centre than yours.", "answers": ["farther", "further"], "explanation": "Far → farther/further."},
+        {"type": "open", "question": "11. This exam is ____ (difficult) than the last one.", "answers": ["more difficult"], "explanation": "Difficult is long → more difficult than."},
+        {"type": "open", "question": "12. She is ____ (old) than she looks.", "answers": ["older"], "explanation": "Old → older."},
+        {"type": "open", "question": "13. This book is ____ (far / interesting) than the film.", "answers": ["far more interesting", "much more interesting"], "explanation": "Use a modifier (far/much) + more interesting than."},
+        {"type": "open", "question": "14. The new system is ____ (a bit / efficient) than the old one.", "answers": ["a bit more efficient", "slightly more efficient"], "explanation": "Use a bit/slightly + more efficient than."},
+        {"type": "open", "question": "15. He drives ____ (carefully) than he used to.", "answers": ["more carefully"], "explanation": "Carefully is an adverb → more carefully than ..."},
+        {"type": "open", "question": "16. The meeting took ____ (long) than we expected.", "answers": ["longer"], "explanation": "Long → longer than we expected."},
+        {"type": "open", "question": "17. This year's results are ____ (slightly / good) than last year's.", "answers": ["slightly better", "a bit better"], "explanation": "Use a small degree adverb + better (slightly/a bit better than)."},
+        {"type": "open", "question": "18. She is ____ (tall) girl in the class.", "answers": ["the tallest"], "explanation": "Tall → the tallest (superlative with the)."},
+        {"type": "open", "question": "19. This is ____ (good) restaurant in town.", "answers": ["the best"], "explanation": "Good → the best (superlative)."},
+        {"type": "open", "question": "20. That was ____ (bad) exam I've ever done.", "answers": ["the worst"], "explanation": "Bad → the worst exam I've ever done."},
+        {"type": "open", "question": "21. It’s ____ (interesting) book I've ever read.", "answers": ["the most interesting"], "explanation": "Long adjective → the most interesting (book I've ever read)."},
+        {"type": "open", "question": "22. January is usually ____ (cold) month of the year here.", "answers": ["the coldest"], "explanation": "Cold → the coldest."},
+        {"type": "open", "question": "23. This question is ____ (difficult) one in the test.", "answers": ["the most difficult"], "explanation": "Difficult → the most difficult."},
+        {"type": "open", "question": "24. He lives in ____ (far) village from the city.", "answers": ["the farthest", "the furthest"], "explanation": "Far → the farthest/furthest."},
+        {"type": "open", "question": "25. This is one of ____ (expensive) hotels in the city.", "answers": ["the most expensive"], "explanation": "Pattern: one of the + superlative plural → one of the most expensive hotels."}
+      ]
+    },
+    "set2": {
+      "title": "Comparatives – Correct the error",
+      "summary": "Correct common mistakes with comparatives (double comparatives, wrong pattern for short/long adjectives, not as ... as, than vs like).",
+      "questions": [
+        {"type": "open", "question": "1. Wrong: 'This exercise is more easier than the last one.' Correct the sentence.", "answers": ["This exercise is easier than the last one.", "This exercise is easier than the last one"], "explanation": "Don't use more + -er together. Just easier."},
+        {"type": "open", "question": "2. Wrong: 'He is more tall than his brother.' Correct the sentence.", "answers": ["He is taller than his brother.", "He is taller than his brother"], "explanation": "Tall is short → taller than, not more tall than."},
+        {"type": "open", "question": "3. Wrong: 'Today is more cold than yesterday.' Correct the sentence.", "answers": ["Today is colder than yesterday.", "Today is colder than yesterday"], "explanation": "Cold is short → colder than, not more cold than."},
+        {"type": "open", "question": "4. Wrong: 'Prague is more small than London.' Correct the sentence.", "answers": ["Prague is smaller than London.", "Prague is smaller than London"], "explanation": "Small is short → smaller than, not more small than."},
+        {"type": "open", "question": "5. Wrong: 'This problem is worser than the last one.' Correct the sentence.", "answers": ["This problem is worse than the last one.", "This problem is worse than the last one"], "explanation": "Bad → worse, not worser."},
+        {"type": "open", "question": "6. Wrong: 'She is not so tall like her brother.' Correct the sentence.", "answers": ["She is not as tall as her brother.", "She is not as tall as her brother"], "explanation": "Pattern: not as + adjective + as (not so ... like)."},
+        {"type": "open", "question": "7. Wrong: 'This road is the more dangerous than that one.' Correct the sentence.", "answers": ["This road is more dangerous than that one.", "This road is more dangerous than that one"], "explanation": "Comparative: more dangerous than (no the before a basic comparative)."},
+        {"type": "open", "question": "8. Wrong: 'Her English is better than my sister.' Correct the sentence.", "answers": ["Her English is better than my sister's.", "Her English is better than my sister's English."], "explanation": "We compare English with English: better than my sister's (English)."}
+      ]
+    }
+  }
+}

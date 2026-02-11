@@ -1,0 +1,106 @@
+{
+  "intro": {
+    "title": "Present Perfect Simple vs Continuous",
+    "sections": [
+      {
+        "title": "What are we comparing?",
+        "content": "Both tenses use have/has + past participle, but:\n\n• Present perfect SIMPLE: I have waited, she has read.\n• Present perfect CONTINUOUS: I have been waiting, she has been reading.\n\nThe choice depends on what you want to emphasise: the result of an action, how many times, how long something has been happening, or a visible effect now."
+      },
+      {
+        "title": "When to use Present Perfect SIMPLE",
+        "content": "Use the SIMPLE form when you focus on:\n\n• Completion or result: I've finished my homework. She's broken her phone.\n• How many / how much: I've read three books. He's sent five emails.\n• Life experience: Have you ever been to Japan?\n• Stative verbs (know, like, love, have, believe, want): I've known him for years. She's had that car since 2020.\n\nStative verbs describe states, not actions, so we don't use the continuous form with them."
+      },
+      {
+        "title": "When to use Present Perfect CONTINUOUS",
+        "content": "Use the CONTINUOUS form when you focus on:\n\n• Duration (how long): I've been waiting for an hour. They've been living here since 2019.\n• An activity that is still going on or has just stopped: She's been studying all evening.\n• A visible or recent effect now: Why are your hands dirty? — Because I've been painting.\n• Temporary or repeated activity: We've been looking for a new flat for months.\n\nTime expressions like for, since, all day, lately often go with the continuous."
+      },
+      {
+        "title": "Quick summary",
+        "content": "• Result / how many / stative verb → SIMPLE (have + past participle).\n• Duration / how long / visible effect now → CONTINUOUS (have been + -ing).\n• When both are possible, the simple stresses the result; the continuous stresses the activity or the time spent."
+      },
+      {
+        "title": "Typical Czech learner errors",
+        "content": "Czech doesn't have the present perfect tense, so these mistakes are common:\n\n• Using past simple where present perfect is needed: Wrong: I never saw that film. Right: I've never seen that film. (life experience)\n• Using present perfect continuous with stative verbs: Wrong: I have been knowing him for years. Right: I have known him for years. (know, like, love, have, want = simple only)\n• Using present perfect with a finished time: Wrong: I have finished yesterday. Right: I finished yesterday. (yesterday → past simple)\n• Choosing continuous when the focus is result/count: Wrong: I have been read three books. Right: I have read three books. (how many → simple)\n\nTip: If you can add 'yesterday' or 'last week', use past simple. If you mean 'up to now' or 'so far', use present perfect."
+      }
+    ]
+  },
+  "check": {
+    "title": "Test your understanding",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "We want to emphasise how long an action has been going on. Which form do we usually use?",
+        "options": {"a": "Present perfect simple", "b": "Present perfect continuous", "c": "Past simple", "d": "Present continuous"},
+        "correct_option": "b",
+        "explanation": "Duration (how long) is typically expressed with the present perfect continuous."
+      },
+      {
+        "type": "mc",
+        "question": "Which sentence is correct? (Stative verb)",
+        "options": {"a": "I have been knowing him for years.", "b": "I have known him for years.", "c": "I know him for years.", "d": "I am knowing him for years."},
+        "correct_option": "b",
+        "explanation": "'Know' is a stative verb; we use the present perfect simple, not the continuous."
+      },
+      {
+        "type": "mc",
+        "question": "We want to say how many things are completed. Which form do we usually use?",
+        "options": {"a": "Present perfect continuous", "b": "Present perfect simple", "c": "Past continuous", "d": "Present simple"},
+        "correct_option": "b",
+        "explanation": "Completion and count (how many) are expressed with the present perfect simple."
+      },
+      {
+        "type": "mc",
+        "question": "Someone's hands are dirty. We explain this with a recent activity. Which is more natural?",
+        "options": {"a": "I have repaired the bike.", "b": "I have been repairing the bike.", "c": "I repaired the bike.", "d": "I repair the bike."},
+        "correct_option": "b",
+        "explanation": "A visible effect now (dirty hands) is explained with the present perfect continuous."
+      }
+    ]
+  },
+  "practice": {
+    "gapfill": {
+      "title": "Practice: Gap fill",
+      "questions": [
+        {"type": "open", "question": "I'm sorry I'm late. I ____ (wait) for the train for almost an hour.", "answers": ["have been waiting"], "explanation": "We focus on how long, so we use the present perfect continuous."},
+        {"type": "open", "question": "She ____ (read) five books so far this summer.", "answers": ["has read"], "explanation": "We focus on how many completed, so we use the present perfect simple."},
+        {"type": "open", "question": "Your hair is wet. ____ you ____ (run) in the rain?", "answers": ["have you been running"], "explanation": "Visible effect now → present perfect continuous."},
+        {"type": "open", "question": "I ____ (know) him since we started high school.", "answers": ["have known"], "explanation": "'Know' is stative; we use the present perfect simple."},
+        {"type": "open", "question": "They ____ (not sleep) well lately because of the noisy neighbours.", "answers": ["have not been sleeping", "haven't been sleeping"], "explanation": "Ongoing situation lately → present perfect continuous."},
+        {"type": "open", "question": "We ____ (look) for a new flat for months.", "answers": ["have been looking"], "explanation": "Duration → present perfect continuous."},
+        {"type": "open", "question": "He ____ (send) ten job applications this week.", "answers": ["has sent"], "explanation": "How many completed → present perfect simple."},
+        {"type": "open", "question": "She ____ (have) that car since 2020.", "answers": ["has had"], "explanation": "'Have' (possession) is stative; present perfect simple."}
+      ]
+    },
+    "errorcorrection": {
+      "title": "Practice: Error correction",
+      "questions": [
+        {"type": "open", "question": "Wrong: 'I have been loving this new series since the first episode.' Correct the sentence.", "answers": ["I have loved this new series since the first episode.", "I have loved this new series since the first episode"], "explanation": "'Love' is stative; we use the present perfect simple."},
+        {"type": "open", "question": "Wrong: 'I have been having this phone for two years.' Correct the sentence.", "answers": ["I have had this phone for two years.", "I have had this phone for two years"], "explanation": "'Have' (possession) is stative; present perfect simple."},
+        {"type": "open", "question": "Wrong: 'She has been owning that shop since 2019.' Correct the sentence.", "answers": ["She has owned that shop since 2019.", "She has owned that shop since 2019"], "explanation": "'Own' is stative; we use the present perfect simple."},
+        {"type": "open", "question": "Wrong: 'We have been believing in recycling for years.' Correct the sentence.", "answers": ["We have believed in recycling for years.", "We have believed in recycling for years"], "explanation": "'Believe' is stative; present perfect simple."}
+      ]
+    },
+    "makesentence": {
+      "title": "Practice: Making sentences (make a full sentence from the cues; use present perfect simple or continuous as appropriate)",
+      "questions": [
+        {"type": "makesentence", "prompt": "you / wait / the bus / 20 minutes", "answers": ["I have been waiting for the bus for 20 minutes.", "I've been waiting for the bus for 20 minutes."], "explanation": "Duration → present perfect continuous."},
+        {"type": "makesentence", "prompt": "she / read / three books / this month", "answers": ["She has read three books this month.", "She's read three books this month."], "explanation": "How many completed → present perfect simple."},
+        {"type": "makesentence", "prompt": "you / know / your best friend / since primary school", "answers": ["I have known my best friend since primary school.", "I've known my best friend since primary school."], "explanation": "Stative verb 'know' → present perfect simple."},
+        {"type": "makesentence", "prompt": "they / live / London / five years", "answers": ["They have been living in London for five years.", "They've been living in London for five years.", "They have lived in London for five years.", "They've lived in London for five years."], "explanation": "Both forms are correct here: duration with 'live' can use present perfect simple or continuous."},
+        {"type": "makesentence", "prompt": "he / just / finish / his homework", "answers": ["He has just finished his homework.", "He's just finished his homework."], "explanation": "Completion/result → present perfect simple."},
+        {"type": "makesentence", "prompt": "you / study / all evening (you are tired now)", "answers": ["I have been studying all evening.", "I've been studying all evening."], "explanation": "Duration and visible effect (tired) → present perfect continuous."}
+      ]
+    },
+    "makequestion": {
+      "title": "Practice: Making questions (make a question from the cues; use present perfect simple or continuous as appropriate)",
+      "questions": [
+        {"type": "makequestion", "prompt": "they / learn / English / how long", "answers": ["How long have they been learning English?", "How long have they been learning English"], "explanation": "Duration → present perfect continuous question."},
+        {"type": "makequestion", "prompt": "she / read / books / this year / how many", "answers": ["How many books has she read this year?", "How many books has she read this year"], "explanation": "How many completed → present perfect simple question."},
+        {"type": "makequestion", "prompt": "he / out of breath – suggest: exercise", "answers": ["Have you been exercising?", "Have you been exercising"], "explanation": "Visible effect → present perfect continuous question."},
+        {"type": "makequestion", "prompt": "they / ever / Japan", "answers": ["Have they ever been to Japan?", "Have they ever been to Japan"], "explanation": "Experience → present perfect simple question."},
+        {"type": "makequestion", "prompt": "she / have / car / how long", "answers": ["How long has she had her car?", "How long has she had her car"], "explanation": "Stative 'have' (possession) → present perfect simple question."},
+        {"type": "makequestion", "prompt": "they / do / all morning / what (they look tired)", "answers": ["What have they been doing all morning?", "What have they been doing all morning"], "explanation": "Duration and visible effect → present perfect continuous question."}
+      ]
+    }
+  }
+}

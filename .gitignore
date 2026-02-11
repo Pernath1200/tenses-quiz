@@ -1,0 +1,17 @@
+# User data (each machine can have its own)
+scores.json
+review_wrong_answers.txt
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*~

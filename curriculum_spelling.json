@@ -1,0 +1,109 @@
+{
+  "intro": {
+    "title": "Spelling",
+    "sections": [
+      {
+        "title": "What this section covers",
+        "content": "Many English words are often misspelt because of silent letters, double letters, or confusing letter patterns (e.g. ie/ei, -ence/-ance). This section focuses on **50 commonly misspelt words** that learners and native speakers often get wrong.\n\nYou will see the full word list below, then in the **check** you can test your recognition, and in **practice** you will correct sentences that contain one or more misspellings of these words.\n\nTip: Learn words in small groups, and notice patterns (e.g. receive, believe – 'i before e except after c' in receive; double letters in accommodation, necessary)."
+      },
+      {
+        "title": "The word list (50 words)",
+        "content": "Learn and revise these commonly misspelt words. They will appear in the practice sentences with typical spelling mistakes for you to correct.\n\n**1–10:** accommodation, achieve, across, address, aggressive, apparently, appearance, argument, beginning, believe\n\n**11–20:** business, calendar, category, ceiling, conscience, conscious, definitely, desperate, difference, disappoint\n\n**21–30:** discipline, embarrass, existence, experience, February, foreign, friend, government, harass, height\n\n**31–40:** immediately, independent, knowledge, license, maintenance, necessary, neighbour, occasion, occurrence, piece\n\n**41–50:** privilege, pronunciation, receive, recommend, restaurant, rhythm, separate, surprise, weird"
+      }
+    ]
+  },
+  "check": {
+    "title": "Test your spelling",
+    "questions": [
+      {
+        "type": "open",
+        "question": "Spell this word correctly: accomodation",
+        "answers": ["accommodation"],
+        "explanation": "Accommodation has double c and double m."
+      },
+      {
+        "type": "open",
+        "question": "Spell this word correctly: recieve",
+        "answers": ["receive"],
+        "explanation": "Receive: i before e except after c."
+      },
+      {
+        "type": "open",
+        "question": "Spell this word correctly: definately",
+        "answers": ["definitely"],
+        "explanation": "Definitely has -ite- in the middle, from 'finite'."
+      },
+      {
+        "type": "open",
+        "question": "Spell this word correctly: neccessary",
+        "answers": ["necessary"],
+        "explanation": "Necessary: one c, double s (one collar, two sleeves)."
+      },
+      {
+        "type": "open",
+        "question": "Spell this word correctly: seperate",
+        "answers": ["separate"],
+        "explanation": "Separate: -par- in the middle (like 'part')."
+      }
+    ]
+  },
+  "practice_order": ["error_correction"],
+  "practice": {
+    "error_correction": {
+      "title": "Practice: Correct the spelling",
+      "questions": [
+        {"type": "open", "question": "Wrong: 'We need accomodation for two nights.' Correct the sentence.", "answers": ["We need accommodation for two nights."], "explanation": "Accommodation has double c and double m."},
+        {"type": "open", "question": "Wrong: 'She managed to acheive her goal.' Correct the sentence.", "answers": ["She managed to achieve her goal."], "explanation": "Achieve: i before e (not acheive)."},
+        {"type": "open", "question": "Wrong: 'We walked accross the road.' Correct the sentence.", "answers": ["We walked across the road."], "explanation": "Across has one c."},
+        {"type": "open", "question": "Wrong: 'Please send your adress.' Correct the sentence.", "answers": ["Please send your address."], "explanation": "Address has double d."},
+        {"type": "open", "question": "Wrong: 'He was very agressive.' Correct the sentence.", "answers": ["He was very aggressive."], "explanation": "Aggressive: double g, double s."},
+        {"type": "open", "question": "Wrong: 'She was apparantly very tired.' Correct the sentence.", "answers": ["She was apparently very tired."], "explanation": "Apparently: double p, -ent- not -ant-."},
+        {"type": "open", "question": "Wrong: 'His appearence had changed.' Correct the sentence.", "answers": ["His appearance had changed."], "explanation": "Appearance: -ance (not -ence)."},
+        {"type": "open", "question": "Wrong: 'They had an arguement.' Correct the sentence.", "answers": ["They had an argument."], "explanation": "Argument: no e after u (argue → argument)."},
+        {"type": "open", "question": "Wrong: 'From the begining, it was clear.' Correct the sentence.", "answers": ["From the beginning, it was clear."], "explanation": "Beginning: double n."},
+        {"type": "open", "question": "Wrong: 'I can't beleive it.' Correct the sentence.", "answers": ["I can't believe it."], "explanation": "Believe: i before e."},
+        {"type": "open", "question": "Wrong: 'It's none of your buisness.' Correct the sentence.", "answers": ["It's none of your business."], "explanation": "Business: -i- then -ness (busy → business)."},
+        {"type": "open", "question": "Wrong: 'Check the calender for the date.' Correct the sentence.", "answers": ["Check the calendar for the date."], "explanation": "Calendar: -ar at the end (not -er)."},
+        {"type": "open", "question": "Wrong: 'Which catagory does it belong to?' Correct the sentence.", "answers": ["Which category does it belong to?"], "explanation": "Category: -e- not -a- in the middle."},
+        {"type": "open", "question": "Wrong: 'There was a leak in the cieling.' Correct the sentence.", "answers": ["There was a leak in the ceiling."], "explanation": "Ceiling: i before e."},
+        {"type": "open", "question": "Wrong: 'His consience troubled him.' Correct the sentence.", "answers": ["His conscience troubled him."], "explanation": "Conscience: -science (science)."},
+        {"type": "open", "question": "Wrong: 'She was concious of the risk.' Correct the sentence.", "answers": ["She was conscious of the risk."], "explanation": "Conscious: -sci- (like science)."},
+        {"type": "open", "question": "Wrong: 'I will definately be there.' Correct the sentence.", "answers": ["I will definitely be there."], "explanation": "Definitely: -ite- from finite."},
+        {"type": "open", "question": "Wrong: 'They were desparate for help.' Correct the sentence.", "answers": ["They were desperate for help."], "explanation": "Desperate: -per- (not -par-)."},
+        {"type": "open", "question": "Wrong: 'What's the diffrence?' Correct the sentence.", "answers": ["What's the difference?"], "explanation": "Difference: double f, -ence."},
+        {"type": "open", "question": "Wrong: 'Don't dissapoint them.' Correct the sentence.", "answers": ["Don't disappoint them."], "explanation": "Disappoint: one s, double p."},
+        {"type": "open", "question": "Wrong: 'It takes disipline to succeed.' Correct the sentence.", "answers": ["It takes discipline to succeed."], "explanation": "Discipline: -ci- not -i-."},
+        {"type": "open", "question": "Wrong: 'She didn't want to embarass him.' Correct the sentence.", "answers": ["She didn't want to embarrass him."], "explanation": "Embarrass: double r, double s."},
+        {"type": "open", "question": "Wrong: 'The existance of life on other planets.' Correct the sentence.", "answers": ["The existence of life on other planets."], "explanation": "Existence: -ence (not -ance)."},
+        {"type": "open", "question": "Wrong: 'She has a lot of experiance.' Correct the sentence.", "answers": ["She has a lot of experience."], "explanation": "Experience: -ence (not -ance)."},
+        {"type": "open", "question": "Wrong: 'We're going in Febuary.' Correct the sentence.", "answers": ["We're going in February."], "explanation": "February: first r after Feb-."},
+        {"type": "open", "question": "Wrong: 'It's a foriegn language.' Correct the sentence.", "answers": ["It's a foreign language."], "explanation": "Foreign: e before i (reign, foreign)."},
+        {"type": "open", "question": "Wrong: 'She's my best freind.' Correct the sentence.", "answers": ["She's my best friend."], "explanation": "Friend: i before e."},
+        {"type": "open", "question": "Wrong: 'The goverment announced new plans.' Correct the sentence.", "answers": ["The government announced new plans."], "explanation": "Government: n before m (govern + -ment)."},
+        {"type": "open", "question": "Wrong: 'You must not harrass people.' Correct the sentence.", "answers": ["You must not harass people."], "explanation": "Harass: one r, double s."},
+        {"type": "open", "question": "Wrong: 'What's the hight of the building?' Correct the sentence.", "answers": ["What's the height of the building?"], "explanation": "Height: -eigh- (like eight)."},
+        {"type": "open", "question": "Wrong: 'Reply imediately.' Correct the sentence.", "answers": ["Reply immediately."], "explanation": "Immediately: double m, -ately."},
+        {"type": "open", "question": "Wrong: 'She's very independant.' Correct the sentence.", "answers": ["She's very independent."], "explanation": "Independent: -ent at the end (not -ant)."},
+        {"type": "open", "question": "Wrong: 'He has a lot of knowlege.' Correct the sentence.", "answers": ["He has a lot of knowledge."], "explanation": "Knowledge: -ledge (know + ledge)."},
+        {"type": "open", "question": "Wrong: 'You need a lisence to drive.' Correct the sentence.", "answers": ["You need a license to drive."], "explanation": "License (AmE noun): -ense. (BrE noun = licence.)"},
+        {"type": "open", "question": "Wrong: 'Regular maintainance is required.' Correct the sentence.", "answers": ["Regular maintenance is required."], "explanation": "Maintenance: -ten- in the middle (maintain + -ance)."},
+        {"type": "open", "question": "Wrong: 'It's neccessary to book in advance.' Correct the sentence.", "answers": ["It's necessary to book in advance."], "explanation": "Necessary: one c, double s."},
+        {"type": "open", "question": "Wrong: 'Our neigbour is very kind.' Correct the sentence.", "answers": ["Our neighbour is very kind."], "explanation": "Neighbour (BrE): -eigh- (neighbor in AmE)."},
+        {"type": "open", "question": "Wrong: 'On this occassion we will celebrate.' Correct the sentence.", "answers": ["On this occasion we will celebrate."], "explanation": "Occasion: double c, one s."},
+        {"type": "open", "question": "Wrong: 'Such an occurance is rare.' Correct the sentence.", "answers": ["Such an occurrence is rare."], "explanation": "Occurrence: double c, double r, -ence."},
+        {"type": "open", "question": "Wrong: 'Would you like a peice of cake?' Correct the sentence.", "answers": ["Would you like a piece of cake?"], "explanation": "Piece: i before e (piece of pie)."},
+        {"type": "open", "question": "Wrong: 'It was a great priviledge to meet her.' Correct the sentence.", "answers": ["It was a great privilege to meet her."], "explanation": "Privilege: -i- then -lege (no d)."},
+        {"type": "open", "question": "Wrong: 'Your pronounciation is very good.' Correct the sentence.", "answers": ["Your pronunciation is very good."], "explanation": "Pronunciation: from 'pronounce' – -nun- not -noun-."},
+        {"type": "open", "question": "Wrong: 'I recieved your letter.' Correct the sentence.", "answers": ["I received your letter."], "explanation": "Receive: i before e except after c."},
+        {"type": "open", "question": "Wrong: 'I would recomend the fish.' Correct the sentence.", "answers": ["I would recommend the fish."], "explanation": "Recommend: double c, double m."},
+        {"type": "open", "question": "Wrong: 'We had dinner at a restuarant.' Correct the sentence.", "answers": ["We had dinner at a restaurant."], "explanation": "Restaurant: -au- in the middle."},
+        {"type": "open", "question": "Wrong: 'She has a good sense of rythm.' Correct the sentence.", "answers": ["She has a good sense of rhythm."], "explanation": "Rhythm: no vowel between th and m (rh-y-th-m)."},
+        {"type": "open", "question": "Wrong: 'Keep them seperate.' Correct the sentence.", "answers": ["Keep them separate."], "explanation": "Separate: -par- (like 'part')."},
+        {"type": "open", "question": "Wrong: 'It was a complete suprise.' Correct the sentence.", "answers": ["It was a complete surprise."], "explanation": "Surprise: double r, -ise (not -ize in this word)."},
+        {"type": "open", "question": "Wrong: 'That's a wierd story.' Correct the sentence.", "answers": ["That's a weird story."], "explanation": "Weird: e before i (exception to the rule)."},
+        {"type": "open", "question": "Wrong: 'We need accomodation and the restuarant is full.' Correct the sentence.", "answers": ["We need accommodation and the restaurant is full."], "explanation": "Accommodation (double c, double m); restaurant (-au-)."},
+        {"type": "open", "question": "Wrong: 'I definately believe it was necessary.' Correct the sentence.", "answers": ["I definitely believe it was necessary."], "explanation": "Definitely (-ite-); necessary (one c, double s)."}
+      ]
+    }
+  }
+}

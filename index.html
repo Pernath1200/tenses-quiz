@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>English Grammar Check</title>
+  <style>
+    :root {
+      --bg: #1a1b26;
+      --surface: #24283b;
+      --text: #c0caf5;
+      --muted: #565f89;
+      --correct: #9ece6a;
+      --wrong: #f7768e;
+      --accent: #7aa2f7;
+      --radius: 8px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      margin: 0;
+      padding: 1rem;
+      min-height: 100vh;
+    }
+    .container { max-width: 640px; margin: 0 auto; }
+    h1 { font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--accent); }
+    .sub { color: var(--muted); font-size: 0.9rem; margin-bottom: 1.5rem; }
+    .card {
+      background: var(--surface);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      margin-bottom: 1rem;
+    }
+    label { display: block; margin-bottom: 0.25rem; color: var(--muted); font-size: 0.85rem; }
+    select, input[type="number"], button {
+      width: 100%;
+      padding: 0.6rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--muted);
+      background: var(--bg);
+      color: var(--text);
+      font-size: 1rem;
+    }
+    button {
+      cursor: pointer;
+      background: var(--accent);
+      border: none;
+      color: var(--bg);
+      font-weight: 600;
+      margin-top: 0.5rem;
+    }
+    button:hover { filter: brightness(1.1); }
+    button.secondary { background: var(--surface); color: var(--text); border: 1px solid var(--muted); }
+    .scores { font-size: 0.9rem; color: var(--muted); margin-bottom: 1rem; }
+    .question-block { margin-bottom: 1.5rem; }
+    .question-text { white-space: pre-line; margin-bottom: 0.75rem; line-height: 1.5; }
+    .options { display: flex; flex-direction: column; gap: 0.5rem; }
+    .option {
+      padding: 0.6rem;
+      border-radius: var(--radius);
+      border: 1px solid var(--muted);
+      background: var(--bg);
+      cursor: pointer;
+    }
+    .option:hover { border-color: var(--accent); }
+    .option.correct { border-color: var(--correct); background: rgba(158, 206, 106, 0.15); }
+    .option.wrong { border-color: var(--wrong); background: rgba(247, 118, 142, 0.15); }
+    .explanation { margin-top: 0.75rem; padding: 0.75rem; background: var(--bg); border-radius: var(--radius); font-size: 0.9rem; color: var(--muted); }
+    .result-ok { color: var(--correct); }
+    .result-fail { color: var(--wrong); }
+    .progress { margin-bottom: 1rem; color: var(--muted); font-size: 0.9rem; }
+    input[type="text"] { width: 100%; padding: 0.6rem; border-radius: var(--radius); border: 1px solid var(--muted); background: var(--bg); color: var(--text); }
+    .summary { margin-top: 1.5rem; padding: 1rem; background: var(--surface); border-radius: var(--radius); font-size: 0.9rem; line-height: 1.6; }
+    .hidden { display: none !important; }
+    .actions { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem; }
+    .actions button { flex: 1; min-width: 140px; }
+    .progress-card { margin-top: 1rem; }
+    .progress-card h3 { font-size: 1rem; color: var(--accent); margin-bottom: 0.5rem; }
+    .progress-stats { display: grid; gap: 0.5rem; font-size: 0.9rem; color: var(--muted); }
+    .progress-stats span { color: var(--text); }
+    .history-line { font-size: 0.85rem; padding: 0.25rem 0; border-bottom: 1px solid var(--bg); }
+    .memory-bank { margin-top: 1rem; }
+    .memory-bank h3 { font-size: 1rem; color: var(--accent); margin-bottom: 0.5rem; }
+    .memory-bank p { font-size: 0.9rem; color: var(--muted); margin-bottom: 0.5rem; }
+    .tab-row { display: flex; gap: 0.5rem; margin-bottom: 1rem; }
+    .tab-row button { margin-top: 0; flex: none; }
+    .tab-row button.active { background: var(--muted); color: var(--text); }
+    #progressScreen .card { margin-bottom: 1rem; }
+    .intro-section { white-space: pre-line; line-height: 1.6; margin-bottom: 1rem; }
+    .intro-section h3 { font-size: 1rem; color: var(--accent); margin-bottom: 0.5rem; }
+    #introScreen .card { margin-bottom: 1rem; }
+    .prepositions-list-card h3 { font-size: 1rem; color: var(--accent); margin: 1rem 0 0.5rem 0; }
+    .prepositions-list-card .list-words { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.5rem; }
+    .prepositions-list-card .list-words span { background: var(--bg); padding: 0.25rem 0.5rem; border-radius: 4px; font-size: 0.9rem; }
+    @media print {
+      body * { visibility: hidden; }
+      .no-print-hide, .no-print-hide * { visibility: visible; }
+      .no-print-hide { position: absolute; left: 0; top: 0; width: 100%; background: white; color: #111; padding: 1rem; }
+      .no-print-hide .actions { display: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>English Grammar Check</h1>
+    <p class="sub">Choose a topic and start the quiz.</p>
+
+    <div id="menuScreen" class="card">
+      <div class="tab-row">
+        <button type="button" id="tabQuiz" class="active">Quiz</button>
+        <button type="button" id="tabProgress" class="secondary">Progress</button>
+      </div>
+      <div id="menuQuiz">
+        <div class="scores" id="scoresSummary"></div>
+        <label for="topicSelect" id="topicLabel" class="hidden">Topic</label>
+        <select id="topicSelect" class="hidden" style="margin-bottom: 0.5rem;"></select>
+        <p style="margin-bottom: 0.5rem; color: var(--muted); font-size: 0.9rem;">Part 1: Intro, rules & test. Part 2: Practice. Part 3: Free practice.</p>
+        <button type="button" id="startPart1Btn" class="secondary">Part 1: Intro, rules & test</button>
+        <button type="button" id="startPart2Btn" class="secondary">Part 2: Practice</button>
+        <button type="button" id="viewPrepositionsListBtn" class="secondary hidden">View preposition lists (print &amp; download)</button>
+        <hr style="border: none; border-top: 1px solid var(--muted); margin: 1rem 0;" />
+        <label for="setSelect">Part 3: Free practice – choose a set</label>
+        <select id="setSelect"></select>
+        <label for="numQuestions">Number of questions (leave empty for all)</label>
+        <input type="number" id="numQuestions" min="1" placeholder="All">
+        <label><input type="checkbox" id="shuffleCheck"> Shuffle order</label>
+        <div class="memory-bank" id="memoryBankSummary"></div>
+        <button id="startBtn">Start quiz</button>
+      </div>
+      <div id="progressScreen" class="hidden">
+        <div class="progress-card">
+          <h3>Your progress</h3>
+          <div class="progress-stats" id="progressStats"></div>
+          <h3 style="margin-top: 1rem;">Recent quizzes</h3>
+          <div id="recentHistory"></div>
+          <h3 style="margin-top: 1rem;">Best scores by set</h3>
+          <div id="bestBySet"></div>
+          <h3 style="margin-top: 1rem;">Memory bank</h3>
+          <p>Questions you've got wrong are stored here so you can practise them again.</p>
+          <div id="memoryBankList"></div>
+          <button type="button" id="practiceWeakBtn" class="secondary" style="margin-top: 0.5rem;">Practice weak spots</button>
+        </div>
+        <button type="button" id="backFromProgressBtn" class="secondary">Back to quiz</button>
+      </div>
+    </div>
+
+    <div id="quizScreen" class="hidden">
+      <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.5rem;">
+        <div class="progress" id="progress" style="margin-bottom: 0;"></div>
+        <button type="button" id="exitQuizBtn" class="secondary" style="margin-top: 0; flex: none;">Exit quiz</button>
+      </div>
+      <div class="card question-block">
+        <div class="question-text" id="questionText"></div>
+        <div id="openBlock" class="hidden">
+          <input type="text" id="openInput" placeholder="Type your answer">
+        </div>
+        <div id="mcBlock" class="options hidden"></div>
+        <button id="submitBtn">Submit</button>
+      </div>
+      <div id="feedbackBlock" class="card hidden">
+        <div id="feedbackText"></div>
+        <div class="explanation" id="explanation"></div>
+        <button id="nextBtn">Next</button>
+      </div>
+    </div>
+
+    <div id="introScreen" class="hidden">
+      <div class="card">
+        <h2 id="introTitle"></h2>
+        <div id="introContent"></div>
+        <div id="introPrepositionsListWrap" class="hidden" style="margin-top: 0.75rem;">
+          <button type="button" id="viewPrepositionsListFromIntroBtn" class="secondary">View preposition lists (print &amp; download)</button>
+        </div>
+        <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.75rem;">
+          <button type="button" id="introNextBtn">Next</button>
+          <button type="button" id="introExitBtn" class="secondary">Back to menu</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="sectionCompleteScreen" class="hidden">
+      <div class="card">
+        <h3 id="sectionCompleteTitle"></h3>
+        <p id="sectionCompleteScore"></p>
+        <button type="button" id="sectionCompleteNextBtn">Next section</button>
+      </div>
+    </div>
+
+    <div id="resultScreen" class="hidden">
+      <div class="card">
+        <h2 id="resultTitle">Quiz finished</h2>
+        <p id="resultScore"></p>
+        <div class="summary" id="ruleSummary"></div>
+        <div class="actions">
+          <button id="retryWrongBtn" class="secondary">Retry wrong answers</button>
+          <button id="exportWrongBtn" class="secondary">Download wrong answers</button>
+          <button id="backToMenuBtn">Back to menu</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="prepositionsListScreen" class="hidden no-print-hide">
+      <div class="card prepositions-list-card">
+        <h2 id="prepositionsListTitle">Prepositions in English</h2>
+        <div id="prepositionsListContent"></div>
+        <div class="actions" style="margin-top: 1rem;">
+          <button type="button" id="prepositionsListPrintBtn" class="secondary">Print list</button>
+          <button type="button" id="prepositionsListDownloadBtn" class="secondary">Download as text</button>
+          <button type="button" id="prepositionsListBackBtn">Back</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const STORAGE_KEY = 'presentPerfectQuizScores';
+    const MEMORY_KEY = 'presentPerfectQuizMemory';
+    let topics = [];
+    let currentTopic = { id: 'present_perfect', title: 'English Grammar Check', curriculum: 'curriculum.json', questions_key: 'sets' };
+    let allQuestionsData = {};
+    let setsData = {};
+    let currentSetId = '';
+    let currentSetTitle = '';
+    let currentQuestions = [];
+    let currentIndex = 0;
+    let score = 0;
+    let wrongIndices = [];
+    let summary = '';
+    let isRetryRound = false;
+    let courseCurriculum = null;
+    let coursePhase = null;
+    let coursePart = null;
+    let introSectionIndex = 0;
+    let prepositionsListData = null;
+    let prepositionsListReturnTo = 'menu';
+    const COURSE_ORDER = ['check', 'gapfill', 'errorcorrection', 'makesentence', 'makequestion'];
+    const PART2_ORDER = ['gapfill', 'errorcorrection', 'makesentence', 'makequestion'];
+    let part2Order = PART2_ORDER;
+
+    function questionHash(q) {
+      const s = (q.question || q.prompt || '').trim();
+      let h = 0;
+      for (let i = 0; i < s.length; i++) h = ((h << 5) - h) + s.charCodeAt(i) | 0;
+      return (h >>> 0).toString(36);
+    }
+
+    function loadScores() {
+      try {
+        const raw = localStorage.getItem(STORAGE_KEY);
+        return raw ? JSON.parse(raw) : { history: [] };
+      } catch { return { history: [] }; }
+    }
+
+    function loadMemoryBank() {
+      try {
+        const raw = localStorage.getItem(MEMORY_KEY);
+        return raw ? JSON.parse(raw) : {};
+      } catch { return {}; }
+    }
+
+    function saveMemoryBankEntry(key, correct) {
+      const bank = loadMemoryBank();
+      if (!bank[key]) bank[key] = { wrong: 0, right: 0, lastWrong: null };
+      if (correct) bank[key].right++; else { bank[key].wrong++; bank[key].lastWrong = new Date().toISOString(); }
+      localStorage.setItem(MEMORY_KEY, JSON.stringify(bank));
+    }
+
+    function saveScore(setId, setTitle, score, total) {
+      const data = loadScores();
+      data.history.push({ set_id: setId, set_title: setTitle, score, total, date: new Date().toISOString() });
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+    }
+
+    function getLastBest(setId) {
+      const data = loadScores();
+      const forSet = (data.history || []).filter(e => e.set_id === setId);
+      if (!forSet.length) return { last: null, best: null };
+      const last = forSet[forSet.length - 1];
+      const best = forSet.reduce((acc, e) => {
+        if (!acc || (e.score / e.total) > (acc.score / acc.total)) return e;
+        return acc;
+      }, null);
+      return { last: [last.score, last.total], best: [best.score, best.total] };
+    }
+
+    function getWeakSpotQuestions() {
+      const bank = loadMemoryBank();
+      const seen = new Set();
+      const out = [];
+      Object.values(setsData).forEach(s => {
+        (s.questions || []).forEach(q => {
+          const key = questionHash(q);
+          if (bank[key] && bank[key].wrong > 0 && !seen.has(key)) {
+            seen.add(key);
+            out.push(q);
+          }
+        });
+      });
+      return out;
+    }
+
+    function getProgressStats() {
+      const data = loadScores();
+      const history = data.history || [];
+      const total = history.length;
+      if (total === 0) return { total: 0, avg: 0, thisWeek: 0, streak: 0 };
+      const now = new Date();
+      const weekAgo = new Date(now.getTime() - 7 * 24 * 60 * 60 * 1000);
+      const thisWeek = history.filter(e => new Date(e.date) >= weekAgo).length;
+      let totalCorrect = 0, totalQuestions = 0;
+      history.forEach(e => { totalCorrect += e.score; totalQuestions += e.total; });
+      const avg = totalQuestions ? Math.round((100 * totalCorrect) / totalQuestions) : 0;
+      let streak = 0;
+      for (let i = history.length - 1; i >= 0; i--) {
+        const pct = (100 * history[i].score) / history[i].total;
+        if (pct >= 80) streak++; else break;
+      }
+      return { total, avg, thisWeek, streak };
+    }
+
+    function normalize(s) {
+      return s.trim().toLowerCase().replace(/\s+/g, ' ');
+    }
+
+    function answerMatches(user, accepted) {
+      const u = normalize(user);
+      return accepted.some(a => normalize(a) === u);
+    }
+
+    function getBaseUrl() {
+      return new URL('.', window.location.href).href;
+    }
+
+    async function loadQuestions() {
+      const res = await fetch(new URL('questions.json?v=2', getBaseUrl()));
+      if (!res.ok) throw new Error('Could not load questions.json');
+      allQuestionsData = await res.json();
+      setsData = allQuestionsData[currentTopic.questions_key] || allQuestionsData.sets || {};
+    }
+
+    function applyTopic() {
+      setsData = allQuestionsData[currentTopic.questions_key] || allQuestionsData.sets || {};
+    }
+
+    function renderMenu() {
+      const select = document.getElementById('setSelect');
+      select.innerHTML = '';
+      const weakSpots = getWeakSpotQuestions();
+      if (weakSpots.length > 0) {
+        const wOpt = document.createElement('option');
+        wOpt.value = 'weakspots';
+        wOpt.textContent = 'Practice weak spots (' + weakSpots.length + ' questions)';
+        select.appendChild(wOpt);
+      }
+      const ids = Object.keys(setsData);
+      ids.forEach(id => {
+        const opt = document.createElement('option');
+        opt.value = id;
+        opt.textContent = setsData[id].title + ' (' + (setsData[id].questions?.length || 0) + ' questions)';
+        select.appendChild(opt);
+      });
+      const allOpt = document.createElement('option');
+      allOpt.value = 'all';
+      allOpt.textContent = 'All sets combined';
+      select.appendChild(allOpt);
+
+      const summaryEl = document.getElementById('scoresSummary');
+      const selVal = select.value;
+      if (selVal === 'weakspots') {
+        summaryEl.textContent = weakSpots.length + ' questions you\'ve got wrong before – practise them to improve.';
+      } else {
+        const lastBest = getLastBest(selVal);
+        if (lastBest.last) {
+          summaryEl.textContent = `Last: ${lastBest.last[0]}/${lastBest.last[1]}` +
+            (lastBest.best && (lastBest.best[0] !== lastBest.last[0] || lastBest.best[1] !== lastBest.last[1])
+              ? `  •  Best: ${lastBest.best[0]}/${lastBest.best[1]}` : '');
+        } else {
+          summaryEl.textContent = '';
+        }
+      }
+
+      const memEl = document.getElementById('memoryBankSummary');
+      const bank = loadMemoryBank();
+      const wrongCount = Object.values(bank).filter(v => v.wrong > 0).length;
+      if (wrongCount > 0) {
+        memEl.innerHTML = '<p><strong>Memory bank:</strong> ' + wrongCount + ' question(s) to review. Choose "Practice weak spots" or open the Progress tab.</p>';
+      } else {
+        memEl.innerHTML = '';
+      }
+
+      document.getElementById('menuScreen').classList.remove('hidden');
+      document.getElementById('quizScreen').classList.add('hidden');
+      document.getElementById('resultScreen').classList.add('hidden');
+      document.getElementById('introScreen').classList.add('hidden');
+      document.getElementById('sectionCompleteScreen').classList.add('hidden');
+      document.getElementById('progressScreen').classList.add('hidden');
+      document.getElementById('prepositionsListScreen').classList.add('hidden');
+      document.getElementById('menuQuiz').classList.remove('hidden');
+      const prepositionsBtn = document.getElementById('viewPrepositionsListBtn');
+      if (currentTopic && currentTopic.id === 'prepositions') {
+        prepositionsBtn.classList.remove('hidden');
+      } else {
+        prepositionsBtn.classList.add('hidden');
+      }
+    }
+
+    function renderPrepositionsListContent(data) {
+      const title = data.title || 'Prepositions in English';
+      document.getElementById('prepositionsListTitle').textContent = title;
+      const content = document.getElementById('prepositionsListContent');
+      content.innerHTML = '';
+      const addList = (label, arr) => {
+        if (!arr || !arr.length) return;
+        const h3 = document.createElement('h3');
+        h3.textContent = label;
+        content.appendChild(h3);
+        const div = document.createElement('div');
+        div.className = 'list-words';
+        arr.forEach(w => {
+          const span = document.createElement('span');
+          span.textContent = w;
+          div.appendChild(span);
+        });
+        content.appendChild(div);
+      };
+      addList('Top 20 (most common)', data.top20 || []);
+      addList('Top 50', data.top50 || []);
+      addList('Complete list', data.complete || []);
+    }
+
+    function prepositionsListAsText(data) {
+      const lines = [(data.title || 'Prepositions in English'), ''];
+      const addSection = (label, arr) => {
+        if (!arr || !arr.length) return;
+        lines.push(label);
+        lines.push(arr.join(', '));
+        lines.push('');
+      };
+      addSection('Top 20 (most common):', data.top20 || []);
+      addSection('Top 50:', data.top50 || []);
+      addSection('Complete list:', data.complete || []);
+      return lines.join('\n');
+    }
+
+    async function showPrepositionsList(returnTo) {
+      prepositionsListReturnTo = returnTo || 'menu';
+      if (!prepositionsListData) {
+        try {
+          const res = await fetch(new URL('prepositions_list.json', getBaseUrl()));
+          if (!res.ok) throw new Error('Could not load list');
+          prepositionsListData = await res.json();
+        } catch (e) {
+          alert('Could not load preposition list. ' + e.message);
+          return;
+        }
+      }
+      renderPrepositionsListContent(prepositionsListData);
+      document.getElementById('menuScreen').classList.add('hidden');
+      document.getElementById('introScreen').classList.add('hidden');
+      document.getElementById('prepositionsListScreen').classList.remove('hidden');
+    }
+
+    function hidePrepositionsList() {
+      document.getElementById('prepositionsListScreen').classList.add('hidden');
+      if (prepositionsListReturnTo === 'intro') {
+        document.getElementById('introScreen').classList.remove('hidden');
+      } else {
+        document.getElementById('menuScreen').classList.remove('hidden');
+      }
+    }
+
+    function showIntroSection(index) {
+      const intro = courseCurriculum.intro || {};
+      const sections = intro.sections || [];
+      if (index >= sections.length) {
+        document.getElementById('introScreen').classList.add('hidden');
+        if (coursePart === 1) startCourseSection('check');
+        return;
+      }
+      document.getElementById('introTitle').textContent = sections[index].title || 'Introduction';
+      document.getElementById('introContent').innerHTML = '<div class="intro-section">' + (sections[index].content || '').replace(/\n/g, '<br>') + '</div>';
+      document.getElementById('introNextBtn').textContent = index < sections.length - 1 ? 'Next' : 'Start test';
+      introSectionIndex = index;
+      const introListWrap = document.getElementById('introPrepositionsListWrap');
+      if (currentTopic && currentTopic.id === 'prepositions') {
+        introListWrap.classList.remove('hidden');
+      } else {
+        introListWrap.classList.add('hidden');
+      }
+    }
+
+    function startCourseSection(phase) {
+      coursePhase = phase;
+      let questions = [];
+      let title = '';
+      if (phase === 'check') {
+        const check = courseCurriculum.check || {};
+        questions = (check.questions || []).slice();
+        title = check.title || 'Test your understanding';
+        currentSetId = 'course_check';
+      } else {
+        const practice = courseCurriculum.practice || {};
+        const section = practice[phase];
+        if (!section || !section.questions) {
+          advanceCourseToNext();
+          return;
+        }
+        questions = section.questions.slice();
+        if (coursePart === 2 && questions.length > 1) {
+          for (let i = questions.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [questions[i], questions[j]] = [questions[j], questions[i]];
+          }
+        }
+        title = section.title || phase;
+        currentSetId = 'course_' + phase;
+      }
+      currentSetTitle = title;
+      currentQuestions = questions;
+      currentIndex = 0;
+      score = 0;
+      wrongIndices = [];
+      isRetryRound = false;
+      document.getElementById('sectionCompleteScreen').classList.add('hidden');
+      document.getElementById('quizScreen').classList.remove('hidden');
+      document.getElementById('feedbackBlock').classList.add('hidden');
+      document.getElementById('exitQuizBtn').textContent = coursePart === 1 ? 'Exit test' : 'Exit quiz';
+      showQuestion();
+    }
+
+    function advanceCourseToNext() {
+      document.getElementById('sectionCompleteScreen').classList.add('hidden');
+      if (coursePart === 1) {
+        coursePart = null;
+        coursePhase = null;
+        renderMenu();
+        return;
+      }
+      const order = coursePart === 2 ? part2Order : COURSE_ORDER;
+      const idx = order.indexOf(coursePhase);
+      const nextPhase = idx >= 0 && idx < order.length - 1 ? order[idx + 1] : null;
+      if (!nextPhase) {
+        coursePhase = null;
+        if (coursePart === 2) {
+          document.getElementById('resultScreen').classList.remove('hidden');
+          document.getElementById('resultScore').textContent = 'Part 2 complete! Well done.';
+          const sectionNames = part2Order.map(function(k) {
+            const s = courseCurriculum.practice && courseCurriculum.practice[k];
+            return (s && s.title) ? s.title.replace(/^Practice: Gap fill –?\s*/i, '').trim() : k.replace(/_/g, ' ');
+          });
+          document.getElementById('ruleSummary').textContent = 'You have finished Practice: ' + sectionNames.join(', ') + '.';
+          document.getElementById('retryWrongBtn').classList.add('hidden');
+          document.getElementById('exportWrongBtn').classList.add('hidden');
+          coursePart = null;
+        }
+        return;
+      }
+      const practice = courseCurriculum.practice || {};
+      const section = practice[nextPhase];
+      if (!section || !section.questions || section.questions.length === 0) {
+        advanceCourseToNext();
+        return;
+      }
+      startCourseSection(nextPhase);
+    }
+
+    async function startPart1() {
+      try {
+        const res = await fetch(new URL(currentTopic.curriculum + '?v=2', getBaseUrl()));
+        if (!res.ok) throw new Error('Could not load ' + currentTopic.curriculum);
+        courseCurriculum = await res.json();
+      } catch (e) {
+        alert('Could not load curriculum. ' + e.message);
+        return;
+      }
+      coursePart = 1;
+      document.getElementById('menuScreen').classList.add('hidden');
+      document.getElementById('introScreen').classList.remove('hidden');
+      introSectionIndex = 0;
+      showIntroSection(0);
+    }
+
+    async function startPart2() {
+      try {
+        const res = await fetch(new URL(currentTopic.curriculum + '?v=2', getBaseUrl()));
+        if (!res.ok) throw new Error('Could not load ' + currentTopic.curriculum);
+        courseCurriculum = await res.json();
+      } catch (e) {
+        alert('Could not load curriculum. ' + e.message);
+        return;
+      }
+      coursePart = 2;
+      part2Order = courseCurriculum.practice_order || PART2_ORDER;
+      document.getElementById('menuScreen').classList.add('hidden');
+      if (!part2Order.length) { renderMenu(); return; }
+      const practice = courseCurriculum.practice || {};
+      const first = part2Order[0];
+      const section = practice[first];
+      if (!section || !section.questions || section.questions.length === 0) {
+        renderMenu();
+        return;
+      }
+      startCourseSection(first);
+    }
+
+    function startQuiz() {
+      coursePhase = null;
+      const setSelect = document.getElementById('setSelect');
+      const setId = setSelect.value;
+      const numInput = document.getElementById('numQuestions');
+      let questions;
+      if (setId === 'weakspots') {
+        questions = getWeakSpotQuestions();
+        if (questions.length === 0) { alert('No weak spots yet. Do a quiz and get some wrong to build your memory bank.'); return; }
+        for (let i = questions.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [questions[i], questions[j]] = [questions[j], questions[i]];
+        }
+      } else {
+        questions = setId === 'all'
+          ? Object.values(setsData).flatMap(s => s.questions || [])
+          : [...(setsData[setId]?.questions || [])];
+        if (document.getElementById('shuffleCheck').checked) {
+          for (let i = questions.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [questions[i], questions[j]] = [questions[j], questions[i]];
+          }
+        }
+      }
+      const max = numInput.value ? Math.min(parseInt(numInput.value, 10) || questions.length, questions.length) : questions.length;
+      questions = questions.slice(0, max);
+      currentQuestions = questions;
+      currentSetId = setId;
+      currentSetTitle = setId === 'weakspots' ? 'Practice weak spots' : (setId === 'all' ? 'All sets combined' : (setsData[setId]?.title || setId));
+      summary = setId === 'weakspots' ? 'These are questions you got wrong before. Keep practising!' : (setId === 'all' ? 'Mixed practice from all sets.' : (setsData[setId]?.summary || ''));
+      currentIndex = 0;
+      score = 0;
+      wrongIndices = [];
+      isRetryRound = false;
+
+      document.getElementById('menuScreen').classList.add('hidden');
+      document.getElementById('quizScreen').classList.remove('hidden');
+      document.getElementById('feedbackBlock').classList.add('hidden');
+      document.getElementById('exitQuizBtn').textContent = 'Exit quiz';
+      showQuestion();
+    }
+
+    function showQuestion() {
+      const q = currentQuestions[currentIndex];
+      const total = currentQuestions.length;
+      document.getElementById('progress').textContent = `Question ${currentIndex + 1} of ${total}`;
+      const promptText = (q.prompt || q.question || '').replace(/^\d+\.\s*/, '').trim();
+      document.getElementById('questionText').textContent = promptText;
+      document.getElementById('openBlock').classList.add('hidden');
+      document.getElementById('mcBlock').classList.add('hidden');
+      document.getElementById('openInput').value = '';
+      document.getElementById('submitBtn').classList.remove('hidden');
+      document.getElementById('feedbackBlock').classList.add('hidden');
+
+      if (q.type === 'mc') {
+        const mcBlock = document.getElementById('mcBlock');
+        mcBlock.classList.remove('hidden');
+        mcBlock.innerHTML = '';
+        const letters = ['a', 'b', 'c', 'd'];
+        Object.entries(q.options || {}).forEach(([key, text]) => {
+          const div = document.createElement('div');
+          div.className = 'option';
+          div.dataset.option = key;
+          div.textContent = key + ') ' + text;
+          div.addEventListener('click', () => {
+            mcBlock.querySelectorAll('.option').forEach(o => o.classList.remove('selected'));
+            div.classList.add('selected');
+            selectedMc = key;
+          });
+          mcBlock.appendChild(div);
+        });
+        selectedMc = null;
+      } else {
+        document.getElementById('openBlock').classList.remove('hidden');
+        document.getElementById('openInput').focus();
+      }
+    }
+
+    let selectedMc = null;
+
+    function submitAnswer() {
+      const q = currentQuestions[currentIndex];
+      let correct = false;
+
+      if (q.type === 'mc') {
+        correct = selectedMc === q.correct_option;
+        document.getElementById('mcBlock').querySelectorAll('.option').forEach(o => {
+          o.classList.remove('selected');
+          if (o.dataset.option === q.correct_option) o.classList.add('correct');
+          else if (o.dataset.option === selectedMc && !correct) o.classList.add('wrong');
+        });
+      } else {
+        const userAnswer = document.getElementById('openInput').value.trim();
+        correct = answerMatches(userAnswer, q.answers || []);
+      }
+
+      if (correct) score++; else wrongIndices.push(currentIndex);
+      saveMemoryBankEntry(questionHash(q), correct);
+
+      document.getElementById('feedbackText').innerHTML = correct
+        ? '<span class="result-ok">Correct!</span>'
+        : '<span class="result-fail">Incorrect.</span> Correct: ' + (q.type === 'mc' ? (q.options && q.options[q.correct_option]) : (q.answers && q.answers[0]));
+      const raw = (q.explanation || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+      document.getElementById('explanation').innerHTML = raw.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+      document.getElementById('submitBtn').classList.add('hidden');
+      document.getElementById('feedbackBlock').classList.remove('hidden');
+      document.getElementById('nextBtn').focus();
+    }
+
+    function nextQuestion() {
+      currentIndex++;
+      if (currentIndex >= currentQuestions.length) {
+        finishQuiz();
+        return;
+      }
+      showQuestion();
+    }
+
+    function finishQuiz() {
+      if (!isRetryRound) saveScore(currentSetId, currentSetTitle, score, currentQuestions.length);
+      document.getElementById('quizScreen').classList.add('hidden');
+      if (coursePhase) {
+        document.getElementById('sectionCompleteTitle').textContent = coursePart === 1 ? 'Part 1 complete' : (currentSetTitle + ' – complete');
+        document.getElementById('sectionCompleteScore').textContent = 'Score: ' + score + ' / ' + currentQuestions.length;
+        document.getElementById('sectionCompleteScreen').classList.remove('hidden');
+        document.getElementById('sectionCompleteNextBtn').textContent = coursePart === 1 ? 'Back to menu' : (part2Order.indexOf(coursePhase) < part2Order.length - 1 ? 'Next section' : 'Back to menu');
+      } else {
+        document.getElementById('resultScreen').classList.remove('hidden');
+        document.getElementById('resultScore').textContent = `Score: ${score} / ${currentQuestions.length}`;
+        document.getElementById('ruleSummary').textContent = summary;
+        document.getElementById('retryWrongBtn').classList.toggle('hidden', wrongIndices.length === 0);
+        document.getElementById('exportWrongBtn').classList.toggle('hidden', wrongIndices.length === 0);
+      }
+    }
+
+    function retryWrong() {
+      const toRetry = wrongIndices.map(i => currentQuestions[i]);
+      currentQuestions = toRetry;
+      currentIndex = 0;
+      score = 0;
+      wrongIndices = [];
+      isRetryRound = true;
+      document.getElementById('resultScreen').classList.add('hidden');
+      document.getElementById('quizScreen').classList.remove('hidden');
+      document.getElementById('exitQuizBtn').textContent = 'Exit quiz';
+      showQuestion();
+    }
+
+    function exportWrong() {
+      const lines = [
+        'Wrong answers – ' + currentSetTitle,
+        'Generated: ' + new Date().toLocaleString(),
+        '',
+      ];
+      wrongIndices.forEach(i => {
+        const q = currentQuestions[i];
+        const correct = q.type === 'mc' ? (q.options && q.options[q.correct_option]) : (q.answers && q.answers[0]);
+        lines.push('---');
+        lines.push('Q: ' + (q.question || q.prompt || '').replace(/\n/g, ' '));
+        lines.push('Correct: ' + correct);
+        lines.push('Explanation: ' + (q.explanation || ''));
+        lines.push('');
+      });
+      const blob = new Blob([lines.join('\n')], { type: 'text/plain' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'review_wrong_answers.txt';
+      a.click();
+      URL.revokeObjectURL(a.href);
+    }
+
+    function renderProgressScreen() {
+      const stats = getProgressStats();
+      const statsEl = document.getElementById('progressStats');
+      statsEl.innerHTML = '';
+      if (stats.total === 0) {
+        statsEl.innerHTML = '<p>No quizzes yet. Complete a quiz to see your progress here.</p>';
+      } else {
+        statsEl.innerHTML =
+          '<div><span>' + stats.total + '</span> quiz(zes) completed</div>' +
+          '<div>Average score: <span>' + stats.avg + '%</span></div>' +
+          '<div>This week: <span>' + stats.thisWeek + '</span> quiz(zes)</div>' +
+          (stats.streak > 0 ? '<div>Current streak (80%+): <span>' + stats.streak + '</span></div>' : '');
+      }
+
+      const history = (loadScores().history || []).slice(-10).reverse();
+      const recentEl = document.getElementById('recentHistory');
+      if (history.length === 0) {
+        recentEl.innerHTML = '<p class="history-line">No history yet.</p>';
+      } else {
+        recentEl.innerHTML = history.map(e => {
+          const d = new Date(e.date);
+          const dateStr = d.toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
+          const pct = Math.round((100 * e.score) / e.total);
+          return '<div class="history-line">' + dateStr + ' – ' + (e.set_title || e.set_id) + ' – ' + e.score + '/' + e.total + ' (' + pct + '%)</div>';
+        }).join('');
+      }
+
+      const ids = Object.keys(setsData);
+      const bestEl = document.getElementById('bestBySet');
+      let bestHtml = '';
+      ids.forEach(id => {
+        const lb = getLastBest(id);
+        if (lb.best) bestHtml += '<div class="history-line">' + (setsData[id].title || id) + ': <span>' + lb.best[0] + '/' + lb.best[1] + '</span></div>';
+      });
+      const allBest = getLastBest('all');
+      if (allBest.best) bestHtml += '<div class="history-line">All sets: <span>' + allBest.best[0] + '/' + allBest.best[1] + '</span></div>';
+      const weakBest = getLastBest('weakspots');
+      if (weakBest.best) bestHtml += '<div class="history-line">Practice weak spots: <span>' + weakBest.best[0] + '/' + weakBest.best[1] + '</span></div>';
+      bestEl.innerHTML = bestHtml || '<p class="history-line">No best scores yet.</p>';
+
+      const weak = getWeakSpotQuestions();
+      const memListEl = document.getElementById('memoryBankList');
+      if (weak.length === 0) {
+        memListEl.innerHTML = '<p>No questions in your memory bank yet. Wrong answers from quizzes will appear here.</p>';
+        document.getElementById('practiceWeakBtn').classList.add('hidden');
+      } else {
+        memListEl.innerHTML = '<p><strong>' + weak.length + ' question(s)</strong> you\'ve got wrong before. Use "Practice weak spots" to drill them.</p>';
+        document.getElementById('practiceWeakBtn').classList.remove('hidden');
+      }
+    }
+
+    function showProgressTab() {
+      document.getElementById('menuQuiz').classList.add('hidden');
+      document.getElementById('progressScreen').classList.remove('hidden');
+      document.getElementById('tabQuiz').classList.remove('active');
+      document.getElementById('tabProgress').classList.add('active');
+      renderProgressScreen();
+    }
+
+    function showQuizTab() {
+      document.getElementById('progressScreen').classList.add('hidden');
+      document.getElementById('menuQuiz').classList.remove('hidden');
+      document.getElementById('tabProgress').classList.remove('active');
+      document.getElementById('tabQuiz').classList.add('active');
+    }
+
+    document.getElementById('startBtn').addEventListener('click', startQuiz);
+    document.getElementById('startPart1Btn').addEventListener('click', startPart1);
+    document.getElementById('startPart2Btn').addEventListener('click', startPart2);
+    document.getElementById('introNextBtn').addEventListener('click', () => {
+      if (introSectionIndex < (courseCurriculum?.intro?.sections?.length || 1) - 1) {
+        showIntroSection(introSectionIndex + 1);
+      } else {
+        document.getElementById('introScreen').classList.add('hidden');
+        if (coursePart === 1) startCourseSection('check');
+      }
+    });
+    document.getElementById('sectionCompleteNextBtn').addEventListener('click', advanceCourseToNext);
+    document.getElementById('submitBtn').addEventListener('click', submitAnswer);
+    document.getElementById('nextBtn').addEventListener('click', nextQuestion);
+    document.getElementById('retryWrongBtn').addEventListener('click', retryWrong);
+    document.getElementById('exportWrongBtn').addEventListener('click', exportWrong);
+    document.getElementById('backToMenuBtn').addEventListener('click', renderMenu);
+    document.getElementById('exitQuizBtn').addEventListener('click', renderMenu);
+    document.getElementById('introExitBtn').addEventListener('click', renderMenu);
+    document.getElementById('viewPrepositionsListBtn').addEventListener('click', () => showPrepositionsList('menu'));
+    document.getElementById('viewPrepositionsListFromIntroBtn').addEventListener('click', () => showPrepositionsList('intro'));
+    document.getElementById('prepositionsListBackBtn').addEventListener('click', hidePrepositionsList);
+    document.getElementById('prepositionsListPrintBtn').addEventListener('click', () => window.print());
+    document.getElementById('prepositionsListDownloadBtn').addEventListener('click', () => {
+      if (!prepositionsListData) return;
+      const text = prepositionsListAsText(prepositionsListData);
+      const blob = new Blob([text], { type: 'text/plain' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'prepositions_list.txt';
+      a.click();
+      URL.revokeObjectURL(a.href);
+    });
+    document.getElementById('openInput').addEventListener('keydown', e => { if (e.key === 'Enter') submitAnswer(); });
+
+    document.getElementById('tabProgress').addEventListener('click', showProgressTab);
+    document.getElementById('tabQuiz').addEventListener('click', showQuizTab);
+    document.getElementById('backFromProgressBtn').addEventListener('click', showQuizTab);
+    document.getElementById('practiceWeakBtn').addEventListener('click', () => {
+      showQuizTab();
+      const select = document.getElementById('setSelect');
+      if (select.querySelector('option[value="weakspots"]')) {
+        select.value = 'weakspots';
+        startQuiz();
+      }
+    });
+    document.getElementById('setSelect').addEventListener('change', () => {
+      const selVal = document.getElementById('setSelect').value;
+      const summaryEl = document.getElementById('scoresSummary');
+      if (selVal === 'weakspots') {
+        const weakSpots = getWeakSpotQuestions();
+        summaryEl.textContent = weakSpots.length + ' questions you\'ve got wrong before – practise them to improve.';
+      } else {
+        const lastBest = getLastBest(selVal);
+        if (lastBest.last) {
+          summaryEl.textContent = 'Last: ' + lastBest.last[0] + '/' + lastBest.last[1] +
+            (lastBest.best && (lastBest.best[0] !== lastBest.last[0] || lastBest.best[1] !== lastBest.last[1]) ? '  •  Best: ' + lastBest.best[0] + '/' + lastBest.best[1] : '');
+        } else summaryEl.textContent = '';
+      }
+    });
+    document.getElementById('topicSelect').addEventListener('change', () => {
+      const idx = parseInt(document.getElementById('topicSelect').value, 10);
+      if (topics[idx] != null) {
+        currentTopic = topics[idx];
+        applyTopic();
+        renderMenu();
+      }
+    });
+
+    (async function init() {
+      try {
+        const mRes = await fetch(new URL('manifest.json?v=2', getBaseUrl()));
+        if (mRes.ok) {
+          const mData = await mRes.json();
+          topics = mData.topics || [];
+          if (topics.length > 0) {
+            currentTopic = topics[0];
+            document.getElementById('topicLabel').classList.remove('hidden');
+            document.getElementById('topicSelect').classList.remove('hidden');
+            const sel = document.getElementById('topicSelect');
+            sel.innerHTML = '';
+            topics.forEach((t, i) => {
+              const opt = document.createElement('option');
+              opt.value = i;
+              opt.textContent = t.title || t.id;
+              sel.appendChild(opt);
+            });
+          }
+        }
+        await loadQuestions();
+        renderMenu();
+      } catch (err) {
+        topics = [
+          { id: 'present_perfect', title: 'Present Perfect Simple vs Continuous', curriculum: 'curriculum.json', questions_key: 'sets' },
+          { id: 'past_simple_present_perfect', title: 'Past Simple vs Present Perfect', curriculum: 'curriculum_past_simple_present_perfect.json', questions_key: 'past_simple_present_perfect' },
+          { id: 'prepositions', title: 'Prepositions', curriculum: 'curriculum_prepositions.json', questions_key: 'prepositions' },
+          { id: 'relative_pronouns', title: 'Relative pronouns', curriculum: 'curriculum_relative_pronouns.json', questions_key: 'relative_pronouns' },
+          { id: 'will_going_to', title: 'Will and going to', curriculum: 'curriculum_will_going_to.json', questions_key: 'will_going_to' },
+          { id: 'infinitive_ing', title: 'Infinitive and -ing form', curriculum: 'curriculum_infinitive_ing.json', questions_key: 'infinitive_ing' },
+          { id: 'spelling', title: 'Spelling', curriculum: 'curriculum_spelling.json', questions_key: 'spelling' },
+          { id: 'comparatives', title: 'Comparatives and Superlatives', curriculum: 'curriculum_comparatives.json', questions_key: 'comparatives' }
+        ];
+        currentTopic = topics[0];
+        document.getElementById('topicLabel').classList.remove('hidden');
+        document.getElementById('topicSelect').classList.remove('hidden');
+        const sel = document.getElementById('topicSelect');
+        sel.innerHTML = '';
+        topics.forEach((t, i) => {
+          const opt = document.createElement('option');
+          opt.value = i;
+          opt.textContent = t.title || t.id;
+          sel.appendChild(opt);
+        });
+        document.getElementById('scoresSummary').textContent = 'Could not load manifest.json (e.g. opened as file). Topic list loaded from fallback. Run from a local server for best results.';
+        await loadQuestions().catch(() => {});
+        renderMenu();
+      }
+    })();
+  </script>
+</body>
+</html>
