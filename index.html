@@ -335,7 +335,7 @@
     }
 
     async function loadQuestions() {
-      const res = await fetch(new URL('questions.json?v=2', getBaseUrl()));
+      const res = await fetch(new URL('questions.json?v=3', getBaseUrl()));
       if (!res.ok) throw new Error('Could not load questions.json');
       allQuestionsData = await res.json();
       setsData = allQuestionsData[currentTopic.questions_key] || allQuestionsData.sets || {};
@@ -569,7 +569,7 @@
 
     async function startPart1() {
       try {
-        const res = await fetch(new URL(currentTopic.curriculum + '?v=2', getBaseUrl()));
+        const res = await fetch(new URL(currentTopic.curriculum + '?v=3', getBaseUrl()));
         if (!res.ok) throw new Error('Could not load ' + currentTopic.curriculum);
         courseCurriculum = await res.json();
       } catch (e) {
@@ -585,7 +585,7 @@
 
     async function startPart2() {
       try {
-        const res = await fetch(new URL(currentTopic.curriculum + '?v=2', getBaseUrl()));
+        const res = await fetch(new URL(currentTopic.curriculum + '?v=3', getBaseUrl()));
         if (!res.ok) throw new Error('Could not load ' + currentTopic.curriculum);
         courseCurriculum = await res.json();
       } catch (e) {
