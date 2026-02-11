@@ -51,10 +51,10 @@
       },
       {
         "type": "mc",
-        "question": "'I remember _____ the door.' (I didn't forget to lock it.) Which fits?",
+        "question": "'I remember _____ the door.' (I recall doing it.) Which fits?",
         "options": {"a": "to lock", "b": "locking", "c": "lock", "d": "to locking"},
-        "correct_option": "a",
-        "explanation": "Remember to do = don't forget (future action). Remember doing = recall past."
+        "correct_option": "b",
+        "explanation": "Remember doing = recall a past action. Remember to do = not forget to do something."
       },
       {
         "type": "mc",
