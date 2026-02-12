@@ -1,0 +1,113 @@
+{
+  "intro": {
+    "title": "Conditionals (zero, first, second, third)",
+    "sections": [
+      {
+        "title": "What are conditionals?",
+        "content": "**Conditionals** are sentences with an **if-clause** (condition) and a **main clause** (result). The tenses we use depend on how **real** or **unreal** the situation is.\n\n• **Zero:** general truths, facts (always true)\n• **First:** real future (possible)\n• **Second:** unreal or hypothetical present/future\n• **Third:** unreal past (something that did not happen)"
+      },
+      {
+        "title": "Zero conditional",
+        "content": "**If + present simple**, **present simple** (in both clauses).\n\nUsed for **general truths**, **facts**, **scientific facts**, **habits**:\n\n• If you **heat** ice, it **melts**.\n• If you **mix** red and blue, you **get** purple.\n• If I **don't sleep** well, I **feel** tired.\n\n**When** can replace **if** when we mean \"whenever\": When you heat water to 100°C, it boils."
+      },
+      {
+        "title": "First conditional",
+        "content": "**If + present simple**, **will + base verb** (or other future forms: going to, can, must, imperative).\n\nUsed for **real future** situations – possible or likely:\n\n• If it **rains** tomorrow, I **will stay** at home.\n• If you **finish** early, **call** me. (imperative)\n• If we **don't hurry**, we **will miss** the bus.\n\nWe do **not** use **will** in the if-clause: Wrong: *If I will see him …* Right: **If I see him**, I will tell him."
+      },
+      {
+        "title": "Second conditional",
+        "content": "**If + past simple**, **would + base verb**.\n\nUsed for **unreal** or **hypothetical** present or future – imagined, unlikely or impossible:\n\n• If I **had** more time, I **would help** you. (I don't have more time.)\n• If I **were** you, I **would apologise**. (I'm not you; *were* is used for all persons in formal style.)\n• If we **won** the lottery, we **would travel** the world. (Unlikely.)\n\n**Could** and **might** are also possible: If he tried harder, he **could** pass. We do **not** use **would** in the if-clause: Wrong: *If I would have time …* Right: **If I had** time …"
+      },
+      {
+        "title": "Third conditional",
+        "content": "**If + past perfect**, **would have + past participle**.\n\nUsed for **unreal past** – something that **did not happen** (we imagine a different past):\n\n• If I **had known**, I **would have told** you. (I didn't know.)\n• If she **had left** earlier, she **would have caught** the train. (She didn't leave earlier.)\n• If they **hadn't missed** the flight, they **would have arrived** on time.\n\nWe do **not** use **would have** in the if-clause: Wrong: *If I would have known …* Right: **If I had known** …"
+      },
+      {
+        "title": "Quick summary",
+        "content": "• **Zero:** if + present, present → facts, general truths (If you heat ice, it melts.)\n• **First:** if + present, will + base → real future (If it rains, I will stay home.)\n• **Second:** if + past, would + base → unreal present/future (If I had time, I would help.)\n• **Third:** if + past perfect, would have + past participle → unreal past (If I had known, I would have told you.)\n• Never use **will** or **would** in the **if-clause** (only in the main clause for first/second/third)."
+      },
+      {
+        "title": "Typical learner errors",
+        "content": "• **Will in if-clause:** Wrong: *If I will see him, I'll tell him.* Right: **If I see him**, I'll tell him. (First conditional: present in if-clause.)\n• **Would in if-clause (second):** Wrong: *If I would have time, I would help.* Right: **If I had time**, I would help.\n• **Would have in if-clause (third):** Wrong: *If I would have known, I would have come.* Right: **If I had known**, I would have come.\n• **Mixing second and third:** Wrong: *If I had known, I would tell you.* (Past condition, but present result – use third: **I would have told** you.)\n• **Was vs were (second):** In formal style we use **If I were**, **if he were** (subjunctive). In informal speech **was** is common: If I was/were you …"
+      }
+    ]
+  },
+  "check": {
+    "title": "Test your understanding",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "Which type of conditional is: 'If you heat water to 100°C, it boils.'?",
+        "options": {"a": "Zero", "b": "First", "c": "Second", "d": "Third"},
+        "correct_option": "a",
+        "explanation": "Zero conditional: present + present for general/scientific facts."
+      },
+      {
+        "type": "mc",
+        "question": "Choose the correct first conditional.",
+        "options": {"a": "If it will rain, we will stay at home.", "b": "If it rained, we would stay at home.", "c": "If it rains, we will stay at home.", "d": "If it rains, we would stay at home."},
+        "correct_option": "c",
+        "explanation": "First conditional: if + present, will + base. No 'will' in the if-clause."
+      },
+      {
+        "type": "mc",
+        "question": "'If I _____ you, I would apologise.' (Second conditional)",
+        "options": {"a": "am", "b": "was", "c": "would be", "d": "were"},
+        "correct_option": "d",
+        "explanation": "Second conditional: if + past. 'Were' is used for all persons in formal style (subjunctive)."
+      },
+      {
+        "type": "mc",
+        "question": "Which is a third conditional?",
+        "options": {"a": "If I know, I will tell you.", "b": "If I had known, I would tell you.", "c": "If I knew, I would have told you.", "d": "If I had known, I would have told you."},
+        "correct_option": "d",
+        "explanation": "Third conditional: if + past perfect, would have + past participle (unreal past)."
+      },
+      {
+        "type": "mc",
+        "question": "What is wrong? 'If I would have time, I would help you.'",
+        "options": {"a": "We must use 'had' in the if-clause, not 'would have'.", "b": "We must use 'will' in the main clause.", "c": "We must use past perfect in both clauses.", "d": "Nothing; the sentence is correct."},
+        "correct_option": "a",
+        "explanation": "Second conditional: if-clause uses past simple (if I had time), not would have."
+      },
+      {
+        "type": "mc",
+        "question": "'If she _____ earlier, she would have caught the train.' (Third conditional)",
+        "options": {"a": "left", "b": "would leave", "c": "had left", "d": "would have left"},
+        "correct_option": "c",
+        "explanation": "Third conditional: if + past perfect (had left)."
+      }
+    ]
+  },
+  "practice_order": ["gapfill", "errorcorrection"],
+  "practice": {
+    "gapfill": {
+      "title": "Practice: Conditionals (gap fill)",
+      "questions": [
+        {"type": "open", "question": "Zero: If you heat ice, it _____.", "answers": ["melts"], "explanation": "Zero conditional: present + present for facts."},
+        {"type": "open", "question": "First: If it _____ tomorrow, we will stay at home.", "answers": ["rains"], "explanation": "First: if + present (rains), will in main clause."},
+        {"type": "open", "question": "Second: If I _____ (have) more time, I would help you.", "answers": ["had"], "explanation": "Second conditional: if + past simple."},
+        {"type": "open", "question": "Second: If I were you, I _____ (apologise).", "answers": ["would apologise"], "explanation": "Second: would + base in main clause."},
+        {"type": "open", "question": "Third: If I _____ (know), I would have told you.", "answers": ["had known"], "explanation": "Third conditional: if + past perfect."},
+        {"type": "open", "question": "Third: If she had left earlier, she _____ (catch) the train.", "answers": ["would have caught"], "explanation": "Third: would have + past participle in main clause."},
+        {"type": "open", "question": "First: If you _____ early, call me.", "answers": ["finish"], "explanation": "First: if + present; main clause can be imperative."},
+        {"type": "open", "question": "Zero: If you don't sleep well, you _____ tired.", "answers": ["feel"], "explanation": "Zero: present in both clauses."},
+        {"type": "open", "question": "Second: If we _____ (win) the lottery, we would travel the world.", "answers": ["won"], "explanation": "Second: if + past simple (won, not would win)."},
+        {"type": "open", "question": "Third: If they hadn't missed the flight, they _____ (arrive) on time.", "answers": ["would have arrived"], "explanation": "Third: would have + past participle."}
+      ]
+    },
+    "errorcorrection": {
+      "title": "Practice: Correct the conditional",
+      "questions": [
+        {"type": "open", "question": "Wrong: 'If I will see him, I'll tell him.' Correct the sentence.", "answers": ["If I see him, I'll tell him.", "If I see him, I'll tell him"], "explanation": "First conditional: no 'will' in the if-clause; use present."},
+        {"type": "open", "question": "Wrong: 'If I would have time, I would help.' Correct the sentence.", "answers": ["If I had time, I would help.", "If I had time, I would help"], "explanation": "Second conditional: if-clause uses past simple (had), not would have."},
+        {"type": "open", "question": "Wrong: 'If I would have known, I would have come.' Correct the sentence.", "answers": ["If I had known, I would have come.", "If I had known, I would have come"], "explanation": "Third conditional: if-clause uses past perfect (had known), not would have."},
+        {"type": "open", "question": "Wrong: 'If I had known, I would tell you.' (Meaning: I didn't know, so I didn't tell.) Correct the sentence.", "answers": ["If I had known, I would have told you.", "If I had known, I would have told you"], "explanation": "Third conditional: both clauses refer to the past – would have told."},
+        {"type": "open", "question": "Wrong: 'If it will rain, we will stay at home.' Correct the sentence.", "answers": ["If it rains, we will stay at home.", "If it rains, we will stay at home"], "explanation": "First conditional: present in if-clause (if it rains)."},
+        {"type": "open", "question": "Wrong: 'If she had left earlier, she would catch the train.' Correct the sentence.", "answers": ["If she had left earlier, she would have caught the train.", "If she had left earlier, she would have caught the train"], "explanation": "Third conditional: main clause needs would have + past participle."},
+        {"type": "open", "question": "Wrong: 'If you heat water to 100°C, it will boil.' (General fact.) Correct to zero conditional.", "answers": ["If you heat water to 100°C, it boils.", "If you heat water to 100°C, it boils"], "explanation": "Zero conditional for general truth: present + present (it boils)."},
+        {"type": "open", "question": "Wrong: 'If he would try harder, he could pass.' Correct the sentence.", "answers": ["If he tried harder, he could pass.", "If he tried harder, he could pass"], "explanation": "Second conditional: if-clause uses past simple (tried), not would try."}
+      ]
+    }
+  }
+}

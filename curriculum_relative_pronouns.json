@@ -11,12 +11,20 @@
         "content": "• **Who** (or **that**) – for people: the man who/that I saw.\n• **Which** or **that** – for things: the book which/that I read.\n• **Where** – for places: the town where I grew up. (Or: the town that/which I grew up in.)\n• **When** – for time: the day when we met. (Or: the day that we met.)\n• **Whose** – for possession: the girl whose bike was stolen.\n\nIn defining relative clauses we can often omit the pronoun when it is the object: The book (that) I read was good."
       },
       {
+        "title": "That vs which: when to use each",
+        "content": "**Defining (restrictive) vs non-defining (non-restrictive)**\n\n• **Defining clause** – essential to say which person or thing we mean. No comma.\n  – The book **that/which** I lent you is on the table. (We need the clause to know which book.)\n  – The house **that** was damaged has been repaired. (Which house? The one that was damaged.)\n\n• **Non-defining clause** – extra information; we could remove it and the sentence still makes sense. **Comma before (and often after)**. Use **which** for things, **who** for people. **Do not use that.**\n  – This book, **which** I bought yesterday, is very good. (We already know which book; the clause just adds info.)\n  – Prague, **which** is the capital of the Czech Republic, has a beautiful centre.\n\n**When to use that:**\n• For **things** (and sometimes people) in **defining** clauses only: The car that broke down was old. The man that I saw left.\n• After words like **everything, something, anything, all**: Everything **that** he said was true. (We usually use **that**, not which, here.)\n• **That** cannot be used in non-defining clauses (with a comma). Wrong: *Prague, that is the capital, ...* Right: **Prague, which is the capital, ...**\n\n**When to use which:**\n• For **things** in both defining and non-defining clauses.\n• In **non-defining** clauses (with comma) we use **which** only: The report, **which** was finished yesterday, is on your desk.\n• In defining clauses (no comma) both **that** and **which** are correct in British English; in American English **that** is often preferred for defining.\n\n**Quick rule:** No comma → **that** or **which** for things. Comma (extra info) → **which** only, never **that**."
+      },
+      {
+        "title": "Typical mistakes: that and which (Czech learners)",
+        "content": "**Confusion between that and which**\n\n• **Using which for people:** Wrong: *The woman which lives next door.* Right: **The woman who/that lives next door.** (**Which** is for things only; for people use **who** or **that**.)\n\n• **Using that in a non-defining clause (with comma):** Wrong: *Prague, that is the capital of the Czech Republic, is beautiful.* Right: **Prague, which is the capital of the Czech Republic, is beautiful.** (After a comma we use **which** for things, not **that**.)\n\n• **Using which when that is better (after everything/something/anything):** We usually use **that** (or omit): Everything **that** he said was true. Something **(that)** I need to tell you. (**Which** is possible but **that** is more natural here.)\n\n• **Forgetting the comma when you add extra information:** If the clause is extra (non-defining), you must use commas: My car, **which** is ten years old, still works well. (Not: My car which is ten years old – that would suggest you have more than one car and define which one.)\n\n• **Thinking they are always interchangeable:** In defining clauses (no comma) for things, yes – that or which. But in non-defining (with comma) only **which**. And **which** is never used for people – use **who** or **that**.\n\n**Summary:** People → **who** or **that**, never **which**. Things, no comma → **that** or **which**. Things, with comma (extra info) → **which** only."
+      },
+      {
         "title": "Common mistake: using 'what' as a relative pronoun",
         "content": "In Czech, 'co' is used as a relative pronoun in many sentences. In English we do **not** use **what** after a noun to mean 'which' or 'that'.\n\nWrong (Czech-style):\n• The book **what** I read was good.\n• The man **what** I saw left.\n• The house **what** I was born in is old.\n\nCorrect:\n• The book **that/which** I read was good.\n• The man **who/that** I saw left.\n• The house **where** I was born is old. (or: the house **that/which** I was born in)\n\n**What** in English is used differently: it means 'the thing(s) that' and does not refer back to a noun. Example: **What** I need is a holiday. ( = The thing that I need is a holiday.)"
       },
       {
         "title": "Summary for Czech learners",
-        "content": "• Never use **what** after a noun to introduce a relative clause. Use **which** or **that** for things, **who** or **that** for people, **where** for places, **when** for time.\n• The book what I read → The book **that/which** I read.\n• The person what I met → The person **who/that** I met.\n• The place what I live → The place **where** I live (or **that/which** I live in).\n• Use **what** only when it means 'the thing that' and starts a clause: What I said was true."
+        "content": "• Never use **what** after a noun to introduce a relative clause. Use **which** or **that** for things, **who** or **that** for people, **where** for places, **when** for time.\n• **That vs which:** People → **who** or **that** (never **which**). Things with no comma → **that** or **which**. Things with a comma (extra info) → **which** only.\n• The book what I read → The book **that/which** I read.\n• The person what I met → The person **who/that** I met.\n• The place what I live → The place **where** I live (or **that/which** I live in).\n• Use **what** only when it means 'the thing that' and starts a clause: What I said was true."
       }
     ]
   },
@@ -26,36 +34,36 @@
       {
         "type": "mc",
         "question": "Which is correct?",
-        "options": {"a": "The book what I read was interesting.", "b": "The book that I read was interesting.", "c": "The book what I read it was interesting.", "d": "The book I read what was interesting."},
-        "correct_option": "b",
+        "options": {"a": "The book that I read was interesting.", "b": "The book what I read was interesting.", "c": "The book what I read it was interesting.", "d": "The book I read what was interesting."},
+        "correct_option": "a",
         "explanation": "We use **that** or **which** for things in a relative clause, not **what**."
       },
       {
         "type": "mc",
         "question": "Which is correct?",
-        "options": {"a": "The woman what lives next door is a doctor.", "b": "The woman who lives next door is a doctor.", "c": "The woman what she lives next door is a doctor.", "d": "The woman which lives next door is a doctor."},
-        "correct_option": "b",
+        "options": {"a": "The woman what lives next door is a doctor.", "b": "The woman what she lives next door is a doctor.", "c": "The woman who lives next door is a doctor.", "d": "The woman which lives next door is a doctor."},
+        "correct_option": "c",
         "explanation": "We use **who** (or **that**) for people, not **what** or **which**."
       },
       {
         "type": "mc",
         "question": "Which is correct?",
-        "options": {"a": "This is the town what I was born.", "b": "This is the town where I was born.", "c": "This is the town what I was born in.", "d": "This is the town who I was born."},
-        "correct_option": "b",
+        "options": {"a": "This is the town what I was born.", "b": "This is the town what I was born in.", "c": "This is the town who I was born.", "d": "This is the town where I was born."},
+        "correct_option": "d",
         "explanation": "For places we use **where** (or 'the town that/which I was born in'), not **what**."
       },
       {
         "type": "mc",
         "question": "When is 'what' correct in a relative sense?",
-        "options": {"a": "The film what we saw was good.", "b": "What I need is more time.", "c": "The thing what I said was wrong.", "d": "The person what helped me left."},
-        "correct_option": "b",
+        "options": {"a": "What I need is more time.", "b": "The film what we saw was good.", "c": "The thing what I said was wrong.", "d": "The person what helped me left."},
+        "correct_option": "a",
         "explanation": "**What** means 'the thing(s) that' and starts its own clause (What I need = The thing that I need). We don't use **what** after a noun."
       },
       {
         "type": "mc",
         "question": "Which is correct?",
-        "options": {"a": "The day what we met was sunny.", "b": "The day when we met was sunny.", "c": "The day what we met on was sunny.", "d": "The day who we met was sunny."},
-        "correct_option": "b",
+        "options": {"a": "The day what we met was sunny.", "b": "The day what we met on was sunny.", "c": "The day when we met was sunny.", "d": "The day who we met was sunny."},
+        "correct_option": "c",
         "explanation": "For time we use **when** (or 'the day that we met'), not **what**."
       }
     ]

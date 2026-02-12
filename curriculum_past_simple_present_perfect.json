@@ -30,29 +30,29 @@
       {
         "type": "mc",
         "question": "Which sentence is correct?",
-        "options": {"a": "I have seen him yesterday.", "b": "I saw him yesterday.", "c": "I have seen him when?", "d": "I saw him ever."},
-        "correct_option": "b",
+        "options": {"a": "I saw him yesterday.", "b": "I have seen him yesterday.", "c": "I have seen him when?", "d": "I saw him ever."},
+        "correct_option": "a",
         "explanation": "Yesterday is a finished past time → past simple."
       },
       {
         "type": "mc",
         "question": "We want to ask about life experience (no specific time). Which is natural?",
-        "options": {"a": "Did you ever go to Paris?", "b": "Have you ever been to Paris?", "c": "Do you ever go to Paris?", "d": "Were you ever in Paris?"},
-        "correct_option": "b",
+        "options": {"a": "Did you ever go to Paris?", "b": "Do you ever go to Paris?", "c": "Have you ever been to Paris?", "d": "Were you ever in Paris?"},
+        "correct_option": "c",
         "explanation": "Ever (life experience) → present perfect."
       },
       {
         "type": "mc",
         "question": "She moved here in 2020 and still lives here. Which is correct?",
-        "options": {"a": "She lived here since 2020.", "b": "She has lived here since 2020.", "c": "She lives here since 2020.", "d": "She has lived here in 2020."},
-        "correct_option": "b",
+        "options": {"a": "She lived here since 2020.", "b": "She lives here since 2020.", "c": "She has lived here in 2020.", "d": "She has lived here since 2020."},
+        "correct_option": "d",
         "explanation": "Since + duration up to now → present perfect."
       },
       {
         "type": "mc",
         "question": "We want to know when something happened. Which is natural?",
-        "options": {"a": "When have you left?", "b": "When did you leave?", "c": "When do you leave?", "d": "When have you been leaving?"},
-        "correct_option": "b",
+        "options": {"a": "When have you left?", "b": "When do you leave?", "c": "When have you been leaving?", "d": "When did you leave?"},
+        "correct_option": "d",
         "explanation": "When (specific past time) → past simple."
       }
     ]

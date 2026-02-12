@@ -34,43 +34,43 @@
       {
         "type": "mc",
         "question": "'At 5 o'clock' – what type of preposition is 'at' here?",
-        "options": {"a": "Place (point)", "b": "Time", "c": "Movement", "d": "Direction"},
-        "correct_option": "b",
+        "options": {"a": "Time", "b": "Place (point)", "c": "Movement", "d": "Direction"},
+        "correct_option": "a",
         "explanation": "'At' with a clock time is a time preposition."
       },
       {
         "type": "mc",
         "question": "'The picture is on the wall.' – What does 'on' express?",
-        "options": {"a": "Time", "b": "Place (surface/line)", "c": "Movement", "d": "Direction"},
-        "correct_option": "b",
+        "options": {"a": "Time", "b": "Movement", "c": "Place (surface/line)", "d": "Direction"},
+        "correct_option": "c",
         "explanation": "'On' with a surface (wall) is place – something on a line or surface."
       },
       {
         "type": "mc",
         "question": "Which preposition often goes with enclosed spaces (room, box, city)?",
-        "options": {"a": "at", "b": "on", "c": "in", "d": "to"},
-        "correct_option": "c",
+        "options": {"a": "at", "b": "on", "c": "to", "d": "in"},
+        "correct_option": "d",
         "explanation": "'In' is used for enclosed spaces: in the room, in the box, in London."
       },
       {
         "type": "mc",
         "question": "The keys are ____ the box.",
-        "options": {"a": "at", "b": "on", "c": "in", "d": "to"},
-        "correct_option": "c",
+        "options": {"a": "in", "b": "at", "c": "on", "d": "to"},
+        "correct_option": "a",
         "explanation": "Inside a space → in."
       },
       {
         "type": "mc",
         "question": "The picture is ____ the wall.",
-        "options": {"a": "in", "b": "on", "c": "at", "d": "by"},
-        "correct_option": "b",
+        "options": {"a": "in", "b": "at", "c": "on", "d": "by"},
+        "correct_option": "c",
         "explanation": "On a surface → on."
       },
       {
         "type": "mc",
         "question": "We'll meet ____ the bus stop.",
-        "options": {"a": "in", "b": "on", "c": "at", "d": "for"},
-        "correct_option": "c",
+        "options": {"a": "at", "b": "in", "c": "on", "d": "for"},
+        "correct_option": "a",
         "explanation": "At a point or place → at."
       }
     ]

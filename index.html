@@ -68,7 +68,9 @@
     .option.selected { border-color: var(--accent); background: rgba(100, 149, 237, 0.2); }
     .option.correct { border-color: var(--correct); background: rgba(158, 206, 106, 0.15); }
     .option.wrong { border-color: var(--wrong); background: rgba(247, 118, 142, 0.15); }
-    .explanation { margin-top: 0.75rem; padding: 0.75rem; background: var(--bg); border-radius: var(--radius); font-size: 0.9rem; color: var(--muted); }
+    .explanation { margin-top: 0.75rem; padding: 0.75rem; background: var(--bg); border-radius: var(--radius); font-size: 0.9rem; color: var(--text); }
+    .correct-answer-line { margin: 0.5rem 0 0; padding: 0.5rem; background: rgba(158, 206, 106, 0.12); border-radius: var(--radius); color: var(--text); font-size: 0.95rem; }
+    .explanation-label { margin: 0.5rem 0 0; font-weight: 600; font-size: 0.9rem; color: var(--text); }
     .result-ok { color: var(--correct); }
     .result-fail { color: var(--wrong); }
     .progress { margin-bottom: 1rem; color: var(--muted); font-size: 0.9rem; }
@@ -115,12 +117,19 @@
       </div>
       <div id="menuQuiz">
         <div class="scores" id="scoresSummary"></div>
+        <p style="margin-bottom: 0.5rem; color: var(--muted); font-size: 0.9rem;">Mixed cloze: find weak areas, then revise by topic.</p>
+        <div class="actions" style="margin-bottom: 1rem;">
+          <button type="button" id="startDiagnosticBtn" class="secondary">Diagnostic test</button>
+          <button type="button" id="startMixedPracticeBtn" class="secondary">Mixed cloze practice</button>
+        </div>
+        <hr style="border: none; border-top: 1px solid var(--muted); margin: 1rem 0;" />
         <label for="topicSelect" id="topicLabel" class="hidden">Topic</label>
         <select id="topicSelect" class="hidden" style="margin-bottom: 0.5rem;"></select>
         <p style="margin-bottom: 0.5rem; color: var(--muted); font-size: 0.9rem;">Part 1: Intro, rules & test. Part 2: Practice. Part 3: Free practice.</p>
         <button type="button" id="startPart1Btn" class="secondary">Part 1: Intro, rules & test</button>
         <button type="button" id="startPart2Btn" class="secondary">Part 2: Practice</button>
         <button type="button" id="viewPrepositionsListBtn" class="secondary hidden">View preposition lists (print &amp; download)</button>
+        <button type="button" id="viewPhrasalVerbsDictionaryBtn" class="secondary hidden">View phrasal verb dictionary (print &amp; download)</button>
         <hr style="border: none; border-top: 1px solid var(--muted); margin: 1rem 0;" />
         <label for="setSelect">Part 3: Free practice – choose a set</label>
         <select id="setSelect"></select>
@@ -174,6 +183,9 @@
         <div id="introPrepositionsListWrap" class="hidden" style="margin-top: 0.75rem;">
           <button type="button" id="viewPrepositionsListFromIntroBtn" class="secondary">View preposition lists (print &amp; download)</button>
         </div>
+        <div id="introPhrasalVerbsWrap" class="hidden" style="margin-top: 0.75rem;">
+          <button type="button" id="viewPhrasalVerbsFromIntroBtn" class="secondary">View phrasal verb dictionary (top 50 + next 100)</button>
+        </div>
         <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 0.75rem;">
           <button type="button" id="introNextBtn">Next</button>
           <button type="button" id="introExitBtn" class="secondary">Back to menu</button>
@@ -194,6 +206,11 @@
         <h2 id="resultTitle">Quiz finished</h2>
         <p id="resultScore"></p>
         <div class="summary" id="ruleSummary"></div>
+        <div id="topicsToReviewBlock" class="hidden" style="margin-top: 1rem;">
+          <h3 style="font-size: 1rem; color: var(--accent); margin-bottom: 0.5rem;">Topics to review</h3>
+          <p style="font-size: 0.9rem; color: var(--muted); margin-bottom: 0.5rem;">You had errors in these areas. Choose a topic to revise the rules and practise.</p>
+          <div id="topicsToReviewList" class="actions"></div>
+        </div>
         <div class="actions">
           <button id="retryWrongBtn" class="secondary">Retry wrong answers</button>
           <button id="exportWrongBtn" class="secondary">Download wrong answers</button>
@@ -210,6 +227,17 @@
           <button type="button" id="prepositionsListPrintBtn" class="secondary">Print list</button>
           <button type="button" id="prepositionsListDownloadBtn" class="secondary">Download as text</button>
           <button type="button" id="prepositionsListBackBtn">Back</button>
+        </div>
+      </div>
+    </div>
+    <div id="phrasalVerbsDictionaryScreen" class="hidden no-print-hide">
+      <div class="card prepositions-list-card">
+        <h2 id="phrasalVerbsDictionaryTitle">Phrasal verb dictionary</h2>
+        <div id="phrasalVerbsDictionaryContent"></div>
+        <div class="actions" style="margin-top: 1rem;">
+          <button type="button" id="phrasalVerbsDictionaryPrintBtn" class="secondary">Print dictionary</button>
+          <button type="button" id="phrasalVerbsDictionaryDownloadBtn" class="secondary">Download as text</button>
+          <button type="button" id="phrasalVerbsDictionaryBackBtn">Back</button>
         </div>
       </div>
     </div>
@@ -236,9 +264,13 @@
     let introSectionIndex = 0;
     let prepositionsListData = null;
     let prepositionsListReturnTo = 'menu';
+    let phrasalVerbsDictionaryData = null;
+    let phrasalVerbsDictionaryReturnTo = 'menu';
     const COURSE_ORDER = ['check', 'gapfill', 'errorcorrection', 'makesentence', 'makequestion'];
     const PART2_ORDER = ['gapfill', 'errorcorrection', 'makesentence', 'makequestion'];
     let part2Order = PART2_ORDER;
+    let quizMode = 'normal';
+    let wrongTopics = new Set();
 
     function questionHash(q) {
       const s = (q.question || q.prompt || '').trim();
@@ -398,12 +430,19 @@
       document.getElementById('sectionCompleteScreen').classList.add('hidden');
       document.getElementById('progressScreen').classList.add('hidden');
       document.getElementById('prepositionsListScreen').classList.add('hidden');
+      document.getElementById('phrasalVerbsDictionaryScreen').classList.add('hidden');
       document.getElementById('menuQuiz').classList.remove('hidden');
       const prepositionsBtn = document.getElementById('viewPrepositionsListBtn');
       if (currentTopic && currentTopic.id === 'prepositions') {
         prepositionsBtn.classList.remove('hidden');
       } else {
         prepositionsBtn.classList.add('hidden');
+      }
+      const phrasalVerbsBtn = document.getElementById('viewPhrasalVerbsDictionaryBtn');
+      if (currentTopic && currentTopic.id === 'phrasal_verbs') {
+        phrasalVerbsBtn.classList.remove('hidden');
+      } else {
+        phrasalVerbsBtn.classList.add('hidden');
       }
     }
 
@@ -472,6 +511,74 @@
       }
     }
 
+    function renderPhrasalVerbsDictionaryContent(data) {
+      const title = data.title || 'Phrasal verb dictionary';
+      document.getElementById('phrasalVerbsDictionaryTitle').textContent = title;
+      const content = document.getElementById('phrasalVerbsDictionaryContent');
+      content.innerHTML = '';
+      const addSection = (label, arr) => {
+        if (!arr || !arr.length) return;
+        const h3 = document.createElement('h3');
+        h3.textContent = label;
+        content.appendChild(h3);
+        const list = document.createElement('div');
+        list.className = 'phrasal-verb-list';
+        arr.forEach(entry => {
+          const div = document.createElement('div');
+          div.className = 'phrasal-verb-entry';
+          div.style.marginBottom = '0.5rem';
+          div.innerHTML = '<strong>' + (entry.verb || '').replace(/&/g, '&amp;').replace(/</g, '&lt;') + '</strong> – ' + (entry.meaning || '').replace(/&/g, '&amp;').replace(/</g, '&lt;') + '. <span class="muted">' + (entry.example || '').replace(/&/g, '&amp;').replace(/</g, '&lt;') + '</span>';
+          list.appendChild(div);
+        });
+        content.appendChild(list);
+      };
+      addSection('Top 50 (most common)', data.top50 || []);
+      addSection('Next 100', data.next100 || []);
+    }
+
+    function phrasalVerbsDictionaryAsText(data) {
+      const lines = [(data.title || 'Phrasal verb dictionary'), ''];
+      const addSection = (label, arr) => {
+        if (!arr || !arr.length) return;
+        lines.push(label);
+        lines.push('');
+        arr.forEach(entry => {
+          lines.push(entry.verb + ' – ' + entry.meaning + '. Example: ' + entry.example);
+        });
+        lines.push('');
+      };
+      addSection('Top 50 (most common)', data.top50 || []);
+      addSection('Next 100', data.next100 || []);
+      return lines.join('\n');
+    }
+
+    async function showPhrasalVerbsDictionary(returnTo) {
+      phrasalVerbsDictionaryReturnTo = returnTo || 'menu';
+      if (!phrasalVerbsDictionaryData) {
+        try {
+          const res = await fetch(new URL('phrasal_verbs_dictionary.json?v=3', getBaseUrl()));
+          if (!res.ok) throw new Error('Could not load dictionary');
+          phrasalVerbsDictionaryData = await res.json();
+        } catch (e) {
+          alert('Could not load phrasal verb dictionary. ' + e.message);
+          return;
+        }
+      }
+      renderPhrasalVerbsDictionaryContent(phrasalVerbsDictionaryData);
+      document.getElementById('menuScreen').classList.add('hidden');
+      document.getElementById('introScreen').classList.add('hidden');
+      document.getElementById('phrasalVerbsDictionaryScreen').classList.remove('hidden');
+    }
+
+    function hidePhrasalVerbsDictionary() {
+      document.getElementById('phrasalVerbsDictionaryScreen').classList.add('hidden');
+      if (phrasalVerbsDictionaryReturnTo === 'intro') {
+        document.getElementById('introScreen').classList.remove('hidden');
+      } else {
+        document.getElementById('menuScreen').classList.remove('hidden');
+      }
+    }
+
     function showIntroSection(index) {
       const intro = courseCurriculum.intro || {};
       const sections = intro.sections || [];
@@ -489,6 +596,12 @@
         introListWrap.classList.remove('hidden');
       } else {
         introListWrap.classList.add('hidden');
+      }
+      const introPhrasalWrap = document.getElementById('introPhrasalVerbsWrap');
+      if (currentTopic && currentTopic.id === 'phrasal_verbs') {
+        introPhrasalWrap.classList.remove('hidden');
+      } else {
+        introPhrasalWrap.classList.add('hidden');
       }
     }
 
@@ -606,8 +719,75 @@
       startCourseSection(first);
     }
 
+    async function startDiagnostic() {
+      let data;
+      try {
+        const res = await fetch(new URL('mixed_cloze.json?v=3', getBaseUrl()));
+        if (!res.ok) throw new Error('Could not load mixed cloze');
+        data = await res.json();
+      } catch (e) {
+        alert('Could not load diagnostic. ' + e.message);
+        return;
+      }
+      const questions = (data.questions || []).slice();
+      for (let i = questions.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [questions[i], questions[j]] = [questions[j], questions[i]];
+      }
+      const max = Math.min(20, questions.length);
+      currentQuestions = questions.slice(0, max);
+      currentSetId = 'diagnostic';
+      currentSetTitle = data.title_diagnostic || 'Diagnostic test';
+      summary = data.summary_diagnostic || '';
+      currentIndex = 0;
+      score = 0;
+      wrongIndices = [];
+      isRetryRound = false;
+      quizMode = 'diagnostic';
+      wrongTopics = new Set();
+      document.getElementById('menuScreen').classList.add('hidden');
+      document.getElementById('quizScreen').classList.remove('hidden');
+      document.getElementById('feedbackBlock').classList.add('hidden');
+      document.getElementById('exitQuizBtn').textContent = 'Exit quiz';
+      showQuestion();
+    }
+
+    async function startMixedPractice() {
+      let data;
+      try {
+        const res = await fetch(new URL('mixed_cloze.json?v=3', getBaseUrl()));
+        if (!res.ok) throw new Error('Could not load mixed cloze');
+        data = await res.json();
+      } catch (e) {
+        alert('Could not load mixed practice. ' + e.message);
+        return;
+      }
+      const questions = (data.questions || []).slice();
+      for (let i = questions.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [questions[i], questions[j]] = [questions[j], questions[i]];
+      }
+      currentQuestions = questions;
+      currentSetId = 'mixed_practice';
+      currentSetTitle = data.title_practice || 'Mixed cloze practice';
+      summary = data.summary_practice || '';
+      currentIndex = 0;
+      score = 0;
+      wrongIndices = [];
+      isRetryRound = false;
+      quizMode = 'practice';
+      wrongTopics = new Set();
+      document.getElementById('menuScreen').classList.add('hidden');
+      document.getElementById('quizScreen').classList.remove('hidden');
+      document.getElementById('feedbackBlock').classList.add('hidden');
+      document.getElementById('exitQuizBtn').textContent = 'Exit quiz';
+      showQuestion();
+    }
+
     function startQuiz() {
       coursePhase = null;
+      quizMode = 'normal';
+      wrongTopics = new Set();
       const setSelect = document.getElementById('setSelect');
       const setId = setSelect.value;
       const numInput = document.getElementById('numQuestions');
@@ -702,14 +882,25 @@
         correct = answerMatches(userAnswer, q.answers || []);
       }
 
-      if (correct) score++; else wrongIndices.push(currentIndex);
+      if (correct) score++; else {
+        wrongIndices.push(currentIndex);
+        if (q.topic) wrongTopics.add(q.topic);
+      }
       saveMemoryBankEntry(questionHash(q), correct);
 
-      document.getElementById('feedbackText').innerHTML = correct
-        ? '<span class="result-ok">Correct!</span>'
-        : '<span class="result-fail">Incorrect.</span> Correct: ' + (q.type === 'mc' ? (q.options && q.options[q.correct_option]) : (q.answers && q.answers[0]));
+      const correctAnswerText = q.type === 'mc' ? (q.options && q.options[q.correct_option]) : (q.answers && q.answers[0]);
       const raw = (q.explanation || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
-      document.getElementById('explanation').innerHTML = raw.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+      const explanationHtml = raw.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+      if (correct) {
+        document.getElementById('feedbackText').innerHTML = '<span class="result-ok">Correct!</span>';
+        document.getElementById('explanation').innerHTML = explanationHtml ? '<span class="explanation-label">Explanation:</span> ' + explanationHtml : '';
+      } else {
+        document.getElementById('feedbackText').innerHTML =
+          '<span class="result-fail">Incorrect.</span>' +
+          (correctAnswerText ? '<p class="correct-answer-line"><strong>Correct answer:</strong> ' + correctAnswerText + '</p>' : '') +
+          (explanationHtml ? '<p class="explanation-label">Why?</p>' : '');
+        document.getElementById('explanation').innerHTML = explanationHtml || '';
+      }
       document.getElementById('submitBtn').classList.add('hidden');
       document.getElementById('feedbackBlock').classList.remove('hidden');
       document.getElementById('nextBtn').focus();
@@ -738,6 +929,30 @@
         document.getElementById('ruleSummary').textContent = summary;
         document.getElementById('retryWrongBtn').classList.toggle('hidden', wrongIndices.length === 0);
         document.getElementById('exportWrongBtn').classList.toggle('hidden', wrongIndices.length === 0);
+        const reviewBlock = document.getElementById('topicsToReviewBlock');
+        const reviewList = document.getElementById('topicsToReviewList');
+        if (quizMode === 'diagnostic' && wrongTopics.size > 0) {
+          reviewBlock.classList.remove('hidden');
+          reviewList.innerHTML = '';
+          wrongTopics.forEach(topicId => {
+            const t = topics.find(x => x.id === topicId);
+            const title = t ? t.title : topicId;
+            const btn = document.createElement('button');
+            btn.type = 'button';
+            btn.className = 'secondary';
+            btn.textContent = 'Revise: ' + title;
+            btn.addEventListener('click', () => {
+              if (t) currentTopic = t;
+              quizMode = 'normal';
+              applyTopic();
+              renderMenu();
+            });
+            reviewList.appendChild(btn);
+          });
+        } else {
+          reviewBlock.classList.add('hidden');
+          reviewList.innerHTML = '';
+        }
       }
     }
 
@@ -846,6 +1061,8 @@
     document.getElementById('startBtn').addEventListener('click', startQuiz);
     document.getElementById('startPart1Btn').addEventListener('click', startPart1);
     document.getElementById('startPart2Btn').addEventListener('click', startPart2);
+    document.getElementById('startDiagnosticBtn').addEventListener('click', startDiagnostic);
+    document.getElementById('startMixedPracticeBtn').addEventListener('click', startMixedPractice);
     document.getElementById('introNextBtn').addEventListener('click', () => {
       if (introSectionIndex < (courseCurriculum?.intro?.sections?.length || 1) - 1) {
         showIntroSection(introSectionIndex + 1);
@@ -873,6 +1090,20 @@
       const a = document.createElement('a');
       a.href = URL.createObjectURL(blob);
       a.download = 'prepositions_list.txt';
+      a.click();
+      URL.revokeObjectURL(a.href);
+    });
+    document.getElementById('viewPhrasalVerbsDictionaryBtn').addEventListener('click', () => showPhrasalVerbsDictionary('menu'));
+    document.getElementById('viewPhrasalVerbsFromIntroBtn').addEventListener('click', () => showPhrasalVerbsDictionary('intro'));
+    document.getElementById('phrasalVerbsDictionaryBackBtn').addEventListener('click', hidePhrasalVerbsDictionary);
+    document.getElementById('phrasalVerbsDictionaryPrintBtn').addEventListener('click', () => window.print());
+    document.getElementById('phrasalVerbsDictionaryDownloadBtn').addEventListener('click', () => {
+      if (!phrasalVerbsDictionaryData) return;
+      const text = phrasalVerbsDictionaryAsText(phrasalVerbsDictionaryData);
+      const blob = new Blob([text], { type: 'text/plain' });
+      const a = document.createElement('a');
+      a.href = URL.createObjectURL(blob);
+      a.download = 'phrasal_verbs_dictionary.txt';
       a.click();
       URL.revokeObjectURL(a.href);
     });
@@ -943,7 +1174,14 @@
           { id: 'will_going_to', title: 'Will and going to', curriculum: 'curriculum_will_going_to.json', questions_key: 'will_going_to' },
           { id: 'infinitive_ing', title: 'Infinitive and -ing form', curriculum: 'curriculum_infinitive_ing.json', questions_key: 'infinitive_ing' },
           { id: 'spelling', title: 'Spelling', curriculum: 'curriculum_spelling.json', questions_key: 'spelling' },
-          { id: 'comparatives', title: 'Comparatives and Superlatives', curriculum: 'curriculum_comparatives.json', questions_key: 'comparatives' }
+          { id: 'comparatives', title: 'Comparatives and Superlatives', curriculum: 'curriculum_comparatives.json', questions_key: 'comparatives' },
+          { id: 'passives', title: 'Passives', curriculum: 'curriculum_passives.json', questions_key: 'passives' },
+          { id: 'articles', title: 'Articles (a, an, the, ∅)', curriculum: 'curriculum_articles.json', questions_key: 'articles' },
+          { id: 'past_simple_continuous', title: 'Past Simple and Past Continuous', curriculum: 'curriculum_past_simple_continuous.json', questions_key: 'past_simple_continuous' },
+          { id: 'phrasal_verbs', title: 'Phrasal verbs', curriculum: 'curriculum_phrasal_verbs.json', questions_key: 'phrasal_verbs' },
+          { id: 'word_order', title: 'Word order in sentences', curriculum: 'curriculum_word_order.json', questions_key: 'word_order' },
+          { id: 'reported_speech', title: 'Reported speech', curriculum: 'curriculum_reported_speech.json', questions_key: 'reported_speech' },
+          { id: 'conditionals', title: 'Conditionals (zero, first, second, third)', curriculum: 'curriculum_conditionals.json', questions_key: 'conditionals' }
         ];
         currentTopic = topics[0];
         document.getElementById('topicLabel').classList.remove('hidden');

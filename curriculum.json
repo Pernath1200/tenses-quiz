@@ -30,29 +30,29 @@
       {
         "type": "mc",
         "question": "We want to emphasise how long an action has been going on. Which form do we usually use?",
-        "options": {"a": "Present perfect simple", "b": "Present perfect continuous", "c": "Past simple", "d": "Present continuous"},
-        "correct_option": "b",
+        "options": {"a": "Present perfect continuous", "b": "Present perfect simple", "c": "Past simple", "d": "Present continuous"},
+        "correct_option": "a",
         "explanation": "Duration (how long) is typically expressed with the present perfect continuous."
       },
       {
         "type": "mc",
         "question": "Which sentence is correct? (Stative verb)",
-        "options": {"a": "I have been knowing him for years.", "b": "I have known him for years.", "c": "I know him for years.", "d": "I am knowing him for years."},
-        "correct_option": "b",
+        "options": {"a": "I have been knowing him for years.", "b": "I know him for years.", "c": "I have known him for years.", "d": "I am knowing him for years."},
+        "correct_option": "c",
         "explanation": "'Know' is a stative verb; we use the present perfect simple, not the continuous."
       },
       {
         "type": "mc",
         "question": "We want to say how many things are completed. Which form do we usually use?",
-        "options": {"a": "Present perfect continuous", "b": "Present perfect simple", "c": "Past continuous", "d": "Present simple"},
-        "correct_option": "b",
+        "options": {"a": "Present perfect continuous", "b": "Past continuous", "c": "Present perfect simple", "d": "Present simple"},
+        "correct_option": "c",
         "explanation": "Completion and count (how many) are expressed with the present perfect simple."
       },
       {
         "type": "mc",
         "question": "Someone's hands are dirty. We explain this with a recent activity. Which is more natural?",
-        "options": {"a": "I have repaired the bike.", "b": "I have been repairing the bike.", "c": "I repaired the bike.", "d": "I repair the bike."},
-        "correct_option": "b",
+        "options": {"a": "I have repaired the bike.", "b": "I repaired the bike.", "c": "I repair the bike.", "d": "I have been repairing the bike."},
+        "correct_option": "d",
         "explanation": "A visible effect now (dirty hands) is explained with the present perfect continuous."
       }
     ]

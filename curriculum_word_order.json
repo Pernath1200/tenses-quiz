@@ -1,0 +1,107 @@
+{
+  "intro": {
+    "title": "Word order in sentences",
+    "sections": [
+      {
+        "title": "The problem: embedded questions",
+        "content": "In **direct questions** we use **question word order** (verb before subject):\n\n• **What is the answer?** (verb **is** before subject **the answer**)\n• **Where is the station?** (verb **is** before subject **the station**)\n• **When did he leave?** (auxiliary **did** before subject **he**)\n\nBut when the question is **inside another sentence** (embedded or indirect), English uses **statement word order** (subject before verb):\n\n• I don't know **what the answer is**. (subject **the answer** + verb **is**)\n• Can you tell me **where the station is**? (subject **the station** + verb **is**)\n• I wonder **when he left**. (subject **he** + verb **left**)\n\n**Wrong (Czech-style):** I don't know what **is the answer**. / I don't know where **is the station**.\n**Right (English):** I don't know what **the answer is**. / I don't know where **the station is**."
+      },
+      {
+        "title": "When do we use statement word order?",
+        "content": "Use **statement word order** (subject + verb) when the question is embedded after:\n\n• **I don't know** what the answer is. / I don't know where he is.\n• **I wonder** when they will arrive. / I wonder why she left.\n• **Can you tell me** what time it is? / Can you tell me where the toilet is?\n• **Tell me** who that man is. / Tell me how much it costs.\n• **Do you know** what his name is? / Do you know if she is coming?\n• **I'm not sure** what the problem is. / I'm not sure where we are.\n• **It depends on** what you want. / It depends on where we go.\n\n**Rule:** After these expressions, we do **not** invert subject and verb. We use the same order as in a statement: **what the answer is**, not *what is the answer*."
+      },
+      {
+        "title": "Direct question vs embedded question",
+        "content": "**Direct question** (standalone) → **question word order** (verb before subject):\n\n• What **is** the answer?\n• Where **is** the station?\n• When **did** he leave?\n• Who **is** that man?\n• How much **does** it cost?\n\n**Embedded question** (inside a sentence) → **statement word order** (subject before verb):\n\n• I don't know what the answer **is**.\n• Can you tell me where the station **is**?\n• I wonder when he **left**.\n• Tell me who that man **is**.\n• Do you know how much it **costs**?\n\n**Yes/No embedded questions** use **if** or **whether** + statement order:\n\n• I don't know **if she is** coming. (not *if is she coming*)\n• I wonder **whether he has** finished. (not *whether has he finished*)"
+      },
+      {
+        "title": "Typical Czech learner errors",
+        "content": "Czech often uses **inverted (question) word order** in embedded clauses. In English we do not:\n\n• **Wrong:** I don't know what **is the answer**. → **Right:** I don't know what **the answer is**.\n• **Wrong:** Can you tell me where **is the station**? → **Right:** Can you tell me where **the station is**?\n• **Wrong:** I wonder when **did he leave**. → **Right:** I wonder when **he left**.\n• **Wrong:** Do you know what **is his name**? → **Right:** Do you know what **his name is**?\n• **Wrong:** I'm not sure what **are the opening hours**. → **Right:** I'm not sure what **the opening hours are**.\n• **Wrong:** Tell me how much **does it cost**. → **Right:** Tell me how much **it costs**.\n\n**Tip:** If you can say \"I don't know\" (or similar) before it, use **statement** word order: subject then verb."
+      },
+      {
+        "title": "Quick summary",
+        "content": "• **Direct question** (standalone): What **is** the answer? (verb before subject)\n• **Embedded question** (inside a sentence): I don't know what **the answer is**. (subject before verb)\n• After *I don't know*, *Can you tell me*, *I wonder*, *Tell me*, *Do you know*, *I'm not sure* → use **statement** word order.\n• Wrong: I don't know what is the answer. Right: I don't know what the answer is."
+      }
+    ]
+  },
+  "check": {
+    "title": "Test your understanding",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "Which is correct?",
+        "options": {"a": "I don't know what the answer is.", "b": "I don't know what is the answer.", "c": "I don't know what the answer.", "d": "I don't know what does the answer."},
+        "correct_option": "a",
+        "explanation": "Embedded question: use statement word order (subject + verb). What the answer is."
+      },
+      {
+        "type": "mc",
+        "question": "'Can you tell me _____?' (Where is the station?) Which fits?",
+        "options": {"a": "where is the station", "b": "where the station", "c": "where the station is", "d": "where does the station"},
+        "correct_option": "c",
+        "explanation": "Embedded: where the station is (statement order)."
+      },
+      {
+        "type": "mc",
+        "question": "'Do you know _____?' (What is his name?) Which fits?",
+        "options": {"a": "what is his name", "b": "what his name", "c": "what does his name", "d": "what his name is"},
+        "correct_option": "d",
+        "explanation": "Embedded: what his name is (statement order)."
+      },
+      {
+        "type": "mc",
+        "question": "'I wonder _____.' (When did he leave?) Which fits?",
+        "options": {"a": "when he left", "b": "when did he leave", "c": "when left he", "d": "when he did leave"},
+        "correct_option": "a",
+        "explanation": "Embedded: when he left (statement order; no auxiliary 'did')."
+      },
+      {
+        "type": "mc",
+        "question": "Which is correct?",
+        "options": {"a": "Tell me how much does it cost.", "b": "Tell me how much it cost.", "c": "Tell me how much it costs.", "d": "Tell me how much costs it."},
+        "correct_option": "c",
+        "explanation": "Embedded: how much it costs (statement order)."
+      },
+      {
+        "type": "mc",
+        "question": "'I don't know _____.' (Is she coming?) Which fits?",
+        "options": {"a": "if is she coming", "b": "if she coming", "c": "if does she come", "d": "if she is coming"},
+        "correct_option": "d",
+        "explanation": "Yes/No embedded: if + statement order (if she is coming)."
+      }
+    ]
+  },
+  "practice_order": ["gapfill", "errorcorrection"],
+  "practice": {
+    "gapfill": {
+      "title": "Practice: Embedded questions (statement word order)",
+      "questions": [
+        {"type": "open", "question": "I don't know what _____ (the answer / be). Use statement order.", "answers": ["the answer is"], "explanation": "Embedded: what the answer is (subject + verb)."},
+        {"type": "open", "question": "Can you tell me where _____ (the station / be)? Use statement order.", "answers": ["the station is"], "explanation": "Embedded: where the station is."},
+        {"type": "open", "question": "Do you know what _____ (his name / be)? Use statement order.", "answers": ["his name is"], "explanation": "Embedded: what his name is."},
+        {"type": "open", "question": "I wonder when _____ (he / leave). Use statement order.", "answers": ["he left"], "explanation": "Embedded: when he left (no 'did')."},
+        {"type": "open", "question": "Tell me how much _____ (it / cost). Use statement order.", "answers": ["it costs"], "explanation": "Embedded: how much it costs."},
+        {"type": "open", "question": "I'm not sure what _____ (the problem / be). Use statement order.", "answers": ["the problem is"], "explanation": "Embedded: what the problem is."},
+        {"type": "open", "question": "Do you know where _____ (she / live)? Use statement order.", "answers": ["she lives"], "explanation": "Embedded: where she lives."},
+        {"type": "open", "question": "I don't know if _____ (she / be) coming. Use statement order.", "answers": ["she is"], "explanation": "Yes/No embedded: if she is coming."},
+        {"type": "open", "question": "Can you tell me what time _____ (it / be)? Use statement order.", "answers": ["it is"], "explanation": "Embedded: what time it is."},
+        {"type": "open", "question": "I wonder why _____ (he / leave). Use statement order.", "answers": ["he left"], "explanation": "Embedded: why he left."}
+      ]
+    },
+    "errorcorrection": {
+      "title": "Practice: Correct the word order",
+      "questions": [
+        {"type": "open", "question": "Wrong: 'I don't know what is the answer.' Correct the sentence.", "answers": ["I don't know what the answer is.", "I don't know what the answer is"], "explanation": "Embedded question: statement order (what the answer is)."},
+        {"type": "open", "question": "Wrong: 'Can you tell me where is the station?' Correct the sentence.", "answers": ["Can you tell me where the station is?", "Can you tell me where the station is"], "explanation": "Embedded: where the station is."},
+        {"type": "open", "question": "Wrong: 'Do you know what is his name?' Correct the sentence.", "answers": ["Do you know what his name is?", "Do you know what his name is"], "explanation": "Embedded: what his name is."},
+        {"type": "open", "question": "Wrong: 'I wonder when did he leave.' Correct the sentence.", "answers": ["I wonder when he left.", "I wonder when he left"], "explanation": "Embedded: when he left (no 'did')."},
+        {"type": "open", "question": "Wrong: 'Tell me how much does it cost.' Correct the sentence.", "answers": ["Tell me how much it costs.", "Tell me how much it costs"], "explanation": "Embedded: how much it costs."},
+        {"type": "open", "question": "Wrong: 'I'm not sure what are the opening hours.' Correct the sentence.", "answers": ["I'm not sure what the opening hours are.", "I'm not sure what the opening hours are"], "explanation": "Embedded: what the opening hours are."},
+        {"type": "open", "question": "Wrong: 'I don't know where is he.' Correct the sentence.", "answers": ["I don't know where he is.", "I don't know where he is"], "explanation": "Embedded: where he is."},
+        {"type": "open", "question": "Wrong: 'Do you know if is she coming?' Correct the sentence.", "answers": ["Do you know if she is coming?", "Do you know if she is coming"], "explanation": "Yes/No embedded: if she is coming."},
+        {"type": "open", "question": "Wrong: 'Can you tell me what time is it?' Correct the sentence.", "answers": ["Can you tell me what time it is?", "Can you tell me what time it is"], "explanation": "Embedded: what time it is."},
+        {"type": "open", "question": "Wrong: 'I wonder why did she leave.' Correct the sentence.", "answers": ["I wonder why she left.", "I wonder why she left"], "explanation": "Embedded: why she left (no 'did')."}
+      ]
+    }
+  }
+}

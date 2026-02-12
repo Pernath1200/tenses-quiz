@@ -38,36 +38,36 @@
       {
         "type": "mc",
         "question": "Which is correct?",
-        "options": {"a": "I want learning English.", "b": "I want to learn English.", "c": "I want learn English.", "d": "I want learning English well."},
-        "correct_option": "b",
+        "options": {"a": "I want to learn English.", "b": "I want learning English.", "c": "I want learn English.", "d": "I want learning English well."},
+        "correct_option": "a",
         "explanation": "Want is followed by to-infinitive, not -ing."
       },
       {
         "type": "mc",
         "question": "Which is correct?",
-        "options": {"a": "She enjoys to read.", "b": "She enjoys read.", "c": "She enjoys reading.", "d": "She enjoys to reading."},
-        "correct_option": "c",
+        "options": {"a": "She enjoys to read.", "b": "She enjoys read.", "c": "She enjoys to reading.", "d": "She enjoys reading."},
+        "correct_option": "d",
         "explanation": "Enjoy is followed by -ing, not to-infinitive."
       },
       {
         "type": "mc",
         "question": "'I remember _____ the door.' (I recall doing it.) Which fits?",
-        "options": {"a": "to lock", "b": "locking", "c": "lock", "d": "to locking"},
-        "correct_option": "b",
+        "options": {"a": "to lock", "b": "lock", "c": "locking", "d": "to locking"},
+        "correct_option": "c",
         "explanation": "Remember doing = recall a past action. Remember to do = not forget to do something."
       },
       {
         "type": "mc",
         "question": "'I look forward to _____ you.' Which is correct?",
-        "options": {"a": "see", "b": "seeing", "c": "to see", "d": "to seeing"},
-        "correct_option": "b",
+        "options": {"a": "see", "b": "to see", "c": "seeing", "d": "to seeing"},
+        "correct_option": "c",
         "explanation": "Look forward to is followed by -ing (to is a preposition here)."
       },
       {
         "type": "mc",
         "question": "'She stopped _____.' (She gave up smoking.) Which fits?",
-        "options": {"a": "to smoke", "b": "smoking", "c": "smoke", "d": "to smoking"},
-        "correct_option": "b",
+        "options": {"a": "to smoke", "b": "smoke", "c": "to smoking", "d": "smoking"},
+        "correct_option": "d",
         "explanation": "Stop doing = give up. Stop to do = pause in order to do."
       }
     ]
