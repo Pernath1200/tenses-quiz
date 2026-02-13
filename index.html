@@ -734,7 +734,7 @@
         const j = Math.floor(Math.random() * (i + 1));
         [questions[i], questions[j]] = [questions[j], questions[i]];
       }
-      const max = Math.min(20, questions.length);
+      const max = Math.min(30, questions.length);
       currentQuestions = questions.slice(0, max);
       currentSetId = 'diagnostic';
       currentSetTitle = data.title_diagnostic || 'Diagnostic test';

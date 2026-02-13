@@ -1,7 +1,7 @@
 {
   "title_diagnostic": "Diagnostic test",
   "title_practice": "Mixed cloze practice",
-  "summary_diagnostic": "Short mixed quiz. Wrong answers will show which grammar areas to revise.",
+  "summary_diagnostic": "About 30 questions from all grammar topics (random order). Wrong answers point to topics you need to revise.",
   "summary_practice": "Cloze-style mixed practice from all topics.",
   "questions": [
     {"type": "open", "question": "I have _____ to London many times.", "answers": ["been"], "topic": "present_perfect", "explanation": "Present perfect for life experience: have/has + past participle."},
@@ -27,6 +27,28 @@
     {"type": "mc", "question": "Look at the clouds. It _____ rain.", "options": {"a": "will", "b": "is going to", "c": "shall", "d": "going to"}, "correct_option": "b", "topic": "will_going_to", "explanation": "Evidence in the present (clouds) → going to."},
     {"type": "mc", "question": "I look forward to _____ you.", "options": {"a": "see", "b": "seeing", "c": "to see", "d": "to seeing"}, "correct_option": "b", "topic": "infinitive_ing", "explanation": "Look forward to + -ing (to is a preposition here)."},
     {"type": "mc", "question": "Which is correct?", "options": {"a": "accomodation", "b": "accommodation", "c": "acommodation", "d": "acommodation"}, "correct_option": "b", "topic": "spelling", "explanation": "Accommodation: double c, double m."},
-    {"type": "mc", "question": "She's _____ than her sister.", "options": {"a": "more tall", "b": "taller", "c": "tallest", "d": "more taller"}, "correct_option": "b", "topic": "comparatives", "explanation": "Short adjective (tall) → -er: taller."}
+    {"type": "mc", "question": "She's _____ than her sister.", "options": {"a": "more tall", "b": "taller", "c": "tallest", "d": "more taller"}, "correct_option": "b", "topic": "comparatives", "explanation": "Short adjective (tall) → -er: taller."},
+    {"type": "open", "question": "The letter _____ (send) yesterday.", "answers": ["was sent"], "topic": "passives", "explanation": "Past passive: was + past participle (sent)."},
+    {"type": "open", "question": "English _____ (speak) in many countries.", "answers": ["is spoken"], "topic": "passives", "explanation": "Present simple passive: is + spoken."},
+    {"type": "mc", "question": "Which sentence is correct?", "options": {"a": "The letter was sent yesterday.", "b": "The letter was send yesterday.", "c": "The letter was sented yesterday.", "d": "The letter is sent yesterday."}, "correct_option": "a", "topic": "passives", "explanation": "Passive = was + past participle. Send → sent."},
+    {"type": "open", "question": "I have _____ apple.", "answers": ["an"], "topic": "articles", "explanation": "An before vowel sound (apple)."},
+    {"type": "open", "question": "_____ sun is shining.", "answers": ["The"], "topic": "articles", "explanation": "The for specific (the sun)."},
+    {"type": "mc", "question": "She is _____ doctor. I'll see you in _____ hour.", "options": {"a": "a / a", "b": "a / an", "c": "an / a", "d": "the / an"}, "correct_option": "b", "topic": "articles", "explanation": "A before consonant sound; an before vowel sound (hour)."},
+    {"type": "open", "question": "When I arrived, she _____ (cook) dinner.", "answers": ["was cooking"], "topic": "past_simple_continuous", "explanation": "Past continuous for action in progress when another event happened."},
+    {"type": "open", "question": "I _____ (watch) TV when the phone rang.", "answers": ["was watching"], "topic": "past_simple_continuous", "explanation": "Past continuous: was/were + -ing for background action."},
+    {"type": "mc", "question": "When the phone rang, I _____ .", "options": {"a": "was cooking", "b": "cooked", "c": "am cooking", "d": "cook"}, "correct_option": "a", "topic": "past_simple_continuous", "explanation": "Action in progress when something happened → past continuous."},
+    {"type": "open", "question": "We need to _____ the meeting. (postpone)", "answers": ["put off"], "topic": "phrasal_verbs", "explanation": "Put off = postpone."},
+    {"type": "open", "question": "Don't _____ ! (stop trying)", "answers": ["give up"], "topic": "phrasal_verbs", "explanation": "Give up = stop trying."},
+    {"type": "mc", "question": "'Look after' means:", "options": {"a": "take care of", "b": "search for (information)", "c": "search for (something lost)", "d": "raise your eyes"}, "correct_option": "a", "topic": "phrasal_verbs", "explanation": "Look after = take care of."},
+    {"type": "open", "question": "I don't know what _____ . (the answer is)", "answers": ["the answer is"], "topic": "word_order", "explanation": "Embedded question: statement word order (what the answer is)."},
+    {"type": "open", "question": "Can you tell me where _____ ? (the station is)", "answers": ["the station is"], "topic": "word_order", "explanation": "Embedded question: where the station is (statement order)."},
+    {"type": "mc", "question": "Which is correct?", "options": {"a": "I don't know what the answer is.", "b": "I don't know what is the answer.", "c": "I don't know what the answer.", "d": "I don't know what does the answer."}, "correct_option": "a", "topic": "word_order", "explanation": "Embedded question: use statement word order (subject + verb)."},
+    {"type": "open", "question": "\"I am tired.\" → She said she _____ tired.", "answers": ["was"], "topic": "reported_speech", "explanation": "Reported speech: present → past (am → was)."},
+    {"type": "open", "question": "\"Where do you live?\" → He asked me where I _____ .", "answers": ["lived"], "topic": "reported_speech", "explanation": "Reported question: statement order; backshift to past."},
+    {"type": "mc", "question": "\"Close the door.\" → He _____ me to close the door.", "options": {"a": "said", "b": "told", "c": "asked", "d": "spoke"}, "correct_option": "b", "topic": "reported_speech", "explanation": "Reported command: tell + person + to-infinitive."},
+    {"type": "open", "question": "Zero: If you heat ice, it _____ .", "answers": ["melts"], "topic": "conditionals", "explanation": "Zero conditional: present + present for facts."},
+    {"type": "open", "question": "First: If it _____ tomorrow, we will stay at home.", "answers": ["rains"], "topic": "conditionals", "explanation": "First conditional: if + present (rains), will in main clause."},
+    {"type": "open", "question": "Second: If I _____ (have) more time, I would help you.", "answers": ["had"], "topic": "conditionals", "explanation": "Second conditional: if + past simple."},
+    {"type": "mc", "question": "Third conditional: If I had known, I _____ you.", "options": {"a": "would tell", "b": "will tell", "c": "would have told", "d": "had told"}, "correct_option": "c", "topic": "conditionals", "explanation": "Third conditional: would have + past participle in main clause."}
   ]
 }
