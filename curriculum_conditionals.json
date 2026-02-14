@@ -8,19 +8,19 @@
       },
       {
         "title": "Zero conditional",
-        "content": "**If + present simple**, **present simple** (in both clauses).\n\nUsed for **general truths**, **facts**, **scientific facts**, **habits**:\n\n• If you **heat** ice, it **melts**.\n• If you **mix** red and blue, you **get** purple.\n• If I **don't sleep** well, I **feel** tired.\n\n**When** can replace **if** when we mean \"whenever\": When you heat water to 100°C, it boils."
+        "content": "**If + present**, **present** (both clauses).\n\nFor **general truths** and **facts**:\n\n• If you heat ice, it melts.\n• If you mix red and blue, you get purple.\n• If I don't sleep well, I feel tired.\n\n**When** = whenever: When you heat water to 100°C, it boils."
       },
       {
         "title": "First conditional",
-        "content": "**If + present simple**, **will + base verb** (or other future forms: going to, can, must, imperative).\n\nUsed for **real future** situations – possible or likely:\n\n• If it **rains** tomorrow, I **will stay** at home.\n• If you **finish** early, **call** me. (imperative)\n• If we **don't hurry**, we **will miss** the bus.\n\nWe do **not** use **will** in the if-clause: Wrong: *If I will see him …* Right: **If I see him**, I will tell him."
+        "content": "**If + present**, **will** (or imperative).\n\nFor **real future** – possible or likely:\n\n• If it rains tomorrow, I will stay at home.\n• If you finish early, call me.\n• If we don't hurry, we will miss the bus.\n\n**No will in the if-clause:** If I **see** him (not *will see*), I will tell him."
       },
       {
         "title": "Second conditional",
-        "content": "**If + past simple**, **would + base verb**.\n\nUsed for **unreal** or **hypothetical** present or future – imagined, unlikely or impossible:\n\n• If I **had** more time, I **would help** you. (I don't have more time.)\n• If I **were** you, I **would apologise**. (I'm not you; *were* is used for all persons in formal style.)\n• If we **won** the lottery, we **would travel** the world. (Unlikely.)\n\n**Could** and **might** are also possible: If he tried harder, he **could** pass. We do **not** use **would** in the if-clause: Wrong: *If I would have time …* Right: **If I had** time …"
+        "content": "**If + past**, **would + base**.\n\nFor **unreal** or **hypothetical** present/future:\n\n• If I had more time, I would help you.\n• If I were you, I would apologise. (Formal: *were* for all persons.)\n• If we won the lottery, we would travel.\n\n**No would in the if-clause:** If I **had** time (not *would have*), I would help."
       },
       {
         "title": "Third conditional",
-        "content": "**If + past perfect**, **would have + past participle**.\n\nUsed for **unreal past** – something that **did not happen** (we imagine a different past):\n\n• If I **had known**, I **would have told** you. (I didn't know.)\n• If she **had left** earlier, she **would have caught** the train. (She didn't leave earlier.)\n• If they **hadn't missed** the flight, they **would have arrived** on time.\n\nWe do **not** use **would have** in the if-clause: Wrong: *If I would have known …* Right: **If I had known** …"
+        "content": "**If + past perfect**, **would have + past participle**.\n\nFor **unreal past** – something that did not happen:\n\n• If I had known, I would have told you.\n• If she had left earlier, she would have caught the train.\n• If they hadn't missed the flight, they would have arrived on time.\n\n**No would have in the if-clause:** If I **had known** (not *would have known*), I would have come."
       },
       {
         "title": "Quick summary",
@@ -28,7 +28,7 @@
       },
       {
         "title": "Typical learner errors",
-        "content": "• **Will in if-clause:** Wrong: *If I will see him, I'll tell him.* Right: **If I see him**, I'll tell him. (First conditional: present in if-clause.)\n• **Would in if-clause (second):** Wrong: *If I would have time, I would help.* Right: **If I had time**, I would help.\n• **Would have in if-clause (third):** Wrong: *If I would have known, I would have come.* Right: **If I had known**, I would have come.\n• **Mixing second and third:** Wrong: *If I had known, I would tell you.* (Past condition, but present result – use third: **I would have told** you.)\n• **Was vs were (second):** In formal style we use **If I were**, **if he were** (subjunctive). In informal speech **was** is common: If I was/were you …"
+        "content": "• **First:** Wrong: If I *will* see him … Right: If I **see** him, I'll tell him.\n• **Second:** Wrong: If I *would have* time … Right: If I **had** time, I would help.\n• **Third:** Wrong: If I *would have* known … Right: If I **had** known, I would have come.\n• **Third main clause:** Wrong: If I had known, I would *tell* you. Right: I would **have told** you."
       }
     ]
   },

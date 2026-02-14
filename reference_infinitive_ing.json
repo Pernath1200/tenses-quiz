@@ -1,0 +1,16 @@
+{
+  "title": "Infinitive and -ing: verb lists",
+  "intro": "After some verbs we use only **to + verb** (to do). After others we use only **verb + -ing** (doing). Here are complete lists for reference.",
+  "verbs_to": [
+    "afford", "agree", "aim", "appear", "arrange", "ask", "attempt", "beg", "care", "choose", "claim", "dare", "decide", "demand", "deserve", "expect", "fail", "guarantee", "happen", "hate", "help", "hesitate", "hope", "intend", "learn", "long", "manage", "need", "neglect", "offer", "plan", "prepare", "pretend", "promise", "refuse", "resolve", "seek", "seem", "strive", "swear", "tend", "threaten", "try", "undertake", "volunteer", "wait", "want", "wish", "would like", "would love", "would prefer"
+  ],
+  "verbs_ing": [
+    "admit", "avoid", "consider", "delay", "deny", "dislike", "enjoy", "escape", "excuse", "fancy", "finish", "forgive", "give up", "imagine", "involve", "keep", "mention", "mind", "miss", "postpone", "practise", "prevent", "put off", "recall", "recommend", "report", "resent", "resist", "risk", "suggest", "tolerate", "can't help", "can't stand", "don't mind", "it's no use", "it's worth", "look forward to", "busy"
+  ],
+  "verbs_both_same": [
+    "begin", "continue", "hate", "like", "love", "prefer", "start"
+  ],
+  "verbs_both_different": [
+    "forget", "remember", "regret", "stop", "try"
+  ]
+}

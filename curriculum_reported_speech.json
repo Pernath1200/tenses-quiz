@@ -4,23 +4,23 @@
     "sections": [
       {
         "title": "What is reported speech?",
-        "content": "**Direct speech** repeats the exact words: *She said, \"I am tired.\"*\n\n**Reported speech** (indirect speech) reports what someone said without quotation marks. We usually change tenses, pronouns and time words:\n\n• Direct: \"I am tired.\" → Reported: She said (that) **she was** tired.\n• Direct: \"We will come.\" → Reported: They said (that) **they would** come.\n• Direct: \"I have finished.\" → Reported: He said (that) **he had** finished.\n\nWe use reporting verbs like **say**, **tell**, **ask**, **explain**. The word **that** after the verb is optional."
+        "content": "**Direct:** exact words. *\"I am tired.\"*\n\n**Reported:** we report what was said; we often change tense, pronouns and time words:\n\n• \"I am tired.\" → She said (that) **she was** tired.\n• \"We will come.\" → They said (that) **they would** come.\n• \"I have finished.\" → He said (that) **he had** finished.\n\nReporting verbs: **say**, **tell**, **ask**. The word **that** is optional."
       },
       {
         "title": "Tense backshift",
-        "content": "When the reporting verb is in the **past** (said, told, asked), we often **shift** the tense backwards:\n\n• Present simple → Past simple: \"I like it.\" → He said he **liked** it.\n• Present continuous → Past continuous: \"I am waiting.\" → She said she **was waiting**.\n• Past simple → Past perfect: \"I saw him.\" → He said he **had seen** him. (Or we keep past simple when the time is clear.)\n• Will → Would: \"I will help.\" → She said she **would** help.\n• Can → Could: \"I can swim.\" → He said he **could** swim.\n• Must → Had to (or kept): \"I must go.\" → She said she **had to** go.\n\nIf the situation is **still true** or **still in the future**, we sometimes keep the same tense (e.g. \"The Earth is round\" → He said the Earth **is** round). In exams and formal reporting we usually backshift."
+        "content": "When we report with **said/told/asked** (past), we usually shift the tense:\n\n• Present → Past: \"I like it.\" → He said he **liked** it.\n• Will → Would: \"I will help.\" → She said she **would** help.\n• Can → Could: \"I can swim.\" → He said he **could** swim.\n• Present perfect → Past perfect: \"I have seen it.\" → He said he **had seen** it.\n• Must → Had to: \"I must go.\" → She said she **had to** go.\n\nExamples: I am tired → she was tired. We will come → they would come."
       },
       {
         "title": "Pronouns and time/place words",
-        "content": "We change pronouns to match the new speaker:\n\n• \"**I** am busy.\" → She said **she** was busy.\n• \"**My** phone is broken.\" → He said **his** phone was broken.\n• \"**We** are leaving.\" → They said **they** were leaving.\n\nWe often change time and place words:\n\n• today → that day; yesterday → the day before; tomorrow → the next day / the following day\n• now → then; here → there; this → that; ago → before\n\nExample: \"I saw her **yesterday**.\" → He said he had seen her **the day before**."
+        "content": "Change **pronouns** to match who is speaking:\n\n• I → he/she; my → his/her; we → they\n\nChange **time and place** words:\n\n• today → that day; yesterday → the day before; tomorrow → the next day\n• now → then; here → there\n\nExample: \"I saw her yesterday.\" → He said he had seen her **the day before**."
       },
       {
         "title": "Say vs tell",
-        "content": "**Say:** say (something); say **to** someone (that) …\n\n• She said (that) she was leaving. / She said to me (that) she was leaving.\n\n**Tell:** tell **someone** (something). Tell always has a person object.\n\n• She told **me** (that) she was leaving. (Not *She told (that) …*)\n\n**Ask** is used for reported questions: He asked (me) where I lived. He asked (me) **if** I was coming."
+        "content": "**Say:** say (that) … or say **to** someone (that) …\n• She said (that) she was leaving.\n\n**Tell:** tell **someone** (that) … — always need a person.\n• She told **me** (that) she was leaving. (Not: She told that …)\n\n**Ask** for questions: He asked (me) where I lived. He asked **if** I was coming.\n\nExamples: Say to me / Tell me. Never: She said me."
       },
       {
         "title": "Reported questions and commands",
-        "content": "**Reported questions** use **statement word order** (subject + verb), not question order:\n\n• \"Where **do you** live?\" → He asked (me) where **I lived**.\n• \"What **is** the time?\" → She asked what **the time was**.\n• \"Are you coming?\" → He asked (me) **if** I was coming. (Yes/No → if or whether)\n\n**Reported commands / requests** use **tell/ask + person + to-infinitive**:\n\n• \"Close the door.\" → He **told** me **to close** the door.\n• \"Please help me.\" → She **asked** me **to help** her."
+        "content": "**Reported questions:** use **statement order** (subject + verb), not question order:\n\n• \"Where do you live?\" → He asked where **I lived**.\n• \"Are you coming?\" → He asked **if** I was coming. (Yes/No → if/whether)\n\n**Commands:** tell/ask + **person + to-infinitive**:\n\n• \"Close the door.\" → He **told** me **to close** the door.\n• \"Please help me.\" → She **asked** me **to help** her.\n\nExamples: where I lived (not where did I live). Tell me to close (not said me)."
       },
       {
         "title": "Quick summary",
@@ -28,7 +28,7 @@
       },
       {
         "title": "Typical learner errors",
-        "content": "• **No backshift:** Wrong: *She said she is tired.* (If reporting in the past) Right: **She said she was tired.**\n• **Question word order in reported questions:** Wrong: *He asked where do I live.* Right: **He asked where I lived.** (Statement order.)\n• **Tell without object:** Wrong: *She told (that) she would come.* Right: **She told me (that) she would come.** or **She said (that) she would come.**\n• **Say + person without 'to':** Wrong: *She said me that …* Right: **She said to me that …** or **She told me that …**\n• **Command form:** Wrong: *He said me close the door.* Right: **He told me to close the door.**"
+        "content": "• **Backshift:** Wrong: She said she *is* tired. Right: She said she **was** tired.\n• **Statement order in questions:** Wrong: He asked where *do I* live. Right: He asked where **I lived**.\n• **Tell + person:** Wrong: She *told (that)* … Right: She **told me (that)** … or She **said (that)** …\n• **Commands:** Wrong: He *said me* close the door. Right: He **told** me **to close** the door."
       }
     ]
   },

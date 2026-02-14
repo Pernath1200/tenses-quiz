@@ -286,6 +286,18 @@
         }
       ]
     },
+    "set6": {
+      "title": "Present Perfect Simple vs Continuous – Set 6",
+      "summary": "Extra practice: duration, result, stative verbs, and choosing the right form.",
+      "questions": [
+        {"type": "open", "question": "1. Fill in the blank (duration)\nThey ____ (look) for a flat for six months.", "answers": ["have been looking"], "explanation": "Duration (for six months) → present perfect continuous."},
+        {"type": "open", "question": "2. Fill in the blank (stative – simple)\nI ____ (believe) in this project from the start.", "answers": ["have believed"], "explanation": "'Believe' is stative; we use the present perfect simple."},
+        {"type": "mc", "question": "3. Multiple choice\nShe's out of breath. She ____ .", "options": {"a": "has run", "b": "has been running", "c": "ran", "d": "runs"}, "correct_option": "b", "explanation": "Visible effect (out of breath) → present perfect continuous."},
+        {"type": "open", "question": "4. Fill in the blank (how many – simple)\nHe ____ (write) three emails so far this morning.", "answers": ["has written"], "explanation": "How many completed → present perfect simple."},
+        {"type": "open", "question": "5. Error correction\nWrong: 'She has been having that car since 2019.' Correct the sentence.", "answers": ["She has had that car since 2019.", "She has had that car since 2019"], "explanation": "'Have' (possession) is stative; use present perfect simple."},
+        {"type": "mc", "question": "6. Choose the best sentence\nYou want to know how long someone has been waiting.", "options": {"a": "How long have you waited?", "b": "How long have you been waiting?", "c": "How long did you wait?", "d": "When have you been waiting?"}, "correct_option": "b", "explanation": "Duration of an activity in progress → present perfect continuous."}
+      ]
+    },
     "cloze_bank": {
       "title": "Present Perfect – Cloze practice (bank)",
       "summary": "Extra cloze-style practice: one blank per sentence.",
@@ -316,6 +328,20 @@
         {"type": "mc", "question": "6. When ____ you ____ to Paris?", "options": {"a": "have you been", "b": "did you go", "c": "have you gone", "d": "do you go"}, "correct_option": "b", "explanation": "When (specific time) → past simple."},
         {"type": "open", "question": "7. Wrong: 'I have been to the cinema yesterday.' Correct the sentence.", "answers": ["I went to the cinema yesterday.", "I went to the cinema yesterday"], "explanation": "Yesterday → past simple."},
         {"type": "open", "question": "8. She ____ (just / finish) her homework.", "answers": ["has just finished", "has just finished her homework"], "explanation": "Just (recent) → present perfect."}
+      ]
+    },
+    "set2": {
+      "title": "Past Simple vs Present Perfect – Set 2",
+      "summary": "More practice: finished time vs result now, ever/never, for/since, when.",
+      "questions": [
+        {"type": "open", "question": "1. They ____ (move) to Berlin last year.", "answers": ["moved"], "explanation": "Last year = finished time → past simple."},
+        {"type": "open", "question": "2. I ____ (never / be) to Australia.", "answers": ["have never been"], "explanation": "Never (life experience) → present perfect."},
+        {"type": "open", "question": "3. She ____ (work) here for five years. (She still works here.)", "answers": ["has worked"], "explanation": "For + duration up to now → present perfect."},
+        {"type": "mc", "question": "4. ____ you ____ your keys? (I can't find them.)", "options": {"a": "Did you lose", "b": "Have you lost", "c": "Do you lose", "d": "Have you been losing"}, "correct_option": "b", "explanation": "Result now (can't find) → present perfect."},
+        {"type": "open", "question": "5. Wrong: 'When have you seen him?' Correct the sentence.", "answers": ["When did you see him?", "When did you see him"], "explanation": "When (specific past time) → past simple."},
+        {"type": "open", "question": "6. We ____ (not / finish) the report yet.", "answers": ["haven't finished", "have not finished"], "explanation": "Yet (expecting completion) → present perfect."},
+        {"type": "open", "question": "7. He ____ (buy) a new car two weeks ago.", "answers": ["bought"], "explanation": "Ago = finished time → past simple."},
+        {"type": "open", "question": "8. ____ you ever ____ (eat) Thai food?", "answers": ["Have you ever eaten"], "explanation": "Ever (life experience) → present perfect."}
       ]
     }
   },
@@ -522,6 +548,23 @@
         {"type": "open", "question": "59. Once ____ a time there was a king.", "answers": ["upon"], "explanation": "**upon** – formal for **on**."},
         {"type": "open", "question": "60. Everyone came ____ Tom.", "answers": ["except"], "explanation": "**except** – not including."}
       ]
+    },
+    "set8": {
+      "title": "Prepositions – Mixed (time, place, collocation)",
+      "summary": "Mixed gap fill: at/on/in for time and place, and common adjective/verb + preposition.",
+      "questions": [
+        {"type": "open", "question": "1. The conference starts ____ Tuesday at 9 am.", "answers": ["on"], "explanation": "On + day."},
+        {"type": "open", "question": "2. The meeting starts on Tuesday ____ 9 am.", "answers": ["at"], "explanation": "At + clock time."},
+        {"type": "open", "question": "3. She's afraid ____ spiders.", "answers": ["of"], "explanation": "Afraid of."},
+        {"type": "open", "question": "4. We'll be there ____ a few minutes.", "answers": ["in"], "explanation": "In + period (future)."},
+        {"type": "open", "question": "5. He's responsible ____ the project.", "answers": ["for"], "explanation": "Responsible for."},
+        {"type": "open", "question": "6. The picture is ____ the wall.", "answers": ["on"], "explanation": "On = on a surface."},
+        {"type": "open", "question": "7. I'm sorry ____ the delay.", "answers": ["for", "about"], "explanation": "Sorry for / about."},
+        {"type": "open", "question": "8. They got married ____ 2022.", "answers": ["in"], "explanation": "In + year."},
+        {"type": "open", "question": "9. She insisted ____ paying.", "answers": ["on"], "explanation": "Insist on + -ing."},
+        {"type": "open", "question": "10. We're waiting ____ the bus.", "answers": ["for"], "explanation": "Wait for."},
+        {"type": "open", "question": "11. The office is ____ the third floor.", "answers": ["on"], "explanation": "On the floor."}
+      ]
     }
   },
   "relative_pronouns": {
@@ -555,6 +598,20 @@
         {"type": "open", "question": "8. Wrong: The person what helped me was very kind. Correct the sentence.", "answers": ["The person who helped me was very kind.", "The person that helped me was very kind.", "The person who helped me was very kind", "The person that helped me was very kind"], "explanation": "For people (subject) use **who** or **that**, not **what**."},
         {"type": "open", "question": "9. Wrong: That's the reason what I left. Correct the sentence.", "answers": ["That's the reason why I left.", "That's the reason that I left.", "That's the reason why I left", "That's the reason that I left"], "explanation": "For reason use **why** or **that**, not **what**."}
       ]
+    },
+    "set3": {
+      "title": "Relative pronouns – Mixed (gap fill)",
+      "summary": "More practice: which/that, who/that, where, when, whose. No 'what' after a noun.",
+      "questions": [
+        {"type": "open", "question": "1. The hotel ____ we stayed was very comfortable.", "answers": ["where", "that", "which"], "explanation": "Place (we stayed there) → where, or that/which we stayed at."},
+        {"type": "open", "question": "2. The person ____ car was stolen reported it to the police.", "answers": ["whose"], "explanation": "Possession → whose."},
+        {"type": "open", "question": "3. The movie ____ won the award is now on TV.", "answers": ["that", "which"], "explanation": "Thing as subject → that or which."},
+        {"type": "open", "question": "4. That's the reason ____ I didn't call.", "answers": ["why", "that"], "explanation": "Reason → why or that."},
+        {"type": "open", "question": "5. The girl ____ you met at the party is my cousin.", "answers": ["who", "that", "whom"], "explanation": "Person as object → who, that, or whom."},
+        {"type": "open", "question": "6. I remember the summer ____ we went to Italy.", "answers": ["when", "that"], "explanation": "Time → when or that."},
+        {"type": "open", "question": "7. The laptop ____ I bought last week is already broken.", "answers": ["that", "which"], "explanation": "Thing as object → that or which."},
+        {"type": "open", "question": "8. The doctor ____ examined me was very thorough.", "answers": ["who", "that"], "explanation": "Person as subject → who or that."}
+      ]
     }
   },
   "will_going_to": {
@@ -584,6 +641,20 @@
         {"type": "open", "question": "4. Wrong: 'I'm going to help you.' (You are offering now.) Correct the sentence.", "answers": ["I'll help you.", "I will help you.", "I'll help you", "I will help you"], "explanation": "Offer → will."},
         {"type": "open", "question": "5. Wrong: 'She will study in Prague.' (She decided and applied last month.) Correct the sentence.", "answers": ["She's going to study in Prague.", "She is going to study in Prague.", "She's going to study in Prague", "She is going to study in Prague"], "explanation": "Plan already made → going to."}
       ]
+    },
+    "set3": {
+      "title": "Will and going to – Mixed",
+      "summary": "More practice: plans vs spontaneous decisions, evidence, offers, promises.",
+      "questions": [
+        {"type": "open", "question": "1. I'm thirsty. I ____ (get) some water. (deciding now)", "answers": ["will get", "'ll get"], "explanation": "Spontaneous decision → will."},
+        {"type": "open", "question": "2. They ____ (fly) to Rome next week. (tickets booked)", "answers": ["are going to fly", "'re going to fly"], "explanation": "Plan (tickets) → going to."},
+        {"type": "open", "question": "3. I'm sure you ____ (pass) the exam.", "answers": ["will pass", "'ll pass"], "explanation": "General prediction → will."},
+        {"type": "open", "question": "4. She ____ (not tell) anyone. I promise.", "answers": ["won't tell", "will not tell"], "explanation": "Promise → will."},
+        {"type": "mc", "question": "5. (Doorbell rings.) I ____ it.", "options": {"a": "am going to get", "b": "will get", "c": "get", "d": "getting"}, "correct_option": "b", "explanation": "Decision at the moment → will."},
+        {"type": "open", "question": "6. Look at the queue – we ____ (wait) for ages.", "answers": ["are going to wait", "'re going to wait"], "explanation": "Prediction from evidence → going to."},
+        {"type": "open", "question": "7. I ____ (help) you with the bags. (offering now)", "answers": ["will help", "'ll help"], "explanation": "Offer → will."},
+        {"type": "open", "question": "8. We ____ (have) a party on Saturday. (invitations sent)", "answers": ["are going to have", "'re going to have"], "explanation": "Arranged plan → going to."}
+      ]
     }
   },
   "infinitive_ing": {
@@ -612,6 +683,20 @@
         {"type": "open", "question": "3. Wrong: 'I look forward to see you.' Correct the sentence.", "answers": ["I look forward to seeing you.", "I look forward to seeing you"], "explanation": "Look forward to + -ing."},
         {"type": "open", "question": "4. Wrong: 'He suggested to go early.' Correct the sentence.", "answers": ["He suggested going early.", "He suggested going early"], "explanation": "Suggest + -ing."},
         {"type": "open", "question": "5. Wrong: 'We decided staying longer.' Correct the sentence.", "answers": ["We decided to stay longer.", "We decided to stay longer"], "explanation": "Decide + to-infinitive."}
+      ]
+    },
+    "set3": {
+      "title": "Infinitive and -ing – Mixed",
+      "summary": "More practice: to-infinitive vs -ing after common verbs and expressions.",
+      "questions": [
+        {"type": "open", "question": "1. He agreed ____ (help) us.", "answers": ["to help"], "explanation": "Agree + to-infinitive."},
+        {"type": "open", "question": "2. I can't stand ____ (wait) in queues.", "answers": ["waiting"], "explanation": "Can't stand + -ing."},
+        {"type": "open", "question": "3. She refused ____ (answer) the question.", "answers": ["to answer"], "explanation": "Refuse + to-infinitive."},
+        {"type": "open", "question": "4. We're considering ____ (move) to the country.", "answers": ["moving"], "explanation": "Consider + -ing."},
+        {"type": "open", "question": "5. They managed ____ (finish) on time.", "answers": ["to finish"], "explanation": "Manage + to-infinitive."},
+        {"type": "open", "question": "6. I don't mind ____ (work) late tonight.", "answers": ["working"], "explanation": "Mind + -ing."},
+        {"type": "open", "question": "7. He offered ____ (drive) us home.", "answers": ["to drive"], "explanation": "Offer + to-infinitive."},
+        {"type": "open", "question": "8. She keeps ____ (forget) her keys.", "answers": ["forgetting"], "explanation": "Keep + -ing."}
       ]
     }
   },
@@ -695,6 +780,22 @@
         {"type": "open", "question": "9. Wrong: 'That's a wierd story.' Correct the sentence.", "answers": ["That's a weird story."], "explanation": "Weird: e before i (exception to the rule)."},
         {"type": "open", "question": "10. Wrong: 'We need accomodation and the restuarant is full.' Correct the sentence.", "answers": ["We need accommodation and the restaurant is full."], "explanation": "Accommodation (double c, double m); restaurant (-au-)."}
       ]
+    },
+    "set6": {
+      "title": "Spelling – Correct the spelling (51–60)",
+      "summary": "Words 51–60: environment, equipment, exaggerate, excellent, existence, familiar, favourite, grammar, guarantee, guidance.",
+      "questions": [
+        {"type": "open", "question": "1. Wrong: 'We must protect the enviroment.' Correct the sentence.", "answers": ["We must protect the environment."], "explanation": "Environment: -on- (not -o-)."},
+        {"type": "open", "question": "2. Wrong: 'We need new equipement.' Correct the sentence.", "answers": ["We need new equipment."], "explanation": "Equipment: -ment (not -ement)."},
+        {"type": "open", "question": "3. Wrong: 'Don't exagerate.' Correct the sentence.", "answers": ["Don't exaggerate."], "explanation": "Exaggerate: double g, double r."},
+        {"type": "open", "question": "4. Wrong: 'The food was exellent.' Correct the sentence.", "answers": ["The food was excellent."], "explanation": "Excellent: double l."},
+        {"type": "open", "question": "5. Wrong: 'The existance of the problem.' Correct the sentence.", "answers": ["The existence of the problem."], "explanation": "Existence: -ence (not -ance)."},
+        {"type": "open", "question": "6. Wrong: 'This place looks familar.' Correct the sentence.", "answers": ["This place looks familiar."], "explanation": "Familiar: -iar (from family)."},
+        {"type": "open", "question": "7. Wrong: 'What's your favorate colour?' Correct the sentence.", "answers": ["What's your favourite colour?"], "explanation": "Favourite (BrE): -ou-, -ite."},
+        {"type": "open", "question": "8. Wrong: 'Check your grammer.' Correct the sentence.", "answers": ["Check your grammar."], "explanation": "Grammar: -ar (not -er)."},
+        {"type": "open", "question": "9. Wrong: 'We garantuee quality.' Correct the sentence.", "answers": ["We guarantee quality."], "explanation": "Guarantee: u after g, -antee."},
+        {"type": "open", "question": "10. Wrong: 'Thanks for your guidence.' Correct the sentence.", "answers": ["Thanks for your guidance."], "explanation": "Guidance: -ance (guide → guidance)."}
+      ]
     }
   },
   "comparatives": {
@@ -742,6 +843,20 @@
         {"type": "open", "question": "7. Wrong: 'This road is the more dangerous than that one.' Correct the sentence.", "answers": ["This road is more dangerous than that one.", "This road is more dangerous than that one"], "explanation": "Comparative: more dangerous than (no the before a basic comparative)."},
         {"type": "open", "question": "8. Wrong: 'Her English is better than my sister.' Correct the sentence.", "answers": ["Her English is better than my sister's.", "Her English is better than my sister's English."], "explanation": "We compare English with English: better than my sister's (English)."}
       ]
+    },
+    "set3": {
+      "title": "Comparatives – Mixed (gap fill)",
+      "summary": "More practice: -er/more, irregular (good/bad/far), superlatives, as ... as.",
+      "questions": [
+        {"type": "open", "question": "1. This room is ____ (dark) than the other one.", "answers": ["darker"], "explanation": "Dark → darker (short adjective)."},
+        {"type": "open", "question": "2. Her result was ____ (good) than mine.", "answers": ["better"], "explanation": "Good → better."},
+        {"type": "open", "question": "3. This is ____ (expensive) restaurant in town.", "answers": ["the most expensive"], "explanation": "Long adjective → the most expensive."},
+        {"type": "open", "question": "4. He's ____ (clever) than he looks.", "answers": ["cleverer", "more clever"], "explanation": "Clever → cleverer or more clever."},
+        {"type": "open", "question": "5. She's not ____ (tall) as her sister.", "answers": ["as tall"], "explanation": "As ... as (equality)."},
+        {"type": "open", "question": "6. That was ____ (bad) film I've ever seen.", "answers": ["the worst"], "explanation": "Bad → the worst."},
+        {"type": "open", "question": "7. It's ____ (far) from here than I thought.", "answers": ["farther", "further"], "explanation": "Far → farther/further."},
+        {"type": "open", "question": "8. He's one of ____ (good) players in the team.", "answers": ["the best"], "explanation": "Good → the best; one of the best."}
+      ]
     }
   },
   "passives": {
@@ -775,6 +890,20 @@
         {"type": "open", "question": "6. Wrong: 'It can be do tomorrow.' Correct the sentence.", "answers": ["It can be done tomorrow.", "It can be done tomorrow"], "explanation": "Modal passive: can be + past participle (done)."},
         {"type": "open", "question": "7. Wrong: 'The meeting was postpone.' Correct the sentence.", "answers": ["The meeting was postponed.", "The meeting was postponed"], "explanation": "Passive: was + past participle (postponed)."},
         {"type": "open", "question": "8. Wrong: 'The book was wrote by a famous author.' Correct the sentence.", "answers": ["The book was written by a famous author.", "The book was written by a famous author"], "explanation": "Write → written (past participle), not wrote."}
+      ]
+    },
+    "set3": {
+      "title": "Passives – Mixed (gap fill)",
+      "summary": "More practice: present/past/future passive, modal passive, by-agent.",
+      "questions": [
+        {"type": "open", "question": "1. The house _____ (paint) at the moment.", "answers": ["is being painted"], "explanation": "Present continuous passive: is being + past participle."},
+        {"type": "open", "question": "2. The project _____ (complete) by next month.", "answers": ["will be completed"], "explanation": "Future passive: will be + past participle."},
+        {"type": "open", "question": "3. The message _____ (send) an hour ago.", "answers": ["was sent"], "explanation": "Past passive: was + sent."},
+        {"type": "open", "question": "4. The rules _____ (must / follow) by everyone.", "answers": ["must be followed"], "explanation": "Modal passive: must be + past participle."},
+        {"type": "open", "question": "5. The bridge _____ (build) in the 1960s.", "answers": ["was built"], "explanation": "Past passive: was built."},
+        {"type": "open", "question": "6. The application _____ (should / submit) before Friday.", "answers": ["should be submitted"], "explanation": "Modal passive: should be + past participle."},
+        {"type": "open", "question": "7. The car _____ (repair) by a local mechanic.", "answers": ["was repaired", "is being repaired"], "explanation": "Past or present passive + by agent."},
+        {"type": "open", "question": "8. New staff _____ (train) every month.", "answers": ["are trained", "is trained"], "explanation": "Present simple passive: are/is + trained."}
       ]
     }
   },
@@ -813,6 +942,20 @@
         {"type": "open", "question": "7. Wrong: 'Sun is very bright today.' Correct the sentence.", "answers": ["The sun is very bright today.", "The sun is very bright today"], "explanation": "Unique (the sun) → the."},
         {"type": "open", "question": "8. Wrong: 'They live in USA.' Correct the sentence.", "answers": ["They live in the USA.", "They live in the USA"], "explanation": "USA → the."}
       ]
+    },
+    "set3": {
+      "title": "Articles – Mixed (a, an, the, ∅)",
+      "summary": "More practice: a/an (sound), the (specific/unique), no article (general, meals, places).",
+      "questions": [
+        {"type": "mc", "question": "1. He's _____ honest man.", "options": {"a": "a", "b": "an", "c": "the", "d": "no article"}, "correct_option": "b", "explanation": "Honest = vowel sound (silent h) → an."},
+        {"type": "mc", "question": "2. _____ coffee in this cup is cold.", "options": {"a": "A", "b": "An", "c": "The", "d": "No article"}, "correct_option": "c", "explanation": "Specific coffee → the."},
+        {"type": "mc", "question": "3. She goes to _____ school by bus.", "options": {"a": "a", "b": "an", "c": "the", "d": "no article"}, "correct_option": "d", "explanation": "Go to school (as student) → no article."},
+        {"type": "mc", "question": "4. _____ milk is good for you.", "options": {"a": "A", "b": "An", "c": "The", "d": "No article"}, "correct_option": "d", "explanation": "Uncountable in general → no article."},
+        {"type": "mc", "question": "5. I need _____ European visa.", "options": {"a": "a", "b": "an", "c": "the", "d": "no article"}, "correct_option": "a", "explanation": "European = consonant sound (yoo-) → a."},
+        {"type": "open", "question": "6. Wrong: 'I love the chocolate.' (chocolate in general) Correct the sentence.", "answers": ["I love chocolate.", "I love chocolate"], "explanation": "Uncountable in general → no article."},
+        {"type": "open", "question": "7. Wrong: 'She is a architect.' Correct the sentence.", "answers": ["She is an architect.", "She is an architect"], "explanation": "Architect = vowel sound → an."},
+        {"type": "open", "question": "8. Wrong: 'We had the lunch at noon.' Correct the sentence.", "answers": ["We had lunch at noon.", "We had lunch at noon"], "explanation": "Have lunch (meal) → no article."}
+      ]
     }
   },
   "past_simple_continuous": {
@@ -844,6 +987,20 @@
         {"type": "open", "question": "4. Wrong: 'While he cooked, she set the table.' (Both in progress at the same time.) Correct the sentence.", "answers": ["While he was cooking, she was setting the table.", "While he was cooking, she was setting the table"], "explanation": "Two parallel actions in progress → past continuous."},
         {"type": "open", "question": "5. Wrong: 'I was seeing him yesterday.' (You met him once.) Correct the sentence.", "answers": ["I saw him yesterday.", "I saw him yesterday"], "explanation": "Completed event → past simple (saw)."},
         {"type": "open", "question": "6. Wrong: 'We had dinner at 8 pm.' (You mean you were in the middle of dinner at that moment.) Correct the sentence.", "answers": ["We were having dinner at 8 pm.", "We were having dinner at 8 pm"], "explanation": "Action in progress at a moment → past continuous."}
+      ]
+    },
+    "set3": {
+      "title": "Past Simple and Past Continuous – Mixed",
+      "summary": "More practice: interrupted actions, parallel actions, completed vs in progress.",
+      "questions": [
+        {"type": "open", "question": "1. She _____ (read) when someone knocked on the door.", "answers": ["was reading"], "explanation": "Action in progress when something happened → past continuous."},
+        {"type": "open", "question": "2. I _____ (not hear) the phone because I was in the garden.", "answers": ["didn't hear", "did not hear"], "explanation": "Completed/single event → past simple."},
+        {"type": "open", "question": "3. While they _____ (discuss) the plan, the boss arrived.", "answers": ["were discussing"], "explanation": "Background action → past continuous."},
+        {"type": "open", "question": "4. He _____ (fall) asleep while he was watching the film.", "answers": ["fell"], "explanation": "Short event → past simple."},
+        {"type": "open", "question": "5. At midnight she _____ (still / work).", "answers": ["was still working"], "explanation": "In progress at a moment → past continuous."},
+        {"type": "open", "question": "6. We _____ (walk) along the beach when we found a shell.", "answers": ["were walking"], "explanation": "Background action → past continuous."},
+        {"type": "mc", "question": "7. I _____ a shower when the doorbell rang.", "options": {"a": "had", "b": "was having", "c": "have", "d": "am having"}, "correct_option": "b", "explanation": "Action in progress → past continuous."},
+        {"type": "open", "question": "8. They _____ (live) in Paris when the war started.", "answers": ["were living", "lived"], "explanation": "Situation in progress → past continuous or past simple."}
       ]
     }
   },
@@ -967,6 +1124,22 @@
         {"type": "open", "question": "19. _____ a moment. (Hold on)", "answers": ["Hold on"], "explanation": "Hold on = wait."},
         {"type": "mc", "question": "20. 'Break down' can mean:", "options": {"a": "end relationship", "b": "stop working; lose control emotionally", "c": "enter by force", "d": "distribute"}, "correct_option": "b", "explanation": "Break down = stop working; lose control."}
       ]
+    },
+    "set6": {
+      "title": "Phrasal verbs – Extra mixed",
+      "summary": "More gap fill and meaning: bring up, take off, find out, carry on, set up, go through, turn up, look into, etc.",
+      "questions": [
+        {"type": "open", "question": "1. She was _____ in Scotland. (brought up)", "answers": ["brought up"], "explanation": "Bring up = raise (children)."},
+        {"type": "open", "question": "2. The plane _____ at 10. (takes off)", "answers": ["takes off"], "explanation": "Take off = leave (plane)."},
+        {"type": "open", "question": "3. We need to _____ what happened. (find out)", "answers": ["find out"], "explanation": "Find out = discover."},
+        {"type": "open", "question": "4. Please _____ with your work. (carry on)", "answers": ["carry on"], "explanation": "Carry on = continue."},
+        {"type": "mc", "question": "5. 'Set up' means:", "options": {"a": "postpone", "b": "establish; arrange", "c": "rise", "d": "switch on"}, "correct_option": "b", "explanation": "Set up = establish, arrange."},
+        {"type": "open", "question": "6. They _____ a lot of difficulties. (went through)", "answers": ["went through"], "explanation": "Go through = experience."},
+        {"type": "open", "question": "7. He didn't _____ at the meeting. (show up / turn up)", "answers": ["show up", "turn up"], "explanation": "Show up / turn up = arrive."},
+        {"type": "mc", "question": "8. 'Look into' means:", "options": {"a": "look inside", "b": "investigate", "c": "search for", "d": "take care of"}, "correct_option": "b", "explanation": "Look into = investigate."},
+        {"type": "open", "question": "9. She _____ her jacket. (took off)", "answers": ["took off"], "explanation": "Take off = remove (clothes)."},
+        {"type": "open", "question": "10. I can't _____ the answer. (work out / figure out)", "answers": ["work out", "figure out"], "explanation": "Work out / figure out = solve, understand."}
+      ]
     }
   },
   "word_order": {
@@ -1001,6 +1174,20 @@
         {"type": "open", "question": "9. Wrong: 'Can you tell me what time is it?' Correct the sentence.", "answers": ["Can you tell me what time it is?", "Can you tell me what time it is"], "explanation": "Embedded: what time it is."},
         {"type": "open", "question": "10. Wrong: 'I wonder why did she leave.' Correct the sentence.", "answers": ["I wonder why she left.", "I wonder why she left"], "explanation": "Embedded: why she left (no 'did')."}
       ]
+    },
+    "set3": {
+      "title": "Word order – Mixed (embedded questions)",
+      "summary": "More practice: statement word order after I don't know, Can you tell me, I wonder, Do you know.",
+      "questions": [
+        {"type": "open", "question": "1. I'm not sure when _____ . (the train leaves)", "answers": ["the train leaves"], "explanation": "Embedded: when the train leaves."},
+        {"type": "open", "question": "2. Do you know how long _____ ? (it takes)", "answers": ["it takes"], "explanation": "Embedded: how long it takes."},
+        {"type": "open", "question": "3. Tell me who _____ . (that man is)", "answers": ["that man is"], "explanation": "Embedded: who that man is."},
+        {"type": "open", "question": "4. I don't know whether _____ . (she is coming)", "answers": ["she is coming"], "explanation": "Yes/No embedded: whether she is coming."},
+        {"type": "open", "question": "5. Can you tell me how many _____ ? (people are coming)", "answers": ["people are coming"], "explanation": "Embedded: how many people are coming."},
+        {"type": "open", "question": "6. I wonder what _____ . (she wants)", "answers": ["she wants"], "explanation": "Embedded: what she wants."},
+        {"type": "mc", "question": "7. Which is correct?", "options": {"a": "I don't know where is he.", "b": "I don't know where he is.", "c": "I don't know where he.", "d": "I don't know where does he."}, "correct_option": "b", "explanation": "Embedded: where he is (statement order)."},
+        {"type": "open", "question": "8. Wrong: 'Do you know when does the shop open?' Correct the sentence.", "answers": ["Do you know when the shop opens?", "Do you know when the shop opens"], "explanation": "Embedded: when the shop opens (no 'does')."}
+      ]
     }
   },
   "reported_speech": {
@@ -1033,6 +1220,20 @@
         {"type": "open", "question": "7. Wrong: 'She said to me that she will help.' (reporting past words) Correct the sentence.", "answers": ["She said to me that she would help.", "She told me that she would help.", "She said to me that she would help", "She told me that she would help"], "explanation": "Will → would when reporting in the past."},
         {"type": "open", "question": "8. Wrong: 'They asked what time is it.' Correct the sentence.", "answers": ["They asked what time it was.", "They asked what time it was"], "explanation": "Reported question: statement order (what time it was)."}
       ]
+    },
+    "set3": {
+      "title": "Reported speech – Mixed",
+      "summary": "More practice: backshift, say/tell, reported questions and commands, time words.",
+      "questions": [
+        {"type": "open", "question": "1. \"I need your help.\" → She said she _____ my help.", "answers": ["needed"], "explanation": "Present → past: need → needed."},
+        {"type": "open", "question": "2. \"What time does it start?\" → He asked what time _____ .", "answers": ["it started"], "explanation": "Reported question: statement order; backshift."},
+        {"type": "open", "question": "3. \"Don't be late.\" → She _____ me not to be late.", "answers": ["told"], "explanation": "Reported negative command: tell + person + not to."},
+        {"type": "open", "question": "4. \"I may come.\" → He said he _____ come.", "answers": ["might"], "explanation": "May → might in reported speech."},
+        {"type": "open", "question": "5. \"I'm leaving today.\" → She said she was leaving _____ .", "answers": ["that day"], "explanation": "Today → that day."},
+        {"type": "mc", "question": "6. \"Did you see him?\" → She asked me _____ .", "options": {"a": "did I see him", "b": "if I had seen him", "c": "if I see him", "d": "had I seen him"}, "correct_option": "b", "explanation": "Yes/No reported: if + statement order; past → had seen."},
+        {"type": "open", "question": "7. \"I can't stay.\" → He said he _____ stay.", "answers": ["couldn't", "could not"], "explanation": "Can't → couldn't."},
+        {"type": "open", "question": "8. \"Wait here.\" → She _____ me to wait there.", "answers": ["told"], "explanation": "Reported command: tell + person + to-infinitive; here → there."}
+      ]
     }
   },
   "conditionals": {
@@ -1064,6 +1265,56 @@
         {"type": "open", "question": "6. Wrong: 'If she had left earlier, she would catch the train.' Correct the sentence.", "answers": ["If she had left earlier, she would have caught the train.", "If she had left earlier, she would have caught the train"], "explanation": "Third conditional: main clause needs would have + past participle."},
         {"type": "open", "question": "7. Wrong: 'If you heat water to 100°C, it will boil.' (General fact.) Correct to zero conditional.", "answers": ["If you heat water to 100°C, it boils.", "If you heat water to 100°C, it boils"], "explanation": "Zero conditional for general truth: present + present (it boils)."},
         {"type": "open", "question": "8. Wrong: 'If he would try harder, he could pass.' Correct the sentence.", "answers": ["If he tried harder, he could pass.", "If he tried harder, he could pass"], "explanation": "Second conditional: if-clause uses past simple (tried), not would try."}
+      ]
+    },
+    "set3": {
+      "title": "Conditionals – Mixed",
+      "summary": "More practice: zero, first, second, third – gap fill and choosing the right form.",
+      "questions": [
+        {"type": "open", "question": "1. Zero: If you _____ (drop) a glass, it breaks.", "answers": ["drop"], "explanation": "Zero: present in both clauses."},
+        {"type": "open", "question": "2. First: If she _____ (call), tell her I'm out.", "answers": ["calls"], "explanation": "First: if + present; imperative in main clause."},
+        {"type": "open", "question": "3. Second: If I _____ (have) enough money, I would buy a car.", "answers": ["had"], "explanation": "Second: if + past simple."},
+        {"type": "open", "question": "4. Third: If they _____ (invite) us, we would have gone.", "answers": ["had invited"], "explanation": "Third: if + past perfect."},
+        {"type": "open", "question": "5. First: We won't go if it _____ (rain).", "answers": ["rains"], "explanation": "First: present in if-clause."},
+        {"type": "open", "question": "6. Second: I would tell you if I _____ (know) the answer.", "answers": ["knew"], "explanation": "Second: if + past simple."},
+        {"type": "mc", "question": "7. If I _____ you, I would apologise.", "options": {"a": "am", "b": "was", "c": "were", "d": "would be"}, "correct_option": "c", "explanation": "Second conditional: if I were you (formal)."},
+        {"type": "open", "question": "8. Third: If he had driven carefully, he _____ (not have) an accident.", "answers": ["wouldn't have had", "would not have had"], "explanation": "Third: would have + past participle in main clause."}
+      ]
+    }
+  },
+  "punctuation": {
+    "set1": {
+      "title": "Punctuation and capitalisation",
+      "summary": "Commas (including Czech vs English), capitalisation (I, days, months, languages, proper nouns).",
+      "questions": [
+        {"type": "open", "question": "1. Wrong: 'I think, that she is coming.' Correct the sentence.", "answers": ["I think that she is coming.", "I think that she is coming"], "explanation": "No comma before 'that' in English (unlike Czech before že)."},
+        {"type": "open", "question": "2. Wrong: 'we went on monday.' Correct the sentence.", "answers": ["We went on Monday.", "We went on Monday"], "explanation": "Capitalise first word and days of the week in English."},
+        {"type": "open", "question": "3. Wrong: 'He and i left early.' Correct the sentence.", "answers": ["He and I left early.", "He and I left early"], "explanation": "The pronoun I is always capitalised in English."},
+        {"type": "open", "question": "4. Wrong: 'She speaks english and german.' Correct the sentence.", "answers": ["She speaks English and German.", "She speaks English and German"], "explanation": "Languages are capitalised in English."},
+        {"type": "open", "question": "5. Wrong: 'I called but she was busy.' Add a comma where needed.", "answers": ["I called, but she was busy.", "I called, but she was busy"], "explanation": "Comma before 'but' when it joins two full sentences."},
+        {"type": "open", "question": "6. Wrong: 'However we decided to stay.' Correct the sentence.", "answers": ["However, we decided to stay.", "However, we decided to stay"], "explanation": "Comma after introductory word However."},
+        {"type": "open", "question": "7. Wrong: 'In january we went to prague.' Correct the sentence.", "answers": ["In January we went to Prague.", "In January we went to Prague"], "explanation": "Capitalise months and place names (proper nouns)."},
+        {"type": "open", "question": "8. Wrong: 'after the meeting he went home.' Correct the sentence.", "answers": ["After the meeting, he went home.", "After the meeting, he went home"], "explanation": "Capitalise first word; comma after introductory phrase."},
+        {"type": "open", "question": "9. Wrong: 'She said that, she would come.' Correct the sentence.", "answers": ["She said that she would come.", "She said that she would come"], "explanation": "No comma before or after 'that' in this sentence type."},
+        {"type": "open", "question": "10. Wrong: 'They speak czech and french.' Correct the sentence.", "answers": ["They speak Czech and French.", "They speak Czech and French"], "explanation": "Nationalities/languages are capitalised in English."}
+      ]
+    }
+  },
+  "countable_uncountable": {
+    "set1": {
+      "title": "Nouns: Countable and uncountable",
+      "summary": "Uncountable (advice, information, news, homework); always plural (scissors, trousers, glasses); correct verb and quantifiers.",
+      "questions": [
+        {"type": "open", "question": "1. Wrong: 'Can you give me an advice?' Correct the sentence.", "answers": ["Can you give me some advice?", "Can you give me a piece of advice?", "Can you give me some advice", "Can you give me a piece of advice"], "explanation": "Advice is uncountable; use 'some advice' or 'a piece of advice'."},
+        {"type": "open", "question": "2. Wrong: 'I need more informations.' Correct the sentence.", "answers": ["I need more information.", "I need more information"], "explanation": "Information is uncountable; no plural -s."},
+        {"type": "open", "question": "3. Wrong: 'Where is my glasses?' Correct the sentence.", "answers": ["Where are my glasses?", "Where are my glasses"], "explanation": "Glasses (spectacles) is always plural; use plural verb (are)."},
+        {"type": "open", "question": "4. Wrong: 'The scissors is in the drawer.' Correct the sentence.", "answers": ["The scissors are in the drawer.", "The scissors are in the drawer"], "explanation": "Scissors is always plural; use plural verb (are)."},
+        {"type": "open", "question": "5. Wrong: 'She has many homeworks.' Correct the sentence.", "answers": ["She has a lot of homework.", "She has lots of homework.", "She has a lot of homework", "She has lots of homework"], "explanation": "Homework is uncountable; use 'a lot of' or 'lots of'."},
+        {"type": "open", "question": "6. Wrong: 'These trousers is too long.' Correct the sentence.", "answers": ["These trousers are too long.", "These trousers are too long"], "explanation": "Trousers is always plural; use plural verb (are)."},
+        {"type": "open", "question": "7. Wrong: 'The news are good.' Correct the sentence.", "answers": ["The news is good.", "The news is good"], "explanation": "News is uncountable and takes a singular verb (is)."},
+        {"type": "open", "question": "8. Wrong: 'We have made a good progress.' Correct the sentence.", "answers": ["We have made good progress.", "We have made good progress"], "explanation": "Progress is uncountable; no 'a' before it."},
+        {"type": "open", "question": "9. Wrong: 'I have too many luggages.' Correct the sentence.", "answers": ["I have too much luggage.", "I have too much luggage"], "explanation": "Luggage is uncountable; use 'much' and no -s."},
+        {"type": "open", "question": "10. Wrong: 'He did a research.' Correct the sentence.", "answers": ["He did research.", "He did some research.", "He did research", "He did some research"], "explanation": "Research is uncountable; no 'a'. Use 'research' or 'some research'."}
       ]
     }
   }

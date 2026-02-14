@@ -1,0 +1,94 @@
+{
+  "intro": {
+    "title": "Punctuation and capitalisation",
+    "sections": [
+      {
+        "title": "What this section covers",
+        "content": "**Punctuation** (especially commas) and **capitalisation** in English.\n\nFocus on differences from Czech so you can avoid common mistakes.\n\n• **Check** – test your understanding.\n• **Practice** – add or correct punctuation and capitals."
+      },
+      {
+        "title": "Commas – when to use them",
+        "content": "Use a comma:\n\n• **In lists** (before 'and' optional in British English): apples, oranges, and bananas.\n• **After introductory words or phrases:** However, we agreed. After the meeting, he left.\n• **Before but, and, or, so, yet** when they join two full sentences: I called, but she was busy.\n• **Around extra (non-defining) information:** My brother, who lives in London, is a doctor.\n\nDo **not** use a comma when the information is essential (defining): The man who called yesterday left a message."
+      },
+      {
+        "title": "Czech vs English – commas",
+        "content": "**Differences that often cause mistakes:**\n\n• **Before že (that):** Czech often uses a comma before že. English usually does **not**: I think that he is right. (no comma before 'that' in most cases)\n\n• **Before and/but:** In English we use a comma when and/but joins two **full sentences**: She smiled, and I waved. If you only join two words or short phrases, no comma: She smiled and waved.\n\n• **Lists:** Czech may use a comma where English uses no comma (e.g. before a final item). In British English the last comma (before 'and') is optional."
+      },
+      {
+        "title": "Capitalisation",
+        "content": "In English we capitalise:\n\n• **I** (the person) – always: He and I went.\n• **First word of a sentence.**\n• **Proper nouns:** London, Jan, the European Union.\n• **Days and months:** Monday, March. (Czech: pondělí, březen – small letter)\n• **Nationalities and languages:** English, Czech, French.\n• **Titles of books/films:** (main words) The Lord of the Rings.\n\nDo **not** capitalise general nouns (e.g. 'university' unless part of a name: Oxford University)."
+      },
+      {
+        "title": "Czech vs English – capitalisation",
+        "content": "**Typical mistakes for Czech learners:**\n\n• **Days and months** – In English always capitalise: **Monday**, **January**. In Czech they are written with a small letter (pondělí, leden).\n\n• **I** – In English **I** is always a capital letter. In Czech 'já' is not capitalised.\n\n• **Nationalities/languages** – English, Czech, German (capital in English).\n\n• **First word after a colon** – In English it depends on style; often capital if a full sentence follows. In Czech often small letter."
+      },
+      {
+        "title": "Quick summary",
+        "content": "• **Commas:** lists, after introductory phrases, before but/and when joining two sentences, around non-defining clauses. Not before 'that' (I think that…).\n• **Capitalise:** I, first word of sentence, proper nouns, days, months, nationalities, languages.\n• Don't transfer Czech comma or capitalisation rules – follow English rules."
+      }
+    ]
+  },
+  "check": {
+    "title": "Test your understanding",
+    "questions": [
+      {
+        "type": "mc",
+        "question": "Which is correct?",
+        "options": {"a": "I think that he is right.", "b": "I think, that he is right.", "c": "I think that, he is right.", "d": "I think, that, he is right."},
+        "correct_option": "a",
+        "explanation": "In English we usually do not put a comma before 'that' in this type of sentence (unlike Czech before že)."
+      },
+      {
+        "type": "mc",
+        "question": "Which is correct?",
+        "options": {"a": "monday and tuesday", "b": "Monday and Tuesday", "c": "Monday and tuesday", "d": "monday and Tuesday"},
+        "correct_option": "b",
+        "explanation": "Days of the week are capitalised in English (unlike in Czech)."
+      },
+      {
+        "type": "mc",
+        "question": "Which is correct?",
+        "options": {"a": "She smiled and i waved.", "b": "She smiled and I waved.", "c": "She smiled and i Waved.", "d": "she smiled and I waved."},
+        "correct_option": "b",
+        "explanation": "The pronoun I is always capitalised in English. First word of sentence is capitalised."
+      },
+      {
+        "type": "mc",
+        "question": "Which is correct? (You have more than one brother; the London one is the doctor.)",
+        "options": {
+          "a": "My brother who lives in London is a doctor.",
+          "b": "My brother, who lives in London, is a doctor.",
+          "c": "My brother, who lives in London is a doctor.",
+          "d": "My brother who lives in London, is a doctor."
+        },
+        "correct_option": "b",
+        "explanation": "When the clause is extra (non-defining) information, we put commas around it: My brother, who lives in London, is a doctor."
+      },
+      {
+        "type": "mc",
+        "question": "Which is correct?",
+        "options": {"a": "We speak english and czech.", "b": "We speak English and Czech.", "c": "We speak English and czech.", "d": "we speak English and Czech."},
+        "correct_option": "b",
+        "explanation": "Languages and nationalities are capitalised in English. Sentence starts with a capital."
+      }
+    ]
+  },
+  "practice_order": ["commas_capitals"],
+  "practice": {
+    "commas_capitals": {
+      "title": "Practice: Commas and capitalisation",
+      "questions": [
+        {"type": "open", "question": "Wrong: 'I think, that she is coming.' Correct the sentence.", "answers": ["I think that she is coming.", "I think that she is coming"], "explanation": "No comma before 'that' in English in this pattern."},
+        {"type": "open", "question": "Wrong: 'we went on monday.' Correct the sentence.", "answers": ["We went on Monday.", "We went on Monday"], "explanation": "Capitalise first word of sentence and the day of the week."},
+        {"type": "open", "question": "Wrong: 'He and i left early.' Correct the sentence.", "answers": ["He and I left early.", "He and I left early"], "explanation": "The pronoun I is always written with a capital letter in English."},
+        {"type": "open", "question": "Wrong: 'She speaks english and german.' Correct the sentence.", "answers": ["She speaks English and German.", "She speaks English and German"], "explanation": "Languages are capitalised in English."},
+        {"type": "open", "question": "Wrong: 'I called but she was busy.' (Add a comma where needed.)", "answers": ["I called, but she was busy.", "I called, but she was busy"], "explanation": "Use a comma before 'but' when it joins two full sentences."},
+        {"type": "open", "question": "Wrong: 'However we decided to stay.' Correct the sentence.", "answers": ["However, we decided to stay.", "However, we decided to stay"], "explanation": "Use a comma after introductory words like However."},
+        {"type": "open", "question": "Wrong: 'In january we went to prague.' Correct the sentence.", "answers": ["In January we went to Prague.", "In January we went to Prague"], "explanation": "Capitalise months and place names (proper nouns)."},
+        {"type": "open", "question": "Wrong: 'The man, who stole the bag, was caught.' (The clause is essential – there were several men, and we mean the one who stole the bag.) Correct by removing unnecessary commas.", "answers": ["The man who stole the bag was caught.", "The man who stole the bag was caught"], "explanation": "No commas when the clause is defining (essential to identify which man)."},
+        {"type": "open", "question": "Wrong: 'after the meeting he went home.' Correct the sentence.", "answers": ["After the meeting, he went home.", "After the meeting, he went home"], "explanation": "Capitalise first word; comma after introductory phrase 'After the meeting'."},
+        {"type": "open", "question": "Wrong: 'She said that, she would come.' Correct the sentence.", "answers": ["She said that she would come.", "She said that she would come"], "explanation": "No comma before or after 'that' in this type of sentence."}
+      ]
+    }
+  }
+}

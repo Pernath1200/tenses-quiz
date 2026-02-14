@@ -4,19 +4,19 @@
     "sections": [
       {
         "title": "What is the passive?",
-        "content": "In an **active** sentence the subject does the action: **The dog bit the man.**\n\nIn a **passive** sentence the object of the action becomes the subject, and we focus on what happened rather than who did it: **The man was bitten by the dog.**\n\nWe form the passive with **be + past participle**:\n• Present simple: The letter **is written** by the secretary.\n• Past simple: The letter **was written** yesterday.\n• Present perfect: The letter **has been written**.\n• Future (will): The letter **will be written** tomorrow.\n• Modals: The letter **can be written** / **must be sent**."
+        "content": "**Active:** the subject does the action. *The dog bit the man.*\n\n**Passive:** we focus on what happened; the object becomes the subject. We use **be + past participle**:\n\n• Present: The letter **is written**.\n• Past: The letter **was written** yesterday.\n• Present perfect: The letter **has been written**.\n• Modals: The letter **can be written** / **must be sent**.\n\nExamples: The man was bitten by the dog. English is spoken everywhere."
       },
       {
         "title": "When do we use the passive?",
-        "content": "We use the passive when:\n\n• **The agent (who did it) is unknown or unimportant:**\n  – My bike was stolen. (We don't know who stole it.)\n  – English is spoken all over the world. (We're not focusing on who speaks it.)\n\n• **We want to focus on the action or the object:**\n  – The new hospital was opened last year. (We care about the hospital, not who opened it.)\n  – The report has been finished. (We care that it's done.)\n\n• **In formal or academic writing:**\n  – The experiment was carried out in a controlled environment.\n  – It is believed that the situation will improve.\n\nIf we want to say who did the action we use **by + agent**: The window was broken **by the storm**."
+        "content": "Use the passive when:\n\n• The **agent is unknown or unimportant:** My bike was stolen. English is spoken everywhere.\n• We want to **focus on the action or result:** The report has been finished. The hospital was opened last year.\n• In **formal writing:** The experiment was carried out. It is believed that …\n\nTo say who did it: **by + agent** — The window was broken **by the storm**."
       },
       {
         "title": "Form: be + past participle",
-        "content": "The passive always uses a form of **be** (am, is, are, was, were, been, being) + **past participle** (e.g. written, done, taken, built).\n\n**Tense** is shown by the form of **be**, not by the past participle:\n\n• Present simple: am/is/are + past participle → The room **is cleaned** every day.\n• Past simple: was/were + past participle → The room **was cleaned** yesterday.\n• Present perfect: have/has been + past participle → The room **has been cleaned**.\n• Past perfect: had been + past participle → The room **had been cleaned** before we arrived.\n• Future: will be + past participle → The room **will be cleaned** tomorrow.\n• With modals: modal + be + past participle → The room **must be cleaned** / **can be cleaned**."
+        "content": "Passive = **be** (in the right tense) + **past participle** (written, done, built).\n\nTense is in **be**, not in the participle:\n\n• Present: **is/are** + participle (The room is cleaned.)\n• Past: **was/were** + participle (The room was cleaned.)\n• Present perfect: **has/have been** + participle\n• Future: **will be** + participle\n• Modals: **must/can be** + participle\n\nExamples: The letter was sent. It must be done by Friday."
       },
       {
         "title": "By-agent and other prepositions",
-        "content": "We use **by** to introduce the agent (the doer):\n• The play was written **by Shakespeare**.\n• The building was designed **by a famous architect**.\n\nWe often **omit** the by-phrase when the agent is unknown, obvious or unimportant:\n• He was arrested. (We know the police do this.)\n• The meeting was postponed. (We don't need to say who did it.)\n\nSome passive verbs take a different preposition (not by):\n• I'm **interested in** this topic. (not *interested by)\n• She was **surprised at** the result. (or by)\n• The room was **filled with** balloons.\n• He's **known for** his charity work."
+        "content": "**By** + agent (who did it): The play was written **by Shakespeare**.\n\nWe often **omit** by when the agent is obvious: He was arrested. The meeting was postponed.\n\nSome passives use a different preposition:\n• **interested in** (not by)\n• **filled with**, **known for**\n\nExamples: I'm interested in this. The room was filled with balloons."
       },
       {
         "title": "Quick summary",
@@ -24,7 +24,7 @@
       },
       {
         "title": "Typical learner errors",
-        "content": "• **Wrong form:** Wrong: *The letter was send.* Right: **The letter was sent.** (Past participle, not base form.)\n• **Wrong tense of be:** Wrong: *The building is built in 1990.* Right: **The building was built in 1990.** (Past → was/were + past participle.)\n• **Using active instead of passive when the subject is the object of the action:** Wrong: *English speaks all over the world.* Right: **English is spoken all over the world.**\n• **Adding an extra 'be' with modals:** Wrong: *It can be be done.* Right: **It can be done.** (Modal + be + past participle, only one 'be'.)"
+        "content": "• **Past participle:** Wrong: The letter was *send*. Right: The letter was **sent**.\n• **Tense in be:** Wrong: The building *is* built in 1990. Right: The building **was** built in 1990.\n• **Active vs passive:** Wrong: English *speaks* everywhere. Right: English **is spoken** everywhere.\n• **One 'be' with modals:** Wrong: It can *be be* done. Right: It can **be** done."
       }
     ]
   },
