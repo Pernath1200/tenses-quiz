@@ -119,7 +119,7 @@
         <div class="scores" id="scoresSummary"></div>
         <p style="margin-bottom: 0.5rem; color: var(--muted); font-size: 0.9rem;">Mixed cloze: find weak areas, then revise by topic.</p>
         <div class="actions" style="margin-bottom: 1rem;">
-          <button type="button" id="startDiagnosticBtn" class="secondary">Diagnostic test</button>
+          <button type="button" id="startDiagnosticBtn" class="secondary">Quick grammar check</button>
           <button type="button" id="startMixedPracticeBtn" class="secondary">Mixed cloze practice</button>
         </div>
         <hr style="border: none; border-top: 1px solid var(--muted); margin: 1rem 0;" />
@@ -156,7 +156,7 @@
           <input type="text" id="openInput" placeholder="Type your answer">
         </div>
         <div id="mcBlock" class="options hidden"></div>
-        <button id="submitBtn">Submit</button>
+        <button type="button" id="submitBtn">Submit</button>
       </div>
       <div id="feedbackBlock" class="card hidden">
         <div id="feedbackText"></div>
@@ -1205,25 +1205,36 @@
     }
 
     async function startDiagnostic() {
-      let data;
+      let allData;
       try {
-        const res = await fetch(new URL('mixed_cloze.json?v=3', getBaseUrl()));
-        if (!res.ok) throw new Error('Could not load mixed cloze');
-        data = await res.json();
+        const res = await fetch(new URL('questions.json?v=3', getBaseUrl()));
+        if (!res.ok) throw new Error('Could not load questions');
+        allData = await res.json();
       } catch (e) {
-        alert('Could not load diagnostic. ' + e.message);
+        alert('Could not load Quick grammar check. ' + e.message);
         return;
       }
-      const questions = (data.questions || []).slice();
-      for (let i = questions.length - 1; i > 0; i--) {
+      const pool = [];
+      (topics || []).forEach(function(t) {
+        const key = t.questions_key || t.id;
+        const sets = allData[key];
+        if (!sets || typeof sets !== 'object') return;
+        Object.values(sets).forEach(function(set) {
+          const qs = set.questions || [];
+          qs.forEach(function(q) {
+            pool.push(Object.assign({}, q, { topic: t.id }));
+          });
+        });
+      });
+      for (let i = pool.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
-        [questions[i], questions[j]] = [questions[j], questions[i]];
+        [pool[i], pool[j]] = [pool[j], pool[i]];
       }
-      const max = Math.min(30, questions.length);
-      currentQuestions = questions.slice(0, max);
+      const max = Math.min(50, pool.length);
+      currentQuestions = pool.slice(0, max);
       currentSetId = 'diagnostic';
-      currentSetTitle = data.title_diagnostic || 'Diagnostic test';
-      summary = data.summary_diagnostic || '';
+      currentSetTitle = 'Quick grammar check';
+      summary = '50 questions from all topics (random order). Wrong answers point to topics you need to revise.';
       currentIndex = 0;
       score = 0;
       wrongIndices = [];
@@ -1607,7 +1618,19 @@
       a.click();
       URL.revokeObjectURL(a.href);
     });
-    document.getElementById('openInput').addEventListener('keydown', e => { if (e.key === 'Enter') submitAnswer(); });
+    document.getElementById('openInput').addEventListener('keydown', function(e) {
+      if (e.key === 'Enter') { e.preventDefault(); submitAnswer(); }
+    });
+    document.addEventListener('keydown', function(e) {
+      if (e.key !== 'Enter') return;
+      const quizScreen = document.getElementById('quizScreen');
+      if (!quizScreen || quizScreen.classList.contains('hidden')) return;
+      const fb = document.getElementById('feedbackBlock');
+      if (fb && !fb.classList.contains('hidden')) return;
+      const q = currentQuestions && currentQuestions[currentIndex];
+      if (!q) return;
+      if (q.type === 'mc' && selectedMc != null) { e.preventDefault(); submitAnswer(); }
+    });
 
     const practiceWeakBtn = document.getElementById('practiceWeakBtn');
     if (practiceWeakBtn) {
@@ -1666,25 +1689,26 @@
         renderMenu();
       } catch (err) {
         topics = [
-          { id: 'present_perfect', title: 'Present Perfect Simple vs Continuous', curriculum: 'curriculum.json', questions_key: 'sets' },
-          { id: 'past_simple_present_perfect', title: 'Past Simple vs Present Perfect', curriculum: 'curriculum_past_simple_present_perfect.json', questions_key: 'past_simple_present_perfect' },
-          { id: 'prepositions', title: 'Prepositions', curriculum: 'curriculum_prepositions.json', questions_key: 'prepositions' },
-          { id: 'relative_pronouns', title: 'Relative pronouns', curriculum: 'curriculum_relative_pronouns.json', questions_key: 'relative_pronouns' },
-          { id: 'will_going_to', title: 'Will and going to', curriculum: 'curriculum_will_going_to.json', questions_key: 'will_going_to' },
-          { id: 'infinitive_ing', title: 'Infinitive and -ing form', curriculum: 'curriculum_infinitive_ing.json', questions_key: 'infinitive_ing' },
-          { id: 'spelling', title: 'Spelling', curriculum: 'curriculum_spelling.json', questions_key: 'spelling' },
-          { id: 'comparatives', title: 'Comparatives and Superlatives', curriculum: 'curriculum_comparatives.json', questions_key: 'comparatives' },
-          { id: 'passives', title: 'Passives', curriculum: 'curriculum_passives.json', questions_key: 'passives' },
           { id: 'articles', title: 'Articles (a, an, the, ∅)', curriculum: 'curriculum_articles.json', questions_key: 'articles' },
-          { id: 'past_simple_continuous', title: 'Past Simple and Past Continuous', curriculum: 'curriculum_past_simple_continuous.json', questions_key: 'past_simple_continuous' },
-          { id: 'past_perfect', title: 'Past Perfect', curriculum: 'curriculum_past_perfect.json', questions_key: 'past_perfect' },
+          { id: 'comparatives', title: 'Comparatives and Superlatives', curriculum: 'curriculum_comparatives.json', questions_key: 'comparatives' },
+          { id: 'conjunctions_linkers', title: 'Conjunctions and linkers', curriculum: 'curriculum_conjunctions_linkers.json', questions_key: 'conjunctions_linkers' },
+          { id: 'countable_uncountable', title: 'Nouns: Countable and uncountable', curriculum: 'curriculum_countable_uncountable.json', questions_key: 'countable_uncountable' },
+          { id: 'infinitive_ing', title: 'Infinitive and -ing form', curriculum: 'curriculum_infinitive_ing.json', questions_key: 'infinitive_ing' },
+          { id: 'passives', title: 'Passives', curriculum: 'curriculum_passives.json', questions_key: 'passives' },
           { id: 'phrasal_verbs', title: 'Phrasal verbs', curriculum: 'curriculum_phrasal_verbs.json', questions_key: 'phrasal_verbs' },
-          { id: 'word_order', title: 'Word order in sentences', curriculum: 'curriculum_word_order.json', questions_key: 'word_order' },
-          { id: 'reported_speech', title: 'Reported speech', curriculum: 'curriculum_reported_speech.json', questions_key: 'reported_speech' },
-{ id: 'conditionals', title: 'Conditionals (zero, first, second, third)', curriculum: 'curriculum_conditionals.json', questions_key: 'conditionals' },
+          { id: 'prepositions', title: 'Prepositions', curriculum: 'curriculum_prepositions.json', questions_key: 'prepositions' },
           { id: 'punctuation', title: 'Punctuation and capitalisation', curriculum: 'curriculum_punctuation.json', questions_key: 'punctuation' },
-          { id: 'countable_uncountable', title: 'Nouns: Countable and uncountable', curriculum: 'curriculum_countable_uncountable.json', questions_key: 'countable_uncountable' }
-          ];
+          { id: 'relative_pronouns', title: 'Relative pronouns', curriculum: 'curriculum_relative_pronouns.json', questions_key: 'relative_pronouns' },
+          { id: 'reported_speech', title: 'Reported speech', curriculum: 'curriculum_reported_speech.json', questions_key: 'reported_speech' },
+          { id: 'spelling', title: 'Spelling', curriculum: 'curriculum_spelling.json', questions_key: 'spelling' },
+          { id: 'word_order', title: 'Word order in sentences', curriculum: 'curriculum_word_order.json', questions_key: 'word_order' },
+          { id: 'conditionals', title: 'Tenses: Conditionals (zero, first, second, third)', curriculum: 'curriculum_conditionals.json', questions_key: 'conditionals' },
+          { id: 'past_perfect', title: 'Tenses: Past Perfect', curriculum: 'curriculum_past_perfect.json', questions_key: 'past_perfect' },
+          { id: 'past_simple_continuous', title: 'Tenses: Past Simple and Past Continuous', curriculum: 'curriculum_past_simple_continuous.json', questions_key: 'past_simple_continuous' },
+          { id: 'past_simple_present_perfect', title: 'Tenses: Past Simple vs Present Perfect', curriculum: 'curriculum_past_simple_present_perfect.json', questions_key: 'past_simple_present_perfect' },
+          { id: 'present_perfect', title: 'Tenses: Present Perfect Simple vs Continuous', curriculum: 'curriculum.json', questions_key: 'sets' },
+          { id: 'will_going_to', title: 'Tenses: Will and going to', curriculum: 'curriculum_will_going_to.json', questions_key: 'will_going_to' }
+        ];
         currentTopic = topics[0];
         document.getElementById('topicLabel').classList.remove('hidden');
         document.getElementById('topicSelect').classList.remove('hidden');

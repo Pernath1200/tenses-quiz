@@ -303,12 +303,11 @@
         },
         {
           "type": "open",
-          "question": "23. That was ____ (bad) exam I've ever done.",
+          "question": "23. That was the ____ (bad) exam I've ever done.",
           "answers": [
-            "the worst",
-            "the worst exam I've ever done."
+            "worst"
           ],
-          "explanation": "Bad → the worst. Typical pattern: the worst ... I've ever done."
+          "explanation": "Superlative of bad → worst (the worst exam)."
         },
         {
           "type": "open",
@@ -339,12 +338,12 @@
         },
         {
           "type": "open",
-          "question": "27. He lives in ____ (far) village from the city.",
+          "question": "27. Of all the villages around here, he lives in ____ (far) from the city.",
           "answers": [
             "the farthest",
             "the furthest"
           ],
-          "explanation": "Far → the farthest / the furthest."
+          "explanation": "Superlative (comparing all villages): far → the farthest / the furthest."
         },
         {
           "type": "open",

@@ -78,7 +78,7 @@
         {"type": "open", "question": "Look at those clouds – it ____ (rain).", "answers": ["is going to rain", "'s going to rain"], "explanation": "Prediction from present evidence → going to."},
         {"type": "open", "question": "I'm so tired. I ____ (have) a rest. (I just decided.)", "answers": ["will have", "'ll have"], "explanation": "Spontaneous decision → will."},
         {"type": "open", "question": "She ____ (study) law at university. (She decided last year.)", "answers": ["is going to study", "'s going to study"], "explanation": "Plan/intention already made → going to."},
-        {"type": "open", "question": "That bag looks heavy. I ____ (carry) it for you.", "answers": ["will carry", "'ll carry"], "explanation": "Offer (deciding now) → will."},
+        {"type": "open", "question": "That bag looks heavy. I ____ (carry) it for you.", "answers": ["will carry", "'ll carry", "can carry"], "explanation": "Offer: both will (I'll do it) and can (I'm able to) are natural here."},
         {"type": "open", "question": "We ____ (meet) at 6. (We arranged it yesterday.)", "answers": ["are going to meet", "'re going to meet"], "explanation": "Already arranged → going to."},
         {"type": "open", "question": "I think the match ____ (be) exciting.", "answers": ["will be", "'ll be"], "explanation": "General prediction (I think) → will."},
         {"type": "open", "question": "He's running towards the bus but it's leaving – he ____ (miss) it.", "answers": ["is going to miss", "'s going to miss"], "explanation": "Prediction from what we can see now → going to."},

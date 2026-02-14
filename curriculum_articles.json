@@ -85,7 +85,6 @@
         {"type": "mc", "question": "They live in _____ USA.", "options": {"a": "a", "b": "an", "c": "the", "d": "no article"}, "correct_option": "c", "explanation": "Country name that includes a common noun (United States) → the."},
         {"type": "mc", "question": "_____ water in the bottle is cold.", "options": {"a": "A", "b": "An", "c": "The", "d": "No article"}, "correct_option": "c", "explanation": "Specific water (in that bottle) → the."},
         {"type": "mc", "question": "It's _____ best film I've ever seen.", "options": {"a": "a", "b": "an", "c": "the", "d": "no article"}, "correct_option": "c", "explanation": "Superlative (best) → the."},
-        {"type": "mc", "question": "She studied at _____ university in Prague.", "options": {"a": "a", "b": "an", "c": "the", "d": "no article"}, "correct_option": "a", "explanation": "University starts with consonant sound (yoo-) → a. One of many."},
         {"type": "mc", "question": "_____ life is full of surprises.", "options": {"a": "A", "b": "An", "c": "The", "d": "No article"}, "correct_option": "d", "explanation": "Life in general (uncountable) → no article."},
         {"type": "mc", "question": "I'll meet you at _____ home.", "options": {"a": "a", "b": "an", "c": "the", "d": "no article"}, "correct_option": "d", "explanation": "At home (fixed phrase) → no article."}
       ]

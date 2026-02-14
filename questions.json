@@ -539,7 +539,7 @@
         {"type": "open", "question": "50. The plane flew ____ the clouds.", "answers": ["above"], "explanation": "**above** – higher than."},
         {"type": "open", "question": "51. The temperature dropped ____ zero.", "answers": ["below"], "explanation": "**below** – lower than."},
         {"type": "open", "question": "52. They live ____ the station.", "answers": ["near"], "explanation": "**near** – close to."},
-        {"type": "open", "question": "53. We walked ____ the river.", "answers": ["along"], "explanation": "**along** – following a line."},
+        {"type": "open", "question": "53. We walked ____ the riverbank for a couple of miles.", "answers": ["along"], "explanation": "**along** – following a line (along the riverbank)."},
         {"type": "open", "question": "54. The ball rolled ____ the table.", "answers": ["off"], "explanation": "**off** – away from a surface."},
         {"type": "open", "question": "55. She ran ____ the stairs.", "answers": ["up"], "explanation": "**up** – direction."},
         {"type": "open", "question": "56. We walked ____ the hill.", "answers": ["down"], "explanation": "**down** – direction."},
@@ -624,7 +624,7 @@
         {"type": "open", "question": "3. Look at those clouds – it ____ (rain).", "answers": ["is going to rain", "'s going to rain"], "explanation": "Prediction from present evidence → going to."},
         {"type": "open", "question": "4. I'm so tired. I ____ (have) a rest. (I just decided.)", "answers": ["will have", "'ll have"], "explanation": "Spontaneous decision → will."},
         {"type": "open", "question": "5. She ____ (study) law at university. (She decided last year.)", "answers": ["is going to study", "'s going to study"], "explanation": "Plan/intention already made → going to."},
-        {"type": "open", "question": "6. That bag looks heavy. I ____ (carry) it for you.", "answers": ["will carry", "'ll carry"], "explanation": "Offer (deciding now) → will."},
+        {"type": "open", "question": "6. That bag looks heavy. I ____ (carry) it for you.", "answers": ["will carry", "'ll carry", "can carry"], "explanation": "Offer: both will (I'll do it) and can (I'm able to) are natural here."},
         {"type": "open", "question": "7. We ____ (meet) at 6. (We arranged it yesterday.)", "answers": ["are going to meet", "'re going to meet"], "explanation": "Already arranged → going to."},
         {"type": "open", "question": "8. I think the match ____ (be) exciting.", "answers": ["will be", "'ll be"], "explanation": "General prediction (I think) → will."},
         {"type": "open", "question": "9. I promise I ____ (not tell) anyone.", "answers": ["won't tell", "will not tell"], "explanation": "Promise → will."},
@@ -822,11 +822,11 @@
         {"type": "open", "question": "17. This year's results are ____ (slightly / good) than last year's.", "answers": ["slightly better", "a bit better"], "explanation": "Use a small degree adverb + better (slightly/a bit better than)."},
         {"type": "open", "question": "18. She is ____ (tall) girl in the class.", "answers": ["the tallest"], "explanation": "Tall → the tallest (superlative with the)."},
         {"type": "open", "question": "19. This is ____ (good) restaurant in town.", "answers": ["the best"], "explanation": "Good → the best (superlative)."},
-        {"type": "open", "question": "20. That was ____ (bad) exam I've ever done.", "answers": ["the worst"], "explanation": "Bad → the worst exam I've ever done."},
+        {"type": "open", "question": "20. That was the ____ (bad) exam I've ever done.", "answers": ["worst"], "explanation": "Superlative of bad → worst (the worst exam)."},
         {"type": "open", "question": "21. It’s ____ (interesting) book I've ever read.", "answers": ["the most interesting"], "explanation": "Long adjective → the most interesting (book I've ever read)."},
         {"type": "open", "question": "22. January is usually ____ (cold) month of the year here.", "answers": ["the coldest"], "explanation": "Cold → the coldest."},
         {"type": "open", "question": "23. This question is ____ (difficult) one in the test.", "answers": ["the most difficult"], "explanation": "Difficult → the most difficult."},
-        {"type": "open", "question": "24. He lives in ____ (far) village from the city.", "answers": ["the farthest", "the furthest"], "explanation": "Far → the farthest/furthest."},
+        {"type": "open", "question": "24. Of all the villages around here, he lives in ____ (far) from the city.", "answers": ["the farthest", "the furthest"], "explanation": "Superlative (comparing all villages): far → the farthest / the furthest."},
         {"type": "open", "question": "25. This is one of ____ (expensive) hotels in the city.", "answers": ["the most expensive"], "explanation": "Pattern: one of the + superlative plural → one of the most expensive hotels."}
       ]
     },
@@ -853,7 +853,7 @@
         {"type": "open", "question": "3. This is ____ (expensive) restaurant in town.", "answers": ["the most expensive"], "explanation": "Long adjective → the most expensive."},
         {"type": "open", "question": "4. He's ____ (clever) than he looks.", "answers": ["cleverer", "more clever"], "explanation": "Clever → cleverer or more clever."},
         {"type": "open", "question": "5. She's not ____ (tall) as her sister.", "answers": ["as tall"], "explanation": "As ... as (equality)."},
-        {"type": "open", "question": "6. That was ____ (bad) film I've ever seen.", "answers": ["the worst"], "explanation": "Bad → the worst."},
+        {"type": "open", "question": "6. That was the ____ (bad) film I've ever seen.", "answers": ["worst"], "explanation": "Superlative of bad → worst (the worst film)."},
         {"type": "open", "question": "7. It's ____ (far) from here than I thought.", "answers": ["farther", "further"], "explanation": "Far → farther/further."},
         {"type": "open", "question": "8. He's one of ____ (good) players in the team.", "answers": ["the best"], "explanation": "Good → the best; one of the best."}
       ]
@@ -923,10 +923,9 @@
         {"type": "mc", "question": "9. They live in _____ USA.", "options": {"a": "a", "b": "an", "c": "the", "d": "no article"}, "correct_option": "c", "explanation": "USA (country with common noun) → the."},
         {"type": "mc", "question": "10. _____ water in the bottle is cold.", "options": {"a": "A", "b": "An", "c": "The", "d": "No article"}, "correct_option": "c", "explanation": "Specific water → the."},
         {"type": "mc", "question": "11. It's _____ best film I've ever seen.", "options": {"a": "a", "b": "an", "c": "the", "d": "no article"}, "correct_option": "c", "explanation": "Superlative → the."},
-        {"type": "mc", "question": "12. She studied at _____ university in Prague.", "options": {"a": "a", "b": "an", "c": "the", "d": "no article"}, "correct_option": "a", "explanation": "University = consonant sound (yoo-) → a."},
-        {"type": "mc", "question": "13. _____ life is full of surprises.", "options": {"a": "A", "b": "An", "c": "The", "d": "No article"}, "correct_option": "d", "explanation": "Life in general → no article."},
-        {"type": "mc", "question": "14. I'll meet you at _____ home.", "options": {"a": "a", "b": "an", "c": "the", "d": "no article"}, "correct_option": "d", "explanation": "At home (fixed phrase) → no article."},
-        {"type": "mc", "question": "15. I bought _____ new car. _____ car is red.", "options": {"a": "a / A", "b": "a / The", "c": "the / The", "d": "no article / The"}, "correct_option": "b", "explanation": "First mention → a. Second mention → the."}
+        {"type": "mc", "question": "12. _____ life is full of surprises.", "options": {"a": "A", "b": "An", "c": "The", "d": "No article"}, "correct_option": "d", "explanation": "Life in general → no article."},
+        {"type": "mc", "question": "13. I'll meet you at _____ home.", "options": {"a": "a", "b": "an", "c": "the", "d": "no article"}, "correct_option": "d", "explanation": "At home (fixed phrase) → no article."},
+        {"type": "mc", "question": "14. I bought _____ new car. _____ car is red.", "options": {"a": "a / A", "b": "a / The", "c": "the / The", "d": "no article / The"}, "correct_option": "b", "explanation": "First mention → a. Second mention → the."}
       ]
     },
     "set2": {
@@ -1028,7 +1027,7 @@
         {"type": "open", "question": "17. _____ this form. (complete)", "answers": ["Fill in", "Fill out"], "explanation": "Fill in / fill out = complete a form."},
         {"type": "open", "question": "18. We _____ a difficult time. (experienced)", "answers": ["went through"], "explanation": "Go through = experience."},
         {"type": "open", "question": "19. _____ a moment. (wait)", "answers": ["Hold on"], "explanation": "Hold on = wait."},
-        {"type": "open", "question": "20. They _____ early. (started a journey)", "answers": ["set out"], "explanation": "Set out = start a journey or task."}
+        {"type": "open", "question": "20. They _____ early to reach the coast before lunch.", "answers": ["set out"], "explanation": "Set out = start a journey or task."}
       ]
     },
     "set2": {
@@ -1070,9 +1069,9 @@
         {"type": "open", "question": "12. We need to _____ this. (handle)", "answers": ["deal with"], "explanation": "Deal with = handle."},
         {"type": "open", "question": "13. _____ for the step. (be careful)", "answers": ["Watch out", "Look out"], "explanation": "Watch out / Look out = be careful."},
         {"type": "open", "question": "14. He _____ the offer. (refused)", "answers": ["turned down"], "explanation": "Turn down = refuse; reduce volume."},
-        {"type": "open", "question": "15. She _____ tennis. (started as hobby)", "answers": ["took up"], "explanation": "Take up = start (hobby); occupy."},
-        {"type": "open", "question": "16. _____ the message. (transmit)", "answers": ["Pass on"], "explanation": "Pass on = transmit."},
-        {"type": "open", "question": "17. They _____ last week. (started living there)", "answers": ["moved in"], "explanation": "Move in = start living somewhere."},
+        {"type": "open", "question": "15. She _____ tennis last year and now plays every week.", "answers": ["took up"], "explanation": "Take up = start (hobby); occupy."},
+        {"type": "open", "question": "16. Could you pass _____ the message to Sarah?", "answers": ["on"], "explanation": "Pass on = pass to someone else; relay, transmit."},
+        {"type": "open", "question": "17. They _____ into their new flat last week.", "answers": ["moved in"], "explanation": "Move in = start living somewhere."},
         {"type": "open", "question": "18. _____ for the course. (register)", "answers": ["Sign up"], "explanation": "Sign up = register."},
         {"type": "open", "question": "19. The meeting _____ on Monday. (happened)", "answers": ["took place"], "explanation": "Take place = happen."},
         {"type": "open", "question": "20. _____ your room. (make tidy)", "answers": ["Tidy up"], "explanation": "Tidy up = make tidy."}
@@ -1086,7 +1085,7 @@
         {"type": "open", "question": "2. Wrong: 'Turn on it.' Correct the sentence.", "answers": ["Turn it on.", "Turn it on"], "explanation": "Separable: pronoun in the middle."},
         {"type": "open", "question": "3. Wrong: 'Who will look the children after?' Correct the sentence.", "answers": ["Who will look after the children?", "Who will look after the children"], "explanation": "Look after is inseparable."},
         {"type": "open", "question": "4. Wrong: 'We ran out milk.' Correct the sentence.", "answers": ["We ran out of milk.", "We ran out of milk"], "explanation": "Run out of = use up. Need 'of'."},
-        {"type": "open", "question": "5. Wrong: 'Don't give in!' (meaning don't stop trying) Correct the sentence.", "answers": ["Don't give up!", "Don't give up"], "explanation": "Give up = stop trying."},
+        {"type": "open", "question": "5. Wrong: 'Don't give away! You're so close.' Correct the sentence.", "answers": ["Don't give up! You're so close.", "Don't give up! You're so close"], "explanation": "Give up = stop trying. Give away = donate or reveal; it doesn't fit here."},
         {"type": "open", "question": "6. Wrong: 'She came up a solution.' Correct the sentence.", "answers": ["She came up with a solution.", "She came up with a solution"], "explanation": "Come up with = think of."},
         {"type": "open", "question": "7. Wrong: 'Pick up it.' Correct the sentence.", "answers": ["Pick it up.", "Pick it up"], "explanation": "Separable: Pick it up."},
         {"type": "open", "question": "8. Wrong: 'I found out my keys.' (meaning I was searching for them) Correct the sentence.", "answers": ["I looked for my keys.", "I was looking for my keys.", "I looked for my keys"], "explanation": "Look for = search for. Find out = discover."},
@@ -1103,25 +1102,25 @@
       "title": "Phrasal verbs – Mixed (all levels)",
       "summary": "Mixed gap fill and multiple choice from top 50 and next 100.",
       "questions": [
-        {"type": "open", "question": "1. They _____ the experiment. (carried out)", "answers": ["carried out"], "explanation": "Carry out = do or complete."},
+        {"type": "open", "question": "1. They _____ the experiment last month and published the results.", "answers": ["carried out"], "explanation": "Carry out = do or complete."},
         {"type": "mc", "question": "2. 'Look after' means:", "options": {"a": "search for", "b": "take care of", "c": "admire", "d": "be careful"}, "correct_option": "b", "explanation": "Look after = take care of."},
-        {"type": "open", "question": "3. We've _____ of milk. (run out)", "answers": ["run out"], "explanation": "Run out of = use up."},
-        {"type": "open", "question": "4. He _____ a solution. (came up with)", "answers": ["came up with"], "explanation": "Come up with = think of."},
+        {"type": "open", "question": "3. We've _____ of milk — can you buy some?", "answers": ["run out"], "explanation": "Run out of = use up."},
+        {"type": "open", "question": "4. He _____ a solution that nobody else had thought of.", "answers": ["came up with"], "explanation": "Come up with = think of."},
         {"type": "mc", "question": "5. 'Put off' means:", "options": {"a": "wear", "b": "postpone", "c": "switch on", "d": "place down"}, "correct_option": "b", "explanation": "Put off = postpone."},
-        {"type": "open", "question": "6. _____ the light. (Turn on)", "answers": ["Turn on"], "explanation": "Turn on = switch on."},
-        {"type": "open", "question": "7. She _____ her illness. (got over)", "answers": ["got over"], "explanation": "Get over = recover from."},
-        {"type": "open", "question": "8. Don't _____ ! (give up)", "answers": ["give up"], "explanation": "Give up = stop trying."},
+        {"type": "open", "question": "6. _____ the light — it's dark in here.", "answers": ["Turn on"], "explanation": "Turn on = switch on."},
+        {"type": "open", "question": "7. She was ill for a week but she _____ it quickly.", "answers": ["got over"], "explanation": "Get over = recover from."},
+        {"type": "open", "question": "8. Don't _____ — you're almost there!", "answers": ["give up"], "explanation": "Give up = stop trying."},
         {"type": "mc", "question": "9. 'Take over' means:", "options": {"a": "remove", "b": "assume control", "c": "start", "d": "accept work"}, "correct_option": "b", "explanation": "Take over = assume control."},
-        {"type": "open", "question": "10. We need to _____ the problem. (sort out)", "answers": ["sort out"], "explanation": "Sort out = resolve."},
-        {"type": "open", "question": "11. They _____ the match. (called off)", "answers": ["called off"], "explanation": "Call off = cancel."},
-        {"type": "open", "question": "12. I _____ in Prague. (grew up)", "answers": ["grew up"], "explanation": "Grow up = become adult."},
+        {"type": "open", "question": "10. We need to _____ the problem before it gets worse.", "answers": ["sort out"], "explanation": "Sort out = resolve."},
+        {"type": "open", "question": "11. They _____ the match because of the rain.", "answers": ["called off"], "explanation": "Call off = cancel."},
+        {"type": "open", "question": "12. I _____ in Prague and moved to London when I was twenty.", "answers": ["grew up"], "explanation": "Grow up = become adult."},
         {"type": "mc", "question": "13. 'Run into' means:", "options": {"a": "use up", "b": "meet by chance", "c": "leave quickly", "d": "hit"}, "correct_option": "b", "explanation": "Run into = meet by chance; encounter."},
-        {"type": "open", "question": "14. _____ your homework. (Hand in)", "answers": ["Hand in"], "explanation": "Hand in = submit."},
-        {"type": "open", "question": "15. She didn't _____. (show up / turn up)", "answers": ["show up", "turn up"], "explanation": "Show up / turn up = arrive."},
-        {"type": "open", "question": "16. We _____ a meeting. (set up)", "answers": ["set up"], "explanation": "Set up = establish, arrange."},
+        {"type": "open", "question": "14. Please _____ your homework by Friday.", "answers": ["hand in", "Hand in"], "explanation": "Hand in = submit."},
+        {"type": "open", "question": "15. She didn't _____ at the party — we waited for an hour.", "answers": ["show up", "turn up"], "explanation": "Show up / turn up = arrive."},
+        {"type": "open", "question": "16. We _____ a meeting for next Monday.", "answers": ["set up"], "explanation": "Set up = establish, arrange."},
         {"type": "mc", "question": "17. 'Give in' means:", "options": {"a": "stop trying", "b": "yield; submit", "c": "distribute", "d": "return"}, "correct_option": "b", "explanation": "Give in = yield; submit."},
-        {"type": "open", "question": "18. I can't _____ this problem. (figure out)", "answers": ["figure out"], "explanation": "Figure out = understand; solve."},
-        {"type": "open", "question": "19. _____ a moment. (Hold on)", "answers": ["Hold on"], "explanation": "Hold on = wait."},
+        {"type": "open", "question": "18. I can't _____ this problem — it's too difficult.", "answers": ["figure out"], "explanation": "Figure out = understand; solve."},
+        {"type": "open", "question": "19. _____ a moment — I'll be right back.", "answers": ["Hold on"], "explanation": "Hold on = wait."},
         {"type": "mc", "question": "20. 'Break down' can mean:", "options": {"a": "end relationship", "b": "stop working; lose control emotionally", "c": "enter by force", "d": "distribute"}, "correct_option": "b", "explanation": "Break down = stop working; lose control."}
       ]
     },
@@ -1129,16 +1128,16 @@
       "title": "Phrasal verbs – Extra mixed",
       "summary": "More gap fill and meaning: bring up, take off, find out, carry on, set up, go through, turn up, look into, etc.",
       "questions": [
-        {"type": "open", "question": "1. She was _____ in Scotland. (brought up)", "answers": ["brought up"], "explanation": "Bring up = raise (children)."},
-        {"type": "open", "question": "2. The plane _____ at 10. (takes off)", "answers": ["takes off"], "explanation": "Take off = leave (plane)."},
-        {"type": "open", "question": "3. We need to _____ what happened. (find out)", "answers": ["find out"], "explanation": "Find out = discover."},
-        {"type": "open", "question": "4. Please _____ with your work. (carry on)", "answers": ["carry on"], "explanation": "Carry on = continue."},
+        {"type": "open", "question": "1. She was _____ in Scotland and moved to England when she was eighteen.", "answers": ["brought up"], "explanation": "Bring up = raise (children)."},
+        {"type": "open", "question": "2. The plane _____ at 10 — we need to be at the airport by 8.", "answers": ["takes off"], "explanation": "Take off = leave (plane)."},
+        {"type": "open", "question": "3. We need to _____ what happened before we decide.", "answers": ["find out"], "explanation": "Find out = discover."},
+        {"type": "open", "question": "4. Please _____ with your work — don't let me interrupt you.", "answers": ["carry on"], "explanation": "Carry on = continue."},
         {"type": "mc", "question": "5. 'Set up' means:", "options": {"a": "postpone", "b": "establish; arrange", "c": "rise", "d": "switch on"}, "correct_option": "b", "explanation": "Set up = establish, arrange."},
-        {"type": "open", "question": "6. They _____ a lot of difficulties. (went through)", "answers": ["went through"], "explanation": "Go through = experience."},
-        {"type": "open", "question": "7. He didn't _____ at the meeting. (show up / turn up)", "answers": ["show up", "turn up"], "explanation": "Show up / turn up = arrive."},
+        {"type": "open", "question": "6. They _____ a lot of difficulties last year but things are better now.", "answers": ["went through"], "explanation": "Go through = experience."},
+        {"type": "open", "question": "7. He didn't _____ at the meeting — nobody knew where he was.", "answers": ["show up", "turn up"], "explanation": "Show up / turn up = arrive."},
         {"type": "mc", "question": "8. 'Look into' means:", "options": {"a": "look inside", "b": "investigate", "c": "search for", "d": "take care of"}, "correct_option": "b", "explanation": "Look into = investigate."},
-        {"type": "open", "question": "9. She _____ her jacket. (took off)", "answers": ["took off"], "explanation": "Take off = remove (clothes)."},
-        {"type": "open", "question": "10. I can't _____ the answer. (work out / figure out)", "answers": ["work out", "figure out"], "explanation": "Work out / figure out = solve, understand."}
+        {"type": "open", "question": "9. She _____ her jacket because the room was warm.", "answers": ["took off"], "explanation": "Take off = remove (clothes)."},
+        {"type": "open", "question": "10. I can't _____ the answer to this question.", "answers": ["work out", "figure out"], "explanation": "Work out / figure out = solve, understand."}
       ]
     }
   },
@@ -1147,16 +1146,16 @@
       "title": "Word order – Embedded questions (gap fill)",
       "summary": "Use statement word order in embedded questions: I don't know what the answer is (not what is the answer).",
       "questions": [
-        {"type": "open", "question": "1. I don't know what _____. (the answer is)", "answers": ["the answer is"], "explanation": "Embedded: what the answer is (statement order)."},
-        {"type": "open", "question": "2. Can you tell me where _____? (the station is)", "answers": ["the station is"], "explanation": "Embedded: where the station is."},
-        {"type": "open", "question": "3. Do you know what _____? (his name is)", "answers": ["his name is"], "explanation": "Embedded: what his name is."},
-        {"type": "open", "question": "4. I wonder when _____. (he left)", "answers": ["he left"], "explanation": "Embedded: when he left (no 'did')."},
-        {"type": "open", "question": "5. Tell me how much _____. (it costs)", "answers": ["it costs"], "explanation": "Embedded: how much it costs."},
-        {"type": "open", "question": "6. I'm not sure what _____. (the problem is)", "answers": ["the problem is"], "explanation": "Embedded: what the problem is."},
-        {"type": "open", "question": "7. Do you know where _____? (she lives)", "answers": ["she lives"], "explanation": "Embedded: where she lives."},
-        {"type": "open", "question": "8. I don't know if _____. (she is coming)", "answers": ["she is coming"], "explanation": "Yes/No embedded: if she is coming."},
-        {"type": "open", "question": "9. Can you tell me what time _____? (it is)", "answers": ["it is"], "explanation": "Embedded: what time it is."},
-        {"type": "open", "question": "10. I wonder why _____. (he left)", "answers": ["he left"], "explanation": "Embedded: why he left."}
+        {"type": "open", "question": "1. I don't know what _____ . (Use the words: the answer / be. Statement order.)", "answers": ["the answer is"], "explanation": "Embedded: what the answer is (statement order)."},
+        {"type": "open", "question": "2. Can you tell me where _____ ? (Use the words: the station / be. Statement order.)", "answers": ["the station is"], "explanation": "Embedded: where the station is."},
+        {"type": "open", "question": "3. Do you know what _____ ? (Use the words: his name / be. Statement order.)", "answers": ["his name is"], "explanation": "Embedded: what his name is."},
+        {"type": "open", "question": "4. I wonder when _____ . (Use the words: he / leave. Statement order; past.)", "answers": ["he left"], "explanation": "Embedded: when he left (no 'did')."},
+        {"type": "open", "question": "5. Tell me how much _____ . (Use the words: it / cost. Statement order.)", "answers": ["it costs"], "explanation": "Embedded question: statement order → how much it costs (not does it cost)."},
+        {"type": "open", "question": "6. I'm not sure what _____ . (Use the words: the problem / be. Statement order.)", "answers": ["the problem is"], "explanation": "Embedded: what the problem is."},
+        {"type": "open", "question": "7. Do you know where _____ ? (Use the words: she / live. Statement order.)", "answers": ["she lives"], "explanation": "Embedded: where she lives."},
+        {"type": "open", "question": "8. I don't know if _____ . (Use the words: she / be / come. Statement order.)", "answers": ["she is coming"], "explanation": "Yes/No embedded: if she is coming."},
+        {"type": "open", "question": "9. Can you tell me what time _____ ? (Use the words: it / be. Statement order.)", "answers": ["it is"], "explanation": "Embedded: what time it is."},
+        {"type": "open", "question": "10. I wonder why _____ . (Use the words: he / leave. Statement order; past.)", "answers": ["he left"], "explanation": "Embedded: why he left."}
       ]
     },
     "set2": {
@@ -1179,12 +1178,12 @@
       "title": "Word order – Mixed (embedded questions)",
       "summary": "More practice: statement word order after I don't know, Can you tell me, I wonder, Do you know.",
       "questions": [
-        {"type": "open", "question": "1. I'm not sure when _____ . (the train leaves)", "answers": ["the train leaves"], "explanation": "Embedded: when the train leaves."},
-        {"type": "open", "question": "2. Do you know how long _____ ? (it takes)", "answers": ["it takes"], "explanation": "Embedded: how long it takes."},
-        {"type": "open", "question": "3. Tell me who _____ . (that man is)", "answers": ["that man is"], "explanation": "Embedded: who that man is."},
-        {"type": "open", "question": "4. I don't know whether _____ . (she is coming)", "answers": ["she is coming"], "explanation": "Yes/No embedded: whether she is coming."},
-        {"type": "open", "question": "5. Can you tell me how many _____ ? (people are coming)", "answers": ["people are coming"], "explanation": "Embedded: how many people are coming."},
-        {"type": "open", "question": "6. I wonder what _____ . (she wants)", "answers": ["she wants"], "explanation": "Embedded: what she wants."},
+        {"type": "open", "question": "1. I'm not sure when _____ . (Use the words: the train / leave. Statement order.)", "answers": ["the train leaves"], "explanation": "Embedded: when the train leaves."},
+        {"type": "open", "question": "2. Do you know how long _____ ? (Use the words: it / take. Statement order.)", "answers": ["it takes"], "explanation": "Embedded: how long it takes."},
+        {"type": "open", "question": "3. Tell me who _____ . (Use the words: that man / be. Statement order.)", "answers": ["that man is"], "explanation": "Embedded: who that man is."},
+        {"type": "open", "question": "4. I don't know whether _____ . (Use the words: she / be / come. Statement order.)", "answers": ["she is coming"], "explanation": "Yes/No embedded: whether she is coming."},
+        {"type": "open", "question": "5. Can you tell me how many _____ ? (Use the words: people / be / come. Statement order.)", "answers": ["people are coming"], "explanation": "Embedded: how many people are coming."},
+        {"type": "open", "question": "6. I wonder what _____ . (Use the words: she / want. Statement order.)", "answers": ["she wants"], "explanation": "Embedded: what she wants."},
         {"type": "mc", "question": "7. Which is correct?", "options": {"a": "I don't know where is he.", "b": "I don't know where he is.", "c": "I don't know where he.", "d": "I don't know where does he."}, "correct_option": "b", "explanation": "Embedded: where he is (statement order)."},
         {"type": "open", "question": "8. Wrong: 'Do you know when does the shop open?' Correct the sentence.", "answers": ["Do you know when the shop opens?", "Do you know when the shop opens"], "explanation": "Embedded: when the shop opens (no 'does')."}
       ]
@@ -1315,6 +1314,24 @@
         {"type": "open", "question": "8. Wrong: 'We have made a good progress.' Correct the sentence.", "answers": ["We have made good progress.", "We have made good progress"], "explanation": "Progress is uncountable; no 'a' before it."},
         {"type": "open", "question": "9. Wrong: 'I have too many luggages.' Correct the sentence.", "answers": ["I have too much luggage.", "I have too much luggage"], "explanation": "Luggage is uncountable; use 'much' and no -s."},
         {"type": "open", "question": "10. Wrong: 'He did a research.' Correct the sentence.", "answers": ["He did research.", "He did some research.", "He did research", "He did some research"], "explanation": "Research is uncountable; no 'a'. Use 'research' or 'some research'."}
+      ]
+    }
+  },
+  "conjunctions_linkers": {
+    "set1": {
+      "title": "Conjunctions and linkers",
+      "summary": "Coordinating and subordinating conjunctions; linkers (however, therefore, for example); avoiding double conjunctions (because+so, although+but).",
+      "questions": [
+        {"type": "open", "question": "1. Wrong: 'Because it was late, so we went home.' Correct the sentence.", "answers": ["Because it was late, we went home.", "It was late so we went home.", "Because it was late, we went home", "It was late so we went home"], "explanation": "Don't use because and so together. Use one or the other."},
+        {"type": "open", "question": "2. Wrong: 'Although she was tired, but she continued.' Correct the sentence.", "answers": ["Although she was tired, she continued.", "She was tired but she continued.", "Although she was tired, she continued", "She was tired but she continued"], "explanation": "Don't use although and but together."},
+        {"type": "open", "question": "3. Fill in: It was difficult. _____, we managed to finish. (contrast)", "answers": ["However", "Nevertheless", "However,", "Nevertheless,"], "explanation": "However or Nevertheless shows contrast (difficult vs we managed)."},
+        {"type": "open", "question": "4. Fill in: He didn't study. _____, he failed the exam. (result)", "answers": ["Therefore", "So", "Therefore,", "So,"], "explanation": "Therefore or So shows result (didn't study → failed)."},
+        {"type": "open", "question": "5. Fill in: I was reading _____ she was cooking. (at the same time)", "answers": ["while", "when"], "explanation": "While = during, two ongoing actions. When is also possible but while is clearer for simultaneous actions."},
+        {"type": "open", "question": "6. Wrong: 'Because he was ill, therefore he stayed in bed.' Correct the sentence.", "answers": ["Because he was ill, he stayed in bed.", "He was ill so he stayed in bed.", "Because he was ill, he stayed in bed", "He was ill so he stayed in bed"], "explanation": "Don't use because and therefore together."},
+        {"type": "open", "question": "7. Fill in: We need to hurry _____ we miss the train. (negative result to avoid)", "answers": ["or", "or we will", "otherwise we will"], "explanation": "Or (we'll) miss = otherwise we'll miss. Shows negative result to avoid."},
+        {"type": "open", "question": "8. Fill in: The film was long. _____, it was very good.", "answers": ["However", "Nevertheless", "On the other hand", "However,", "Nevertheless,", "On the other hand,"], "explanation": "Contrast: long vs good. However, Nevertheless, or On the other hand."},
+        {"type": "open", "question": "9. Fill in: _____ you see him, tell him to call me.", "answers": ["When", "If"], "explanation": "When = at the time you see him. If = in case you see him. Both can work."},
+        {"type": "open", "question": "10. Fill in: _____ it was expensive, we decided to buy it. (contrast)", "answers": ["Although", "Though"], "explanation": "Although or Though introduces a contrast (expensive vs we bought it)."}
       ]
     }
   }

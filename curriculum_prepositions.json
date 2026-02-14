@@ -228,7 +228,7 @@
         {"type": "open", "question": "The plane flew ____ the clouds.", "answers": ["above"], "explanation": "**above** – higher than (above the clouds)."},
         {"type": "open", "question": "The temperature dropped ____ zero.", "answers": ["below"], "explanation": "**below** – lower than (below zero)."},
         {"type": "open", "question": "They live ____ the station.", "answers": ["near"], "explanation": "**near** – close to (near the station)."},
-        {"type": "open", "question": "We walked ____ the river.", "answers": ["along"], "explanation": "**along** – following a line (along the river)."},
+        {"type": "open", "question": "We walked ____ the riverbank for a couple of miles.", "answers": ["along"], "explanation": "**along** – following a line (along the riverbank)."},
         {"type": "open", "question": "The ball rolled ____ the table.", "answers": ["off"], "explanation": "**off** – away from a surface (off the table)."},
         {"type": "open", "question": "She ran ____ the stairs.", "answers": ["up"], "explanation": "**up** – direction (up the stairs)."},
         {"type": "open", "question": "We walked ____ the hill.", "answers": ["down"], "explanation": "**down** – direction (down the hill)."},

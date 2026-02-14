@@ -1,7 +1,7 @@
 {
-  "title_diagnostic": "Diagnostic test",
+  "title_diagnostic": "Quick grammar check",
   "title_practice": "Mixed cloze practice",
-  "summary_diagnostic": "About 30 questions from all grammar topics (random order). Wrong answers point to topics you need to revise.",
+  "summary_diagnostic": "50 questions from all topics (random order). Wrong answers point to topics you need to revise.",
   "summary_practice": "Cloze-style mixed practice from all topics.",
   "questions": [
     {"type": "open", "question": "I have _____ to London many times.", "answers": ["been"], "topic": "present_perfect", "explanation": "Present perfect for life experience: have/has + past participle."},
